@@ -12,8 +12,8 @@
 4. `data/telemetry/turn_metrics.csv`: 160 registros por turno de latencia,
    emisiones, entropía y fidelidad; sus respuestas están en
    `data/experimental/responses_replica.csv`.
-5. `data/telemetry/sensitivity_grid.csv` y `figures/`: malla 5x5 del estudio
-   de sensibilidad H3.
+5. `data/telemetry/sensitivity_grid.csv` y
+   `data/telemetry/figures/`: malla 5x5 del estudio de sensibilidad H3.
 6. `src/`: código fuente del sistema y de los análisis.
 
 ## Pasos

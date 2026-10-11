@@ -38,7 +38,7 @@ El repositorio materializa cuatro objetivos:
 | 160 respuestas evaluadas por los jueces | `data/experimental/responses.csv` |
 | Calificaciones de J1, J2 y J3 por respuesta y criterio | `data/evaluation/` |
 | Registros por turno de latencia, emisiones, entropía y fidelidad | `data/telemetry/turn_metrics.csv` |
-| Malla 5x5 del estudio de sensibilidad H3 y su figura | `data/telemetry/sensitivity_grid.csv`, `figures/` |
+| Malla 5x5 del estudio de sensibilidad H3 y su figura | `data/telemetry/sensitivity_grid.csv`, `data/telemetry/figures/` |
 | Código fuente | `src/` |
 
 Los registros por turno provienen de una reejecución de la campaña con el mismo
