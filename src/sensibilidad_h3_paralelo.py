@@ -1,15 +1,3 @@
-"""
-sensibilidad_h3_paralelo.py — Estudio de Sensibilidad Factorial en Paralelo (Sección 4.3 de la Tesis)
-Validación Formal y Topológica de la Hipótesis H3:
-"Existe una región compacta y contigua del espacio de hiperparámetros (α, c)
-en la que el desempeño del motor se mantiene estable."
-
-Diseño factorial: 5 x 5 = 25 configuraciones
-  α ∈ {0.20, 0.25, 0.30, 0.35, 0.40}  (Factor EWMA de memoria)
-  c ∈ {0.30, 0.40, 0.50, 0.60, 0.70}  (Fuerza de acoplamiento semántico)
-Banco de pruebas: 17 diálogos multiturno (40 turnos en total, 23 transiciones inter-turno).
-"""
-
 import os
 import sys
 

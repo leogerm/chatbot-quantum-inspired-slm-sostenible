@@ -11,7 +11,3 @@ resume sus resultados, pero el archivo de calificaciones finales no está
 disponible en este checkout. El archivo recibido aquí era una prueba para
 revisar las preguntas; sus puntuaciones fueron retiradas del manual publicado
 y no se presentan como resultados experimentales.
-
-Los cinco criterios son pertinencia, continuidad temática, corrección del
-contenido, adecuación de la extensión y naturalidad del registro, con escala
-de 1 a 5.
