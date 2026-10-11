@@ -1,1 +1,81 @@
 query_id,dialogue_id,category,query_text
+Par-001,T01,Tecnologia,¿Cómo se declara una función en Python?
+Par-002,T02,Tecnologia,Tengo un error de índice fuera de rango en mi lista
+Par-003,T03,Tecnologia,¿Qué diferencia hay entre una lista y una tupla?
+Par-004,T04,Tecnologia,Explícame qué es una API REST
+Par-005,T05,Tecnologia,¿Cómo hago un JOIN entre dos tablas en SQL?
+Par-006,T06,Tecnologia,Mi programa se cierra sin mostrar ningún mensaje de error
+Par-007,D01,Tecnologia,Quiero aprender a programar en Python
+Par-008,D01,Tecnologia,¿Por dónde debería empezar?
+Par-009,D01,Tecnologia,¿Y qué editor de código me recomiendas?
+Par-010,D02,Tecnologia,Necesito crear una base de datos para mi proyecto
+Par-011,D02,Tecnologia,¿Qué motor conviene para pocos usuarios?
+Par-012,D03,Tecnologia,Explícame qué es un bucle for
+Par-013,D03,Tecnologia,¿Y cuándo conviene usar while en su lugar?
+Par-014,D03,Tecnologia,"Ahora cambiemos de tema, ¿cómo estuvo tu día?"
+Par-015,W01,Trabajo,Tengo demasiadas tareas acumuladas esta semana
+Par-016,W02,Trabajo,Mi jefe me pidió el informe para mañana
+Par-017,W03,Trabajo,¿Cómo organizo mejor mis reuniones?
+Par-018,W04,Trabajo,Necesito priorizar entre tres proyectos urgentes
+Par-019,W05,Trabajo,¿Cómo redacto un correo para pedir una prórroga?
+Par-020,W06,Trabajo,No alcancé a terminar el plazo que me dieron
+Par-021,D04,Trabajo,Tengo que preparar una presentación para el equipo
+Par-022,D04,Trabajo,¿Cuántas diapositivas serían razonables?
+Par-023,D04,Trabajo,¿Y cómo cierro la presentación?
+Par-024,D05,Trabajo,Quiero pedir un aumento de sueldo
+Par-025,D05,Trabajo,¿Cuál sería el mejor momento para plantearlo?
+Par-026,D06,Trabajo,Estoy planificando el trabajo del próximo mes
+Par-027,D06,Trabajo,"Olvida eso, mejor recomiéndame una película"
+Par-028,E01,Estudio,Necesito estudiar para el examen de estadística
+Par-029,E02,Estudio,Explícame la teoría de grafos de forma sencilla
+Par-030,E03,Estudio,¿Qué es una derivada?
+Par-031,E04,Estudio,¿Cómo puedo memorizar mejor lo que leo?
+Par-032,E05,Estudio,No entiendo el concepto de probabilidad condicional
+Par-033,E06,Estudio,¿Cuántas horas debería estudiar al día?
+Par-034,D07,Estudio,Quiero entender qué es el aprendizaje automático
+Par-035,D07,Estudio,¿Y en qué se diferencia del aprendizaje profundo?
+Par-036,D07,Estudio,Dame un ejemplo cotidiano de cada uno
+Par-037,D08,Estudio,Tengo que hacer un ensayo sobre energías renovables
+Par-038,D08,Estudio,¿Cómo estructuro la introducción?
+Par-039,D09,Estudio,Explícame el teorema de Pitágoras
+Par-040,D09,Estudio,¿Para qué sirve en la vida real?
+Par-041,B01,Bienestar,Me siento cansado todo el tiempo
+Par-042,B02,Bienestar,No he podido dormir bien últimamente
+Par-043,B03,Bienestar,¿Cómo puedo manejar mejor el estrés?
+Par-044,B04,Bienestar,Quiero empezar a hacer ejercicio
+Par-045,B05,Bienestar,Me cuesta concentrarme durante el día
+Par-046,B06,Bienestar,¿Qué hábitos ayudan a descansar mejor?
+Par-047,D10,Bienestar,Quiero mejorar mi rutina diaria
+Par-048,D10,Bienestar,¿Por dónde empiezo?
+Par-049,D10,Bienestar,¿Y cómo mantengo la constancia?
+Par-050,D11,Bienestar,Me siento abrumado con todo lo que tengo pendiente
+Par-051,D11,Bienestar,¿Cómo desconecto al terminar el día?
+Par-052,D12,Bienestar,Quiero comer de forma más equilibrada
+Par-053,D12,Bienestar,"Cambiando de tema, ¿qué es un algoritmo?"
+Par-054,C01,Conversacional,"Hola, ¿cómo estás?"
+Par-055,C02,Conversacional,Buenos días
+Par-056,C03,Conversacional,¿Qué tal tu día?
+Par-057,C04,Conversacional,Gracias por la ayuda
+Par-058,C05,Conversacional,Cuéntame algo interesante
+Par-059,C06,Conversacional,¿Cómo te llamas?
+Par-060,D13,Conversacional,"Hola, ¿me puedes ayudar con algo?"
+Par-061,D13,Conversacional,Es sobre un problema de mi computadora
+Par-062,D13,Conversacional,No enciende la pantalla
+Par-063,D14,Conversacional,Buenas tardes
+Par-064,D14,Conversacional,Solo quería conversar un rato
+Par-065,D15,Conversacional,¿Puedes explicarme qué haces exactamente?
+Par-066,D15,Conversacional,"Entiendo, gracias"
+Par-067,G01,General,¿Cuál es la capital de Francia?
+Par-068,G02,General,¿Qué opinas sobre el sentido de la vida?
+Par-069,G03,General,Explícame qué es el cambio climático
+Par-070,G04,General,¿Por qué el cielo es azul?
+Par-071,G05,General,¿Cómo funciona el sistema solar?
+Par-072,G06,General,Háblame de la historia del Ecuador
+Par-073,G07,General,¿Qué es la inteligencia artificial?
+Par-074,D16,General,Me interesa el tema de la sostenibilidad
+Par-075,D16,General,¿Qué puedo hacer desde casa?
+Par-076,D17,General,Cuéntame sobre los volcanes del Ecuador
+Par-077,D17,General,¿Cuál es el más alto?
+Par-078,D18,General,¿Qué sabes sobre la computación cuántica?
+Par-079,D19,General,Explícame qué es la entropía
+Par-080,D20,General,¿Cómo se mide la huella de carbono?

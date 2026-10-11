@@ -20,7 +20,7 @@ los archivos originales o una exportación autorizada.
 
 ## Archivos esperados
 
-1. `data/experimental/queries.csv`: 57 consultas con categoría e
+1. `data/experimental/queries.csv`: consultas exportadas con categoría e
    identificador de diálogo.
 2. `data/experimental/turns.csv`: 80 turnos asociados a sus diálogos.
 3. `data/experimental/responses.csv`: 160 respuestas, identificadas por
@@ -41,3 +41,8 @@ los archivos originales o una exportación autorizada.
 
 La fuente canónica del proyecto es
 https://github.com/leogerm/chatbot-quantum-inspired-slm-sostenible.
+
+La hoja de evaluación recibida contenía 80 registros y las dos respuestas por
+turno, pero no contenía puntuaciones en las columnas de J1, J2 o J3. Por eso
+`data/evaluation/ratings.csv` conserva solo su encabezado. No se usó
+`fill_judges.py`, ya que generaba puntuaciones sintéticas.
