@@ -45,6 +45,29 @@ reportadas son 18 200,22 ms frente a 17 545,43 ms de latencia media y
 0,010891 frente a 0,010537 gCO2eq por turno, con 1,7142 gCO2eq acumulados.
 Son estimaciones CodeCarbon, no mediciones eléctricas directas.
 
+## Objetivos e hipótesis
+
+El objetivo general es evaluar un chatbot local en español que combine
+clasificación clásica, contexto semántico de 12 dimensiones y generación con
+un Small Language Model, midiendo coherencia, latencia y huella ambiental.
+Los objetivos específicos cubren la arquitectura modular de tres capas, el
+motor EWMA con acoplamiento 12x12, la comparación experimental con sensibilidad
+de hiperparámetros y un panel de inspección en tiempo real.
+
+El protocolo contrasta:
+
+- **H1:** mejora de coherencia conversacional frente al baseline mediante cinco
+  criterios evaluados por jueces ciegos.
+- **H2:** sobrecarga menor de 500 ms y 1 gCO2eq por turno.
+- **H3:** región compacta y contigua de estabilidad en `(alpha, c)`.
+
+La evidencia disponible respalda la viabilidad técnica y la operación local
+del prototipo. H1 no mostró una diferencia concluyente en esta muestra; H2 es
+compatible con las estimaciones instrumentadas, pero no queda demostrada por
+el tamaño muestral; H3 cumple el criterio preregistrado de la malla 5x5. Estas
+conclusiones son acotadas al corpus, hardware y parámetros estudiados, y
+orientan las siguientes mejoras.
+
 ## Procedimiento
 
 1. Usar las exportaciones ya incluidas como referencia y no cambiar sus
