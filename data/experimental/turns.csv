@@ -1,1 +1,81 @@
 dialogue_id,turn_id,query_id,speaker,turn_text
+T01,T01,Par-001,user,¿Cómo se declara una función en Python?
+T02,T01,Par-002,user,Tengo un error de índice fuera de rango en mi lista
+T03,T01,Par-003,user,¿Qué diferencia hay entre una lista y una tupla?
+T04,T01,Par-004,user,Explícame qué es una API REST
+T05,T01,Par-005,user,¿Cómo hago un JOIN entre dos tablas en SQL?
+T06,T01,Par-006,user,Mi programa se cierra sin mostrar ningún mensaje de error
+D01,T01,Par-007,user,Quiero aprender a programar en Python
+D01,T02,Par-008,user,¿Por dónde debería empezar?
+D01,T03,Par-009,user,¿Y qué editor de código me recomiendas?
+D02,T01,Par-010,user,Necesito crear una base de datos para mi proyecto
+D02,T02,Par-011,user,¿Qué motor conviene para pocos usuarios?
+D03,T01,Par-012,user,Explícame qué es un bucle for
+D03,T02,Par-013,user,¿Y cuándo conviene usar while en su lugar?
+D03,T03,Par-014,user,"Ahora cambiemos de tema, ¿cómo estuvo tu día?"
+W01,T01,Par-015,user,Tengo demasiadas tareas acumuladas esta semana
+W02,T01,Par-016,user,Mi jefe me pidió el informe para mañana
+W03,T01,Par-017,user,¿Cómo organizo mejor mis reuniones?
+W04,T01,Par-018,user,Necesito priorizar entre tres proyectos urgentes
+W05,T01,Par-019,user,¿Cómo redacto un correo para pedir una prórroga?
+W06,T01,Par-020,user,No alcancé a terminar el plazo que me dieron
+D04,T01,Par-021,user,Tengo que preparar una presentación para el equipo
+D04,T02,Par-022,user,¿Cuántas diapositivas serían razonables?
+D04,T03,Par-023,user,¿Y cómo cierro la presentación?
+D05,T01,Par-024,user,Quiero pedir un aumento de sueldo
+D05,T02,Par-025,user,¿Cuál sería el mejor momento para plantearlo?
+D06,T01,Par-026,user,Estoy planificando el trabajo del próximo mes
+D06,T02,Par-027,user,"Olvida eso, mejor recomiéndame una película"
+E01,T01,Par-028,user,Necesito estudiar para el examen de estadística
+E02,T01,Par-029,user,Explícame la teoría de grafos de forma sencilla
+E03,T01,Par-030,user,¿Qué es una derivada?
+E04,T01,Par-031,user,¿Cómo puedo memorizar mejor lo que leo?
+E05,T01,Par-032,user,No entiendo el concepto de probabilidad condicional
+E06,T01,Par-033,user,¿Cuántas horas debería estudiar al día?
+D07,T01,Par-034,user,Quiero entender qué es el aprendizaje automático
+D07,T02,Par-035,user,¿Y en qué se diferencia del aprendizaje profundo?
+D07,T03,Par-036,user,Dame un ejemplo cotidiano de cada uno
+D08,T01,Par-037,user,Tengo que hacer un ensayo sobre energías renovables
+D08,T02,Par-038,user,¿Cómo estructuro la introducción?
+D09,T01,Par-039,user,Explícame el teorema de Pitágoras
+D09,T02,Par-040,user,¿Para qué sirve en la vida real?
+B01,T01,Par-041,user,Me siento cansado todo el tiempo
+B02,T01,Par-042,user,No he podido dormir bien últimamente
+B03,T01,Par-043,user,¿Cómo puedo manejar mejor el estrés?
+B04,T01,Par-044,user,Quiero empezar a hacer ejercicio
+B05,T01,Par-045,user,Me cuesta concentrarme durante el día
+B06,T01,Par-046,user,¿Qué hábitos ayudan a descansar mejor?
+D10,T01,Par-047,user,Quiero mejorar mi rutina diaria
+D10,T02,Par-048,user,¿Por dónde empiezo?
+D10,T03,Par-049,user,¿Y cómo mantengo la constancia?
+D11,T01,Par-050,user,Me siento abrumado con todo lo que tengo pendiente
+D11,T02,Par-051,user,¿Cómo desconecto al terminar el día?
+D12,T01,Par-052,user,Quiero comer de forma más equilibrada
+D12,T02,Par-053,user,"Cambiando de tema, ¿qué es un algoritmo?"
+C01,T01,Par-054,user,"Hola, ¿cómo estás?"
+C02,T01,Par-055,user,Buenos días
+C03,T01,Par-056,user,¿Qué tal tu día?
+C04,T01,Par-057,user,Gracias por la ayuda
+C05,T01,Par-058,user,Cuéntame algo interesante
+C06,T01,Par-059,user,¿Cómo te llamas?
+D13,T01,Par-060,user,"Hola, ¿me puedes ayudar con algo?"
+D13,T02,Par-061,user,Es sobre un problema de mi computadora
+D13,T03,Par-062,user,No enciende la pantalla
+D14,T01,Par-063,user,Buenas tardes
+D14,T02,Par-064,user,Solo quería conversar un rato
+D15,T01,Par-065,user,¿Puedes explicarme qué haces exactamente?
+D15,T02,Par-066,user,"Entiendo, gracias"
+G01,T01,Par-067,user,¿Cuál es la capital de Francia?
+G02,T01,Par-068,user,¿Qué opinas sobre el sentido de la vida?
+G03,T01,Par-069,user,Explícame qué es el cambio climático
+G04,T01,Par-070,user,¿Por qué el cielo es azul?
+G05,T01,Par-071,user,¿Cómo funciona el sistema solar?
+G06,T01,Par-072,user,Háblame de la historia del Ecuador
+G07,T01,Par-073,user,¿Qué es la inteligencia artificial?
+D16,T01,Par-074,user,Me interesa el tema de la sostenibilidad
+D16,T02,Par-075,user,¿Qué puedo hacer desde casa?
+D17,T01,Par-076,user,Cuéntame sobre los volcanes del Ecuador
+D17,T02,Par-077,user,¿Cuál es el más alto?
+D18,T01,Par-078,user,¿Qué sabes sobre la computación cuántica?
+D19,T01,Par-079,user,Explícame qué es la entropía
+D20,T01,Par-080,user,¿Cómo se mide la huella de carbono?
