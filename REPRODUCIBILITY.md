@@ -2,10 +2,12 @@
 
 ## Alcance
 
-El repositorio documenta la evidencia necesaria para el apartado D.3 sin
-publicar datos que no estén disponibles en el checkout. Las plantillas CSV
-describen la forma esperada de los datos y permanecen vacías hasta incorporar
-los archivos originales o una exportación autorizada.
+El repositorio documenta la evidencia disponible para el apartado D.3 sin
+inventar resultados ni publicar artefactos no autorizados. Incluye una
+exportación del corpus, las respuestas de ambas condiciones, el manual de
+evaluación ciega, el código fuente y una matriz de sensibilidad H3. Los
+archivos que todavía no tienen mediciones finales se mantienen como plantillas
+con sus encabezados.
 
 ## Convenciones
 
@@ -20,24 +22,32 @@ los archivos originales o una exportación autorizada.
 
 ## Archivos esperados
 
-1. `data/experimental/queries.csv`: consultas exportadas con categoría e
+1. `data/experimental/queries.csv`: 80 consultas exportadas con categoría e
    identificador de diálogo.
 2. `data/experimental/turns.csv`: 80 turnos asociados a sus diálogos.
 3. `data/experimental/responses.csv`: 160 respuestas, identificadas por
    condición.
-4. `data/evaluation/ratings.csv`: valoración de J1, J2 y J3 por criterio.
-5. `data/telemetry/turn_metrics.csv`: una fila por turno con latencia,
-   emisiones, entropía y fidelidad.
+4. `data/evaluation/manual_jueces_ciegos.xlsx`: instrumento para aplicar la
+   evaluación ciega a 80 pares, con cinco criterios y escala de 1 a 5.
+5. `data/evaluation/ratings.csv`: valoración final de J1, J2 y J3 por criterio;
+   permanece vacía hasta recibir las calificaciones reales.
+6. `data/telemetry/sensitivity_grid.csv`: resultados exportados de la malla
+   factorial 5x5 del estudio H3.
+7. `data/telemetry/turn_metrics.csv`: plantilla para una fila por turno con
+   latencia, emisiones, entropía y fidelidad.
+8. `src/codepysensibilidad.py` y `src/sensibilidad_h3_paralelo.py`: código
+   fuente del motor y del estudio de sensibilidad.
 
 ## Procedimiento
 
-1. Copiar las exportaciones autorizadas a las rutas anteriores sin cambiar los
-   identificadores.
+1. Usar las exportaciones ya incluidas como referencia y no cambiar sus
+   identificadores al incorporar nuevas versiones autorizadas.
 2. Revisar que los encabezados coincidan con las plantillas y que no haya
    secretos, archivos personales, modelos binarios o temporales.
 3. Comprobar los conteos declarados en `data/*/README.md`.
-4. Ejecutar el código de `src/` cuando esté disponible y conservar solo
-   salidas reproducibles y pequeñas.
+4. Instalar las dependencias de `requirements.txt` y ejecutar el código de
+   `src/` desde la raíz del repositorio cuando se necesite reproducir el
+   estudio.
 
 La fuente canónica del proyecto es
 https://github.com/leogerm/chatbot-quantum-inspired-slm-sostenible.
