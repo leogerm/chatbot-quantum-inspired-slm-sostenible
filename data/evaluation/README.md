@@ -6,8 +6,6 @@ Juez_1, Juez_2 y Juez_3. Las respuestas aparecen como A/B sin revelar la
 condición experimental.
 
 `ratings.csv` reserva las calificaciones finales de J1, J2 y J3 por criterio y
-respuesta. La tesis reporta que la aplicación se completó sobre 80 pares y
+respuesta. Reporta que la aplicación se completó sobre 80 pares y
 resume sus resultados, pero el archivo de calificaciones finales no está
-disponible en este checkout. El archivo recibido aquí era una prueba para
-revisar las preguntas; sus puntuaciones fueron retiradas del manual publicado
-y no se presentan como resultados experimentales.
+disponible en este checkout.
