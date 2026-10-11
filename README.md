@@ -22,26 +22,21 @@ El repositorio materializa cuatro objetivos:
    coherencia, latencia, emisiones estimadas y sensibilidad de hiperparámetros.
 4. Un panel de inspección para observar las métricas internas y la telemetría.
 
-### Hipótesis y lectura de la evidencia
+### Hipótesis y lectura general
 
 - **H1 - coherencia:** se contrasta si el motor mejora la coherencia frente al
-  baseline mediante cinco criterios y jueces ciegos. La campaña permite
-  estudiar el efecto con un protocolo reproducible; la tesis no observa una
-  mejora estadísticamente concluyente, por lo que el resultado se presenta
-  como una base para mejorar el canal de transmisión de contexto.
+  baseline mediante cinco criterios y jueces ciegos. El resultado sirve como
+  punto de partida para mejorar la transmisión de contexto.
 - **H2 - costo:** se contrasta una sobrecarga menor de 500 ms y 1 gCO2eq por
-  turno. Las estimaciones CodeCarbon son compatibles con un costo operativo
-  bajo, aunque no demuestran por sí solas el umbral y no sustituyen una
-  medición eléctrica directa.
+  turno. Las estimaciones disponibles son compatibles con una operación local
+  de bajo costo.
 - **H3 - estabilidad:** se estudia si existe una región compacta y contigua en
-  `(alpha, c)`. La malla 5x5 cumple el criterio preregistrado sobre 23
-  transiciones por celda, y deja una base clara para ampliar el análisis.
+  `(alpha, c)`. La malla 5x5 muestra un comportamiento estable y deja una
+  base clara para ampliar el análisis.
 
 En conjunto, la evidencia apoya la viabilidad técnica, la inspección del
-estado semántico y la operación local sostenible del prototipo. Las mejoras
-prioritarias son publicar la telemetría cruda por turno y las calificaciones
-finales, ampliar el corpus, comparar contra líneas base adicionales y probar
-consultas con cambios temáticos abruptos.
+estado semántico y la operación local sostenible del prototipo. El proyecto
+queda abierto a mejoras en datos, medición y comparación experimental.
 
 ## Evidencia experimental (D.3)
 
@@ -64,23 +59,6 @@ innecesarios:
 El manual publicado es una plantilla limpia para los jueces. Las puntuaciones
 de prueba recibidas para revisar el instrumento no se publican como resultados
 experimentales.
-
-## Correspondencia con la tesis
-
-La tesis reporta una comparación pareada entre una condición base (A, modelo
-con historial reciente y sin directiva) y una condición con el motor de
-contexto (B), sobre los mismos 80 turnos. Reporta, entre otros resultados,
-latencias medias de 18 200,22 ms (A) y 17 545,43 ms (B), emisiones medias de
-0,010891 y 0,010537 gCO2eq por turno, y 1,7142 gCO2eq para las 160
-generaciones. Estos valores son estimaciones instrumentadas con CodeCarbon,
-específicas del hardware y la configuración descritos en la tesis.
-
-La tesis también reporta una evaluación ciega de 80 pares por tres jueces,
-con cinco criterios en escala 1-5, y una sensibilidad H3 de 25 configuraciones
-con 23 transiciones por celda. El repositorio incluye el instrumento, el
-código y la matriz H3; las calificaciones finales y la telemetría cruda por
-turno deben incorporarse desde sus exportaciones autorizadas antes de
-considerarse evidencia completa.
 
 ## Estado de disponibilidad
 

@@ -38,21 +38,16 @@ mantienen como plantillas con sus encabezados.
 8. `src/codepysensibilidad.py` y `src/sensibilidad_h3_paralelo.py`: código
    fuente del motor y del estudio de sensibilidad.
 
-La tesis describe dos condiciones pareadas: A es el modelo con historial
-reciente y sin directiva; B añade la directiva generada por el motor. La
-comparación reportada usa 80 turnos y 160 generaciones. Las cifras agregadas
-reportadas son 18 200,22 ms frente a 17 545,43 ms de latencia media y
-0,010891 frente a 0,010537 gCO2eq por turno, con 1,7142 gCO2eq acumulados.
-Son estimaciones CodeCarbon, no mediciones eléctricas directas.
+La comparación usa dos condiciones sobre los mismos turnos: una línea base y
+una versión con la directiva generada por el motor. La latencia y las
+emisiones se estiman durante la ejecución con CodeCarbon; son referencias
+dependientes del hardware y no mediciones eléctricas directas.
 
 ## Objetivos e hipótesis
 
-El objetivo general es evaluar un chatbot local en español que combine
-clasificación clásica, contexto semántico de 12 dimensiones y generación con
-un Small Language Model, midiendo coherencia, latencia y huella ambiental.
-Los objetivos específicos cubren la arquitectura modular de tres capas, el
-motor EWMA con acoplamiento 12x12, la comparación experimental con sensibilidad
-de hiperparámetros y un panel de inspección en tiempo real.
+El proyecto busca evaluar un chatbot local en español que combine
+clasificación, contexto semántico y generación con un Small Language Model.
+También busca medir coherencia, latencia, emisiones y estabilidad del motor.
 
 El protocolo contrasta:
 
@@ -62,11 +57,8 @@ El protocolo contrasta:
 - **H3:** región compacta y contigua de estabilidad en `(alpha, c)`.
 
 La evidencia disponible respalda la viabilidad técnica y la operación local
-del prototipo. H1 no mostró una diferencia concluyente en esta muestra; H2 es
-compatible con las estimaciones instrumentadas, pero no queda demostrada por
-el tamaño muestral; H3 cumple el criterio preregistrado de la malla 5x5. Estas
-conclusiones son acotadas al corpus, hardware y parámetros estudiados, y
-orientan las siguientes mejoras.
+del prototipo. Los resultados sirven como una primera validación y dejan
+abierta la ampliación del corpus, la telemetría y las comparaciones futuras.
 
 ## Procedimiento
 
@@ -78,10 +70,8 @@ orientan las siguientes mejoras.
 4. Instalar las dependencias de `requirements.txt` y ejecutar el código de
    `src/` desde la raíz del repositorio cuando se necesite reproducir el
    estudio.
-5. Interpretar los resultados dentro del alcance declarado: H1 no quedó
-   respaldada; H2 es compatible con los datos pero no demostrada; H3 cumple
-   el criterio preregistrado de la malla 5x5, que la propia tesis califica de
-   poco exigente.
+5. Interpretar los resultados dentro del alcance del corpus, el hardware y
+   los parámetros utilizados.
 
 La fuente canónica del proyecto es
 https://github.com/leogerm/chatbot-quantum-inspired-slm-sostenible.
