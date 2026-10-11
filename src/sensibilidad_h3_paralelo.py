@@ -21,7 +21,7 @@ import seaborn as sns
 from codepysensibilidad import ContextEngine, SemanticEncoder, IntentClassifier
 
 # ══════════════════════════════════════════════════════════════════════════════
-#  1. BANCO DE DATOS DE LA TESIS: 17 DIÁLOGOS MULTITURNO (40 TURNOS)
+#  1. BANCO DE DATOS DE 17 DIÁLOGOS MULTITURNO (40 TURNOS)
 # ══════════════════════════════════════════════════════════════════════════════
 DIALOGOS_TESIS = {
     "D01": {
@@ -343,16 +343,9 @@ def graficar_mapa_calor_editorial(
     print(f"  [OK] Gráfica editorial guardada en:\n       - {output_png}\n       - {output_pdf}")
 
 
-# ══════════════════════════════════════════════════════════════════════════════
-#  5. ORQUESTADOR PRINCIPAL DEL ESTUDIO EN PARALELO
-# ══════════════════════════════════════════════════════════════════════════════
+
 def ejecutar_sensibilidad_h3():
-    banner = """
-    ╔════════════════════════════════════════════════════════════════════════╗
-    ║   ESTUDIO DE SENSIBILIDAD FACTORIAL EN PARALELO — HIPÓTESIS H3         ║
-    ║   Chatbot Híbrido Quantum-Inspired · Evaluación 5x5 de Parámetros      ║
-    ╚════════════════════════════════════════════════════════════════════════╝
-    """
+   
     print(banner)
 
     from codepysensibilidad import SemanticEncoder, IntentClassifier
