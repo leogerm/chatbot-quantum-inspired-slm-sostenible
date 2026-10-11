@@ -151,6 +151,9 @@ DIALOGOS_TESIS = {
     }
 }
 
+RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DIR_TELEMETRIA = os.path.join(RAIZ, "data", "telemetry")
+
 ALPHAS = [0.20, 0.25, 0.30, 0.35, 0.40]
 COUPLINGS = [0.30, 0.40, 0.50, 0.60, 0.70]
 
@@ -320,8 +323,8 @@ def graficar_mapa_calor_editorial(
                 ax.add_patch(rect)
 
     ax.set_title(
-        r"Figura 4.X: Mapa de Sensibilidad Factorial de la Continuidad ($\psi_t \cdot \psi_{t-1}$)" + "\n" +
-        r"Meseta de Estabilidad Topológica en el Plano $(\alpha, c)$ — Subconjunto Multiturno (N=40)",
+        r"Sensibilidad factorial de la continuidad media del estado ($\psi_t \cdot \psi_{t-1}$)" + "\n" +
+        r"en el plano $(\alpha, c)$ — subconjunto multiturno (23 transiciones por celda)",
         fontsize=12, pad=18, weight="bold", color="#111827"
     )
     ax.set_xlabel(r"Fuerza de Acoplamiento Semántico $c$ (Matriz $\mathbf{C}$)", fontsize=11, labelpad=10, weight="semibold")
@@ -345,10 +348,9 @@ def graficar_mapa_calor_editorial(
 
 
 def ejecutar_sensibilidad_h3():
-   
-    print(banner)
-
-    from codepysensibilidad import SemanticEncoder, IntentClassifier
+    print("═" * 76)
+    print("  ESTUDIO DE SENSIBILIDAD H3 — MALLA FACTORIAL 5 x 5 SOBRE (α, c)")
+    print("═" * 76)
 
     n_cpus = os.cpu_count() or 4
     print(f"  * Núcleos de CPU detectados para ejecución en paralelo: {n_cpus}")
@@ -356,7 +358,7 @@ def ejecutar_sensibilidad_h3():
     print(f"  * Banco de prueba: {len(DIALOGOS_TESIS)} diálogos multiturno (40 turnos en total)")
 
     # ── Fase 1: Pre-codificación estática (Optimización NLP) ──
-    print("\n  [1/4] Pre-codificando diálogos multiturno en espacio Hilbert H^12...")
+    print("\n  [1/4] Pre-codificando diálogos multiturno en el espacio semántico de 12 dimensiones...")
     t0_pre = time.perf_counter()
     encoder = SemanticEncoder()
     classifier = IntentClassifier()
@@ -421,14 +423,15 @@ def ejecutar_sensibilidad_h3():
         row["en_meseta_estabilidad"] = row["mean_state_continuity"] >= umbral_meseta
     df_results = pd.DataFrame(rows_csv)
     df_results = df_results.sort_values(by=["alpha", "coupling"])
-    csv_path = "sensibilidad_malla_5x5.csv"
+    csv_path = os.path.join(DIR_TELEMETRIA, "sensitivity_grid.csv")
     df_results.to_csv(csv_path, index=False, encoding="utf-8")
     print(f"        Exportados datos a: {csv_path}")
 
     # ── Fase 4: Graficación editorial ──
     print("\n  [4/4] Generando visualización científica de alta resolución...")
-    png_path = "heatmap_sensibilidad_h3.png"
-    pdf_path = "heatmap_sensibilidad_h3.pdf"
+    os.makedirs(os.path.join(DIR_TELEMETRIA, "figures"), exist_ok=True)
+    png_path = os.path.join(DIR_TELEMETRIA, "figures", "heatmap_sensibilidad_h3.png")
+    pdf_path = os.path.join(DIR_TELEMETRIA, "figures", "heatmap_sensibilidad_h3.pdf")
     graficar_mapa_calor_editorial(
         grid_sc=grid_state_cont,
         alphas=ALPHAS,
@@ -467,85 +470,21 @@ def ejecutar_sensibilidad_h3():
     print(f"     • Umbral Mínimo de Estabilidad: {umbral_meseta:.4f}")
     print(f"     • Celdas en la banda:           {topologia['celdas_meseta']} de 25 ({topologia['porcentaje_meseta']:.1f}%)")
     criterio_2_ok = topologia['porcentaje_meseta'] >= 20.0
-    print(f"     • Condición (≥ 20%):            {'CUMPLIDA (SUPERADA AMPLIAMENTE)' if criterio_2_ok else 'NO CUMPLIDA'}")
+    print(f"     • Condición (≥ 20%):            {'CUMPLIDA' if criterio_2_ok else 'NO CUMPLIDA'}")
 
     print(f"\n  3. Criterio de Compacidad y Contigüidad Topológica:")
     print(f"     • Componentes conexas detectadas: {topologia['n_componentes']}")
     print(f"     • Celdas en componente óptima:    {topologia['tamano_comp_optima']} de {topologia['celdas_meseta']}")
     criterio_3_ok = topologia['es_contigua']
-    print(f"     • Región es contigua y compacta:  {'SÍ (MESETA CONTINUA CONFIRMADA)' if criterio_3_ok else 'NO'}")
+    print(f"     • Región es contigua y compacta:  {'SÍ' if criterio_3_ok else 'NO'}")
 
-    dictamen_h3 = "ACEPTADA SIN RESERVAS" if (criterio_2_ok and criterio_3_ok) else "RECHAZADA"
+    dictamen_h3 = "CUMPLE EL CRITERIO PREREGISTRADO" if (criterio_2_ok and criterio_3_ok) else "NO CUMPLE EL CRITERIO PREREGISTRADO"
     print("\n" + "═"*76)
-    print(f"  DICTAMEN FORMAL DE LA HIPÓTESIS H3:  >>> {dictamen_h3} <<<")
+    print(f"  ESTADO DE H3: {dictamen_h3}")
+    if umbral_meseta < min_val:
+        print("  Nota: la banda de ±0.05 es más ancha que la variación total de la malla")
+        print(f"        (Δ = {delta_total:.4f}); el criterio resulta poco exigente por diseño.")
     print("═"*76)
-
-    # ── Texto Redactado en Tercera Persona para la Tesis ──
-    print("\n" + "╔" + "═"*74 + "╗")
-    print("║  TEXTO LISTO PARA INTEGRAR EN LA SECCIÓN 4.3 DE LA TESIS               ║")
-    print("╚" + "═"*74 + "╝\n")
-    texto_tesis = generar_texto_tesis(
-        peak_val=peak_val,
-        peak_alpha=peak_alpha,
-        peak_coupling=peak_coupling,
-        min_val=min_val,
-        delta_total=delta_total,
-        umbral_meseta=umbral_meseta,
-        celdas_meseta=topologia["celdas_meseta"],
-        porcentaje_meseta=topologia["porcentaje_meseta"],
-        n_componentes=topologia["n_componentes"]
-    )
-    print(texto_tesis)
-    print("\n" + "═"*76 + "\n")
-
-
-def generar_texto_tesis(
-    peak_val: float,
-    peak_alpha: float,
-    peak_coupling: float,
-    min_val: float,
-    delta_total: float,
-    umbral_meseta: float,
-    celdas_meseta: int,
-    porcentaje_meseta: float,
-    n_componentes: int
-) -> str:
-    return f"""
-4.3 Estudio de Sensibilidad de Hiperparámetros y Validación de H3
-
-4.3.1 Protocolo Experimental de la Malla Factorial
-Con el propósito de evaluar la robustez topológica del motor de contexto cuántico y verificar
-formalmente la hipótesis H3 («Existe una región compacta y contigua del espacio de hiperparámetros
-(α, c) en la que el desempeño del motor se mantiene estable»), se diseñó y ejecutó una malla
-factorial completa de 5 × 5 (25 configuraciones paramétricas). Los factores analizados comprendieron
-el factor EWMA de memoria conversacional α ∈ {{0.20, 0.25, 0.30, 0.35, 0.40}} y la fuerza de acoplamiento
-semántico c ∈ {{0.30, 0.40, 0.50, 0.60, 0.70}}. El corpus de evaluación consistió en los 17 diálogos
-multiturno del protocolo de pruebas (40 turnos en total, abarcando 23 transiciones inter-turno consecutivas).
-La métrica central de desempeño correspondió a la continuidad de estado normalizado ψ_t · ψ_{{t-1}},
-complementada por la fidelidad de estímulo φ_t · ψ_{{t-1}}.
-
-4.3.2 Topología del Espacio Paramétrico y Región de Estabilidad
-Los resultados cuantitativos resumidos en la Figura 4.X y la Tabla 4.X revelan que la continuidad
-media del estado exhibe una meseta suave y regular a lo largo de toda la superficie evaluada. Se localizó
-un pico de continuidad máxima de C_max = {peak_val:.4f} en la configuración (α = {peak_alpha:.2f}, c = {peak_coupling:.2f}).
-El valor mínimo registrado en los bordes de la malla fue de C_min = {min_val:.4f}, lo que representa
-una variación absoluta máxima extremadamente estrecha de únicamente Δ = {delta_total:.4f} puntos.
-
-Al aplicar el criterio de aceptación predefinido en la Sección 4.3.3—el cual estipula que al menos
-un 20 % de las celdas de la malla (mínimo 5 de 25) deben conservar una continuidad dentro de una banda
-de tolerancia de ±0.05 respecto al óptimo (C ≥ {umbral_meseta:.4f})—, se constató que el {porcentaje_meseta:.1f} %
-de las configuraciones ({celdas_meseta} de 25 celdas) se ubicaron dentro de este margen. Asimismo, el análisis
-de componentes conexas con conectividad 4-vecinos confirmó la existencia de una única componente conexa
-(k = {n_componentes}), corroborando que la zona de estabilidad constituye una meseta continua, compacta y
-libre de discontinuidades abruptas o comportamientos caóticos.
-
-4.3.3 Conclusión y Dictamen Formal de H3
-Dado que el pico de continuidad media se identificó con claridad, que el porcentaje de celdas estables
-superó con holgura el umbral mínimo exigido ({porcentaje_meseta:.1f} % frente al 20 % requerido) y que se verificó
-matemáticamente la contigüidad topológica en el plano (α, c), se concluye que el comportamiento del motor
-no depende de una calibración milimétrica o frágil, sino que opera con alta estabilidad estructural.
-Por tanto, la hipótesis H3 es ACEPTADA FORMALMENTE SIN RESERVAS.
-"""
 
 
 if __name__ == "__main__":
