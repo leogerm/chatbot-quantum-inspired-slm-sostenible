@@ -70,6 +70,3 @@ experimentales.
 | J1/J2/J3 por criterio | `data/evaluation/ratings.csv` | Pendiente de calificaciones finales |
 | Latencia, emisiones, entropía y fidelidad | `data/telemetry/` | Plantilla; matriz H3 disponible |
 | Código fuente | `src/` | Motor y sensibilidad H3 integrados |
-
-No se publican secretos, modelos binarios, archivos temporales, `__pycache__`
-ni documentos personales.
