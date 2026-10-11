@@ -1,0 +1,1853 @@
+response_id,dialogue_id,query_id,condition,response_text
+Par-001-baseline,T01,Par-001,baseline,"En Python, puedes declarar una función utilizando la siguiente sintaxis:
+
+```python
+def nombre_de_la_funcion(parametros):
+    ""Descripción de la función""
+    
+    bloques_de_código
+    
+    return valor_salida
+```
+
+A continuación, te explico los elementos clave en este código:
+- `def`: Es un comando que indica la declaración de una función.
+- `nombre_de_la_funcion`: Este es el nombre dado a tu función. 
+- `(parametros)`: Puedes indicar parámetros que aceptará la función, pero se incluyen entre paréntesis.
+- `""Descripción de la función""`: Esta es una descripción breve sobre lo que hace tu función.
+- `bloques_de_código`: Aquí podrías colocar cualquier código para implementar el proceso deseado por tu función. Los bloques de código pueden contener operaciones, bucles, llamadas a funciones y otras cosas.
+- `return valor_salida`: Este es un comando opcional que indica qué debe devolver la función cuando termina su ejecución. Si no se usa, la función devuelve `None`.
+
+Las funciones en Python son muy útiles para separar tu código de funcionalidades. Una vez definidas, puedes llamarlas desde cualquier parte del programa, lo que hace mucho más limpio y modular el código."
+Par-001-motor,T01,Par-001,motor,"Para declarar una función en Python, sigue estos pasos:
+
+1. Definir el nombre de la función (un solo palabra, mayúsculas y minúsculas).
+2. Luego coloca los paréntesis vacíos `()`.
+3. Dentro del cuerpo de la función, puedes colocar cualquier código que sea necesario para ejecutar.
+4. Para cerrar una declaración, usa el signo `#` cuando no hay necesidad de variables o retorno.
+
+Ejemplo:
+```python
+def saludar():
+    print(""Hola a todos!"")
+
+saludar()
+```
+
+Nota: En Python, los paréntesis son obligatorios para definir funciones."
+Par-002-motor,T02,Par-002,motor,"Por favor, compara los siguientes errores:
+- La cantidad de elementos en la lista no coincide con el índice que estás utilizando.
+- El índice está fuera del rango válido (por ejemplo, si tienes 5 elementos y intentas acceder a índice -1 o +6).
+- Estás intentando modificar un elemento que ya existe, pero el valor no es correcto para ese índice.
+
+Por favor, asegúrate de verificar estos posibles errores y ajusta la lista según sea necesario."
+Par-002-baseline,T02,Par-002,baseline,"¡Siento mucho que hayas tenido este problema! Para poder ayudarte mejor, necesito algunos detalles específicos del código y el error específico. Aquí te describiré cómo podrías solucionarlo:
+
+1. **Muestra Tu Código**: Asegúrate de incluir la parte del código que genera el error.
+2. **Método del Código**:
+    - ¿Estás leyendo desde un archivo, almacenándolo en memoria o obténendolo a través de una entrada estándar?
+3. **Datos Ingresados**: Explica si has pasado algún tipo específico de datos a tu código y qué valores los estás usando.
+
+Si me dices esto, estaré encantado de ayudarte a diagnosticar el problema y resolverlo de manera efectiva."
+Par-003-motor,T03,Par-003,motor,"Una lista en Python es un tipo de secuencia que almacena varios elementos en una sola variable, separados por comas. Los elementos pueden cambiar su posición dentro de la lista o ser modificados.
+
+Por otro lado, una tupla en Python también almacena varias entradas, pero estas se almacenan como valores estáticos. Una vez definida y no cambia. Las tuplas son más eficientes en términos de memoria, ya que no requieren la estructura de lista para guardar los datos.
+
+En resumen, la principal diferencia es cómo maneja el acceso a sus elementos: las listas permiten modificarlos (añadir o eliminar elementos), mientras que las tuplas son indeformables. Además, la forma en la que se presentan estos dos tipos también dista notablemente: las listas son definidas entre corchetes [], y las tuplas entre paréntesis ()."
+Par-003-baseline,T03,Par-003,baseline,"Un método para diferenciar una lista de una tupla es:
+
+1. La estructura:
+- Lista: Las listas son secuencias de elementos del tipo indefinido.
+  Ejemplo: `my_list = [1, ""hola"", True]`
+
+- Tuplas: Son colecciones inmutables de valores.
+  Ejemplo: `my_tuple = (1, ""hola"", True)`
+
+2. Modificabilidad:
+- Las listas son modificables (pueden cambiar su contenido).
+- Las tuplas no son modificables.
+
+3. Índices y posiciones:
+- Listas pueden ser indexadas de manera directa con números.
+  Ejemplo: `my_list[0] = ""hola""`
+
+- Tuplas solo tienen acceso a sus elementos mediante índices, ya que no se puede modificar su contenido.
+  Ejemplo: `my_tuple[1] = ""adiós""` (no funciona porque la tupla es inmutable)
+
+4. Cálculo y manejo:
+- Las listas pueden ser tratadas como cadenas para cálculos de caracteres, etc.
+
+5. Prácticas:
+- Lista se usa más comúnmente cuando el orden importa.
+- Tuplas se usan cuando las características deben ser identificables en lugar del orden.
+  
+En resumen: Un método para distinguir una lista de una tupla es saber si puedes cambiar su contenido o no, y por qué."
+Par-004-baseline,T04,Par-004,baseline,"Una API (Application Programming Interface) es como un cajón de herramientas para desarrolladores, y una API REST es una especie de cajón de herramientas especializado diseñado para apertura remota y recuperación. Aquí te explico algunos puntos clave:
+
+1. Apertura Remota: Esta significa que puedes acceder a la información o servicios ofrecidos por la API desde un dispositivo externo (un cliente) sin necesidad de conocer el código fuente del servidor.
+
+2. Recuperación: Los datos, métodos y acciones para interactuar con la aplicación principal pueden ser identificados de manera estándar y se proporcionan mediante URL. 
+
+3. Simplicidad: Una API REST es mucho más fácil de usar que otras formas de intercambio de información porque no requiere conocimientos complejos del código fuente del servidor.
+
+4. Flexibilidad: Puedes acceder a cualquier servicio web sin tener que descargar la aplicación completa.
+
+5. Velocidad: No necesitas depender del servidor para interactuar, lo cual puede ser una ventaja cuando se trata de realizar muchas operaciones en un corto tiempo.
+
+6. Seguridad: Muchas API REST están diseñadas para proporcionar autenticación y autorización seguras, lo que significa que solo los usuarios autorizados pueden acceder a ciertas funciones del servicio web.
+
+En resumen, una API REST es como un ladrillo de Lego que te permite construir una caja mágica capaz de interactuar con muchas aplicaciones diferentes, ya sean web, móviles o incluso dispositivos físicos, sin necesidad de deshacerte del leguaje original."
+Par-004-motor,T04,Par-004,motor,"Una API REST (Representational State Transfer) es un conjunto específico de directrices para el desarrollo de servicios web y la interacción entre aplicaciones. Estas APIs son diseñadas para permitir las transacciones y solicitudes HTTP a través de protocolos como HTTP, utilizando métodos estándar (GET, POST, PUT, DELETE) sin necesidad de establecer nuevas conexiones de redes.
+
+Las características principales de un API REST incluyen:
+
+1. Servicios web: Los servicios web son pautas de comunicación que permiten realizar solicitudes HTTP en tiempo real entre dos sistemas. En la práctica, esto significa que las API REST funcionan a través del protocolo HTTP (una de las más utilizadas para comunicar sitios web) y permite interactuar con ellos mediante métodos como GET, POST, PUT y DELETE.
+
+2. Servicios basados en recursos: Los servicios REST se definen por cómo accederán los clientes a una aplicación o servicio, y no por cómo esa información será procesada. Se enfoca en la gestión de un ""servicio"" representado por un recurso específico que puede tener varias operaciones CRUD.
+
+3. Reducción al mínimo requerimientos: Los servicios REST minimizan el uso del estado local (luchando con la persistencia), y a menudo requieren solo una llamada HTTP para completar su solicitud.
+
+4. Seguridad básica: Algunas APIs restadas ofrecen características como autenticación, encriptación de datos y restricciones sobre acceso, pero es completamente opcional.
+
+5. Simplicidad: Aunque puede parecer extraño inicialmente, la mayoría de los servicios web modernos están programados para funcionar con el uso del protocolo HTTP, lo que significa que son REST-friendly (capaces de interactuar con REST).
+
+Las APIs REST se utilizan ampliamente en un gran número de aplicaciones y sitios web, desde tiendas online hasta plataformas de videojuegos. Están diseñadas para ser escalables a la medida de las necesidades del servicio, y permiten la creación de microservicios y aplicaciones móviles que interactúan fácilmente con bases de datos en la nube o servidores locales."
+Par-005-baseline,T05,Par-005,baseline,"En SQL, puedes hacer joins entre varias tablas usando las sentencias `INNER JOIN`, `LEFT JOIN`, `RIGHT JOIN` o `FULL OUTER JOIN`. Aquí te muestro cómo hacer cada uno de ellos:
+
+1. **INNER JOIN**:
+   - Utiliza para devolver solo los registros donde existan coincidencias en ambas tablas.
+   ```sql
+   SELECT ...
+   FROM tabla1
+   INNER JOIN tabla2 ON tabla1.columna = tabla2.columna;
+   ```
+
+2. **LEFT JOIN** (o LEFT OUTER JOIN):
+   - Devuelve todos los registros de la primera tabla y los que coinciden en las columnas correspondientes de la segunda tabla.
+   ```sql
+   SELECT ...
+   FROM tabla1
+   LEFT JOIN tabla2 ON tabla1.columna = tabla2.columna;
+   ```
+
+3. **RIGHT JOIN** (o RIGHT OUTER JOIN):
+   - Devuelve todos los registros de la segunda tabla y los que coinciden en las columnas correspondientes de la primera tabla.
+   ```sql
+   SELECT ...
+   FROM tabla1
+   RIGHT JOIN tabla2 ON tabla1.columna = tabla2.columna;
+   ```
+
+4. **FULL OUTER JOIN**:
+   - Devuelve todos los registros de ambas tablas, incluso si no hay coincidencias en alguna columna.
+   ```sql
+   SELECT ...
+   FROM tabla1
+   FULL OUTER JOIN tabla2 ON tabla1.columna = tabla2.columna;
+   ```
+
+El `ON` es opcional y se usa para especificar la condición de las columnas de las dos tablas. Si no se usa, se asume una relación basada en el nombre de columna.
+
+Recuerda que debes ajustar las consultas según los nombres exactos de tus tablas y campos específicos, especialmente si están en mayúsculas o minúsculas distintas."
+Par-005-motor,T05,Par-005,motor,"Para realizar una operación de ""JOIN"" (junta) en SQL, debes definir el tipo de join que quieres utilizar según las necesidades del conjunto de datos que deseas obtener.
+
+Existen tres tipos principales de joins:
+
+1. LEFT JOIN: Devuelve todas las filas de la tabla izquierda.
+2. RIGHT JOIN: Devuelve todas las filas de la tabla derecha.
+3. INNER JOIN: Devuelve las filas donde haya coincidencia en ambas tablas.
+
+El comando estándar SQL para un join es:
+
+```sql
+SELECT column1, column2, ... FROM tabla_izquierda
+JOIN tabla_derecha 
+ON columna_unica = columna_de_la_derecha;
+```
+
+- La palabra clave ""JOIN"" indica que se quiere realizar el tipo de union requerida.
+- Algunas bases de datos (como MySQL) pueden permitir la definición del join con la palabra clave `USING` o `ON`. En cambio, SQL Server requiere especificar las columnas por nombre directamente."
+Par-006-baseline,T06,Par-006,baseline,"A veces, puede haber diferentes razones por las que el programa de tu dispositivo no muestra un mensaje de error al cerrarse. Aquí te doy algunas sugerencias para intentarlo:
+
+1. Verifica si existe una operación en progreso:
+- Revisa cualquier tareas importantes que se están realizando.
+- Puedes hacerlo presionando Ctrl + Alt + Esc y seleccionando ""Detener"" en la ventana emergente.
+
+2. Asegúrate de tener suficiente espacio libre en tu dispositivo para ejecutar el programa:
+
+3. Mantén las actualizaciones del sistema operativo (Windows, macOS, Android o iOS) a la última versión siempre que sean disponibles.
+
+4. Intenta reiniciar el dispositivo:
+- Presiona los botones de encendido y desplázate hasta ""Reiniciar"" para realizar una recarga completa.
+
+5. Actualiza tu navegador web: Si estás utilizando un navegador, verifica si se encuentra en la última versión disponible.
+
+6. Pídele a alguien más que pueda intentarlo:
+- Asegúrate de cerrar todas las aplicaciones relacionadas con el programa antes de empezar.
+- Si es posible, ejecútalo desde una computadora diferente para verificar si está el problema en tu dispositivo específico.
+
+7. Contacta al soporte técnico: Dependiendo del equipo y los síntomas, el soporte técnico puede darte algunas pautas adicionales o sugerencias."
+Par-006-motor,T06,Par-006,motor,"¡Qué pena! Cuando un programa se cierra sin mostrar un mensaje de error es muy frustrante, ya que no puedes analizar qué hizo mal tu código o por qué ese error ocurrió. Aquí hay algunos posibles pasos para intentar identificar el problema:
+
+1. **Reiniciar y cerrar:** Si tu programa funciona bien desde hace horas, probablemente haya una excepción oculta que no muestra ningún mensaje de error.
+
+2. **Reproducir en modo de depuración:** Intenta ejecutar el código en modo de depuración para ver si hay más detalles sobre qué hizo mal. Esto suele ser útil si tu problema es algo como un uso inadecuado de funciones o objetos o una falta de concisión en la lógica.
+
+3. **Revisar la función principal:** Asegúrate que no tienes algún error al llamar a alguna parte de tu código principal desde una función o método secundario. 
+
+4. **Borrar y volver a escribir:** Si el problema es un módulo más pequeño, intenta borrar ese código completamente para ver si te deja la ventana abierta.
+
+5. **Análisis sintáctico y lógico:** Revisa tu lógica de forma muy detallada. Asegúrate de que todos tus condicionales están completos y que cada paso tiene sentido en el contexto donde está usado. 
+
+6. **Preguntas a la redacción de código:** Si estás escribiendo una función o módulo, mira si puedes encontrar errores de lógica o sintaxis. Asegúrate de no hacer errores como las líneas saltando con comas (por ejemplo, `return` que está en el lugar incorrecto o mal asignar los valores a variables).
+
+Si después de estos pasos tu problema persiste y la ventana del programa se cierra inesperadamente sin mostrar ningún error, podría ser útil proporcionar detalles sobre qué estás intentando hacer exactamente. Esto puede ayudar más a identificar dónde está el error y cómo resolverlo."
+Par-007-baseline,D01,Par-007,baseline,"¡Excelente elección! Python es uno de los lenguajes de programación más populares, no solo por su simpleza y facilidad de uso para principiantes, sino también por la cantidad de bibliotecas y frameworks disponibles para hacer aplicaciones divertidas.
+
+Aquí tienes una guía básica para empezar:
+
+1. **Instala Python**: Primero, asegúrate de que tienes instalado Python. Si no sabes cómo instalarlo, busca las instrucciones específicas para tu sistema operativo en la página oficial de Python: <https://www.python.org/>
+
+2. **Instalación de Jupyter Notebook** (opcional pero recomendable):
+   - Este es un navegador interactivo donde puedes escribir código y ejecutarlo directamente.
+   - Si no has instalado Jupyter, busca instrucciones para tu sistema operativo.
+
+3. **Crea un primer programa simple**: Abre Jupyter o cualquier IDE de Python que utilices (como PyCharm, Visual Studio Code, etc.) y escribirás algo como:
+   ```python
+   print(""Hola, mundo!"")
+   ```
+
+4. **Módulos estándar**: Practica con los módulos de Python nativos para entender su estructura básica:
+   ```python
+   import math
+
+   print(math.pi)
+   ```
+5. **Navegación en código**: Lee ejemplos y tutoriales que te ayuden a entender cómo funciona un programa.
+6. **Resolver problemas en Python**: Intenta resolver algunos de los ejercicios o problemas propuestos en la documentación oficial o en plataformas como Kaggle, HackerRank, etc.
+
+Recuerda practicar regularmente para mejorar tus habilidades y encontrar el estilo que mejor te funciona. Hay muchos recursos gratuitos disponibles online para aprender más sobre Python, desde tutoriales simples hasta tutoriales avanzados y guías prácticas de aplicaciones específicas. ¡Buena suerte en tu camino al mundo del programación!"
+Par-008-baseline,D01,Par-008,baseline,"¡De acuerdo! Aquí te dejo algunos pasos generales que pueden ayudarte a aprender Python:
+
+1. **Primeros Pasos**: Elegir una librería o curso para comenzar, como la Biblioteca de Tiempo Real (RTI) o los cursos en plataformas como Codecademy y Udemy.
+
+2. **Basado en Python 3.x**:
+   - Necesitarás aprender las características más básicas del lenguaje.
+   - Entenderá variables, constantes, tipos de datos, operadores aritméticos y booleanos.
+   - Practicarán funciones (una función es una pequeña rutina que realiza tareas específicas).
+   - Comprenderán los bucles para repeticiones en el código.
+
+3. **Interfaz del Programador**: Luego puedes enfocarte en las interfaces del programador, como la pantalla del usuario y cómo manejar la entrada de datos.
+   
+4. **Manejo de errores**:
+   - Entenderás lo que son los errores y qué hacer con ellos.
+
+5. **Módulos e Objetos**: Aprenderán sobre las bibliotecas, los módulos y cómo interactuar con objetos en Python.
+
+6. **Ejemplos prácticos**: Práctica siempre ayuda más que la teoría; puedes comenzar a probar tu conocimiento en proyectos o aplicaciones simples para ver como funciona cada parte del código.
+
+7. **Lecturas adicionales**: Para profundizar, puedes leer libros de texto como ""Think Python"" por Allen Downey, o las plataformas web como Codecademy y Udacity, que ofrecen cursos gratuitos de fácil acceso a través de varias páginas en línea.
+
+8. **Participa en Comunidades**: Aprenderás mucho si te sientas con compañeros de intereses. Las redes sociales, la comunidad en línea, las conferencias o eventos locales pueden brindarte una mejor comprensión del lenguaje y un entorno más productivo para programar.
+
+Recuerda que aprender cualquier nuevo idioma requiere tiempo y práctica constante; por lo tanto, trata de practicar el código con regularidad. ¡Buena suerte!"
+Par-009-baseline,D01,Par-009,baseline,"Por supuesto! En términos de uso generalizado, hay varios editor de código populares que pueden ser adecuados para programar Python. Aquí te presento algunas recomendaciones:
+
+1. **Visual Studio Code**: Uno de los más usados y completos, con una gran comunidad de desarrolladores y extensas extensiones disponibles.
+
+2. **PyCharm Community Edition**: Ideal para principiantes y para aquellos que quieran mantener su código en un entorno profesional.
+
+3. **Sublime Text**: Mucha potencia, rápida y bastante fácil de usar. 
+
+4. **Atom**: Aunque también es gratuito, por ahora uno de los más grandes desarrolladores no están disponibles.
+
+5. **Eclipse PyDev**: Para aquellos que prefieren tener un editor completo con una serie de herramientas avanzadas para Python.
+
+6. **Spyder** o **Spyder IDE**: Esencialmente Python en el navegador, perfecto para entornos colaborativos y pequeños proyectos más grandes, pero no se preocupe si quiere continuar programando fuera del navegador: puedes usar tu editor predilecto como Spyder solo es una interfaz de usuario."
+Par-007-motor,D01,Par-007,motor,"¡Excelente elección! Programar es una habilidad valiosa que te permitirá resolver problemas, crear software y mucho más. Aquí tienes algunas sugerencias para comenzar:
+
+1. **Primeras Etapas:**
+   - **Basado en la Comunidad:** Utiliza el Stack Overflow o GitHub como recursos principales.
+   - **Aprender a usar IDEs (Integrated Development Environments):** Como Eclipse, PyCharm, Visual Studio Code son buenos para Python.
+   - **Librerías y Pandas:** Puedes comenzar con pandas para manipular datos en línea.
+
+2. **Basado en Libros:**
+   - Los libros básicos incluyen:
+     - ""Python Crash Course"" por Eric Matthes
+     - ""Automate the Boring Stuff with Python"" por Al Sweigart
+
+3. **Programas de Inversión (Online):**
+   - Clase Python y Django, 5º de Julio de la Asociación Colombiana del Programadores de Software.
+   - Bootcamp en Platzi o Codecademy para visualizar los fundamentos.
+
+4. **Proyectos:**
+   - Comenzar con pequeños proyectos como calculadoras, sitios web simples, o aplicaciones de to-do list (listo en 30 minutos).
+
+5. **Entender la Lógica de Programación:**
+   - No solo aprendas a escribir código, sino también entender cómo funciona.
+
+Recuerda que la programación es una práctica y aprenderás de tus errores. Aprende constantemente desde nuevas situaciones y proyectos. ¡Buena suerte en tu viaje hacia el mundo del codificación!"
+Par-008-motor,D01,Par-008,motor,"Primero, deberías aprender el lenguaje de programación Python y su framework Flask.
+
+Python es uno de los lenguajes más utilizados para la programación web y tiene un entorno de desarrollo amigable. Flasquejáte como una aplicación web simple antes de emprender con Flask.
+
+Aquí tienes algunos pasos:
+
+1. **Instalaciones:**
+   - Instala Python ya sea en una máquina virtual o desde tu repositorio de software.
+   - Puedes instalar Flask utilizando `pip install flask`.
+
+2. **Basico de Python:**
+   - Crea un primer programa que hagas y comenta cada línea para entender cómo funciona.
+
+3. **Basico de Flask:**
+   - Empezarás a aprender Flask, una librería web simple pero poderosa. Puedes crear una aplicación básica con `flask app = Flask(__name__)` y luego manejar rutas usando `app.route('/')`.
+
+4. **Módulos básicos en Python y Flask:**
+   - Aprende sobre módulos de terceros que podrían ser útiles para tu proyecto (como SQLAlchemy o Jupyter).
+   
+5. **Controladores, modelos y vistas:**
+   - Entendiendo conceptos como controladores Flask, modelos y views es clave para crear aplicaciones web.
+
+6. **Pruebas automatizadas:**
+   - Aprende a usar herramientas como Pytest para escribir pruebas unitarias de tu código.
+
+7. **Mantén la Calidad de Código:**
+   - Con los errores que puedan surgir, manten una buena tradición de codificación y mantén un uso adecuado de comentarios.
+
+8. **Comunidad Flask:**
+   - Aprende a interactuar con la comunidad del proyecto Flask en StackOverflow o GitHub para obtener respuestas a tus preguntas y aprender de los errores que puedan surgir.
+
+Recuerda, aprende gradualmente y pruebate constantemente tu código. La práctica es el mejor método para comprender cualquier nueva habilidad como programar."
+Par-009-motor,D01,Par-009,motor,"Para trabajar con Python, puedes usar muchos editores y IDEs, pero aquí te dejo algunas recomendaciones populares:
+
+- **Visual Studio Code**: Es uno de los más grandes y abiertos en el mercado, que también tiene un excelente plugin para Flask.
+  
+  - Instala Visual Studio Code desde su sitio web: <https://code.visualstudio.com/download>
+  - Desinstala cualquier editor existente antes de instalar VS Code.
+
+- **PyCharm**: Es una edición de código completo con muchas características avanzadas, especialmente útil para el desarrollo de aplicaciones web y API REST.
+  
+  - Descarga PyCharm desde: <https://www.jetbrains.com/pycharm/download/>
+
+Por último, no olvides descargar las extensiones o plugins relacionados con Flask que podrías necesitar. Las extensiones de VS Code son muy útiles:
+
+- **Python Extension Pack**: Este estándar extensivo permite a las extensiones en VS Code interactuar más fácilmente con Python.
+  
+  - Instala el Python Extension Pack desde: <https://marketplace.visualstudio.com/items?itemName=ms-python.python>
+
+¡Esto debería ayudarte a comenzar tu viaje hacia la programación!"
+Par-010-baseline,D02,Par-010,baseline,"¡Genial! Para ayudarte con la creación de tu base de datos, necesitaré algunos detalles adicionales:
+
+1. ¿Qué tipo de información quieres almacenar?
+2. ¿Deseas que se mantenga en orden por alguna columna específica (clúster)?
+3. ¿Tienes un modelo inicial o una estructura previa?
+
+Espero poder ayudarte a construir tu base de datos más efectiva para tus necesidades específicas."
+Par-011-baseline,D02,Par-011,baseline,"Para proyectos con pocos usuarios y que busques velocidad, MySQL podría ser una buena elección inicial debido a su simplicidad de uso e implementación. Sin embargo, debes considerar si realmente necesitas la funcionalidad extensa de MySQL o si una base de datos más simple como SQLite sería suficiente."
+Par-010-motor,D02,Par-010,motor,"¡Perfectamente! Crear una base de datos es un paso crucial en cualquier proyecto. ¿Hay algo específico sobre la estructura o características de tu base de datos que necesitas saber? Por ejemplo, quieres que sea orientada a objetos (OOP), relacional o pura BLOBs (Valores Binarios en Datos)?"
+Par-011-motor,D02,Par-011,motor,"El MySQL (MySQL) y PostgreSQL son opciones populares para crear bases de datos para proyectos con poco a una serie de usuarios. Ambos tienen características fuertes pero también están adaptados a diferentes escenarios:
+
+MySQL: 
+- Es fácil de aprender
+- Amplio soporte para la programación en Java, PHP, Python, entre otros.
+- Comunidad y recursos disponibles
+
+PostgreSQL:
+- Se destaca por su alta velocidad
+- Mejora los requisitos de seguridad
+- Permite realizar consultas más complejas
+
+Ambos tienen una amplia gama de características que podrían ser adecuadas dependiendo del tipo de proyecto que estés desarrollando. Si tu proyecto se trata principalmente de pequeños proyectos o aplicaciones web básica, ambos sistemas están bien equipados para empezar.
+
+Recuerda probar y ajustar según tus necesidades específicas."
+Par-012-baseline,D03,Par-012,baseline,"Un bucle ""for"" en lenguajes de programación como Python o Java es una estructura que permite realizar cierta acción repetidamente mientras ciertas condiciones sean verdaderas. Este tipo de control permitirá el manejo de secuencias y iterar sobre ellas.
+
+Un for in ""for-in"" se usa cuando quieres recorrer un conjunto, por ejemplo, los elementos de una lista o tupla.
+Ejemplo: 
+```python
+# Lista de números 
+numeros = [1, 2, 3, 4]
+
+# Para recorrer la lista 
+for numero in numeros:
+    print(numero)
+```
+Y si quieres recorrer una cadena o un string ""for-in""
+```python
+palabra = 'Hola'
+
+for letra in palabra:
+    print(letra)
+```
+
+Este tipo de estructuras permite ser muy útiles para manejar y trabajar con datos, ya sean iterables (como listas, tuplas, etc.), valores de entrada, etc."
+Par-013-baseline,D03,Par-013,baseline,"El uso de un bucle ""while"" suele ser más apropiado cuando no se conozca la cantidad de veces que se desea repetir una acción. Esto es porque se trata de un control estructura condicional, en lugar de un bucle por defecto, donde siempre se sabe cuántas iteraciones hay previamente. Por ejemplo:
+
+```
+while (numero < 10) {
+    numero += 1;
+}
+```
+
+Este código incrementa el valor del ""variable"" con cada iteración mientras que la condición es verdadera hasta llegar a un límite especificado en el ""while"".
+
+Por otro lado, cuando conoces cuántas veces quieres hacer algo, lo más recomendable sería utilizar bucles for. Por ejemplo:
+
+```
+for (int i = 0; i < 10; i++) {
+    System.out.println(""Imprimiendo número: "" + i);
+}
+```"
+Par-014-baseline,D03,Par-014,baseline,"¡Qué gusto! Como asistente conversacional, no tengo la capacidad de vivir experiencias personales. Sin embargo, estoy aquí para ayudarte a resolver tus dudas y proporcionarte información cuando te lo pidas. ¿Cómo puedo asistirte hoy?"
+Par-012-motor,D03,Par-012,motor,"Un bucle `for` es una estructura repetitiva en programación que permite ejecutar un bloque de código varias veces. Su principal propósito es simplificar el diseño de bloques de lógica que se repiten. 
+
+Basado en la siguiente información:
+
+- **Inicialización**: Se debe establecer un valor inicial.
+- **Condición**: Una condición debe ser verificada para determinar si se sigue o no ejecutando el bucle.
+- **Incremento (incrementación)**: Un incremento de estado debe realizarse después de cada iteración.
+
+Aquí está un ejemplo básico:
+
+```plaintext
+for (int i = 1; i <= 5; i++) {
+    // Bloque de código a repetir
+    System.out.println(i);
+}
+```
+
+Explicando por partes:
+- `int i = 1`: Inicializamos la variable `i` con el valor inicial.
+- `(i <= 5)`: Es una condición que debe ser verdadera mientras se cumpla.
+- `System.out.println(i);`: Este es nuestro bloque de código a repetir hasta que la condición no sea más que cierto.
+
+El bucle `for` simplifica significativamente el diseño y escritura de programas, especialmente cuando hay varias líneas o bloques de lógica que se repiten."
+Par-013-motor,D03,Par-013,motor,"El bucle `while` se puede considerar cuando no sabes exactamente cuántas iteraciones necesitarás o cuando quieres que la cantidad de iteraciones dependa del resultado de una condición. Por ejemplo, si estás probando varias posibilidades hasta encontrar la correcta y solo deseas hacerlo mientras no encuentras esa opción correcta."
+Par-014-motor,D03,Par-014,motor,"Como asistente conversacional, no tengo la capacidad de tener un día en el sentido humano porque mi ""dia"" es 24 horas del día 7 días a la semana. Pero puedo ayudarte con cualquier información o preguntas que tengas. ¿Te interesaría saber cómo podría ayudar?"
+Par-015-motor,W01,Par-015,motor,"Entiendo que tu semana parece estar llena. Aquí te dejo algunos consejos para administrar mejor el tiempo:
+
+1. **Prioriza tus tareas**: Define lo más importante antes de hacerlo.
+2. **Establece metas claras**: Esto ayuda a mantener una dirección efectiva y no se olvida nada.
+3. **Planifica tu trabajo**: Divide cada tarea en etapas para asignarles un tiempo específico.
+4. **Usa herramientas inteligentes**: Apps como Trello o Asana pueden ayudarte a gestionar tus tareas.
+5. **Reserva tiempo de descanso**: Evita hacer varias cosas al mismo tiempo y busca momentos para recuperarte.
+6. **Mantén una rutina**: Intenta manejar siempre la misma jornada de trabajo.
+
+Recuerda, es normal tener semanas llenas, pero puedes hacerlas más llevaderas adaptándote a tus prioridades."
+Par-015-baseline,W01,Par-015,baseline,"Entiendo que estés teniendo una semana llena de responsabilidades. Aquí te dejo algunas sugerencias para ayudarte a manejarlas:
+
+1. Prioriza tus tareas: Identifica qué necesitas hacer primero y planificá un calendario o agenda con los días restantes.
+
+2. Divide las tareas: Si tienes varias actividades que debes realizar, divide cada tarea en partes más pequeñas y hazla poco a poco.
+
+3. Utiliza tu tiempo eficientemente: Considera cambiar de métodos de trabajo para maximizar tu productividad.
+
+4. Reducir la distracción: Mira si hay cosas que puedes eliminar o reducir al finalizar las tareas del día (como tomar café o comer).
+
+5. Haz un esfuerzo físico: La actividad física puede ayudar a mejorar tu concentración y energía para hacer tus tareas.
+
+6. Asegúrate de descansar suficiente: El sueño adecuado ayuda a manejar la presión y mantener la claridad de pensamiento vital durante la semana.
+
+7. Recuerda tomar tiempo para relajarte: Un paréntesis de un minuto puede ser una gran herramienta en tu día-tarea.
+
+Recuerda, es normal tener días como éste pero intenta mantenerte lista para manejarlos bien. ¡Feliz semana!"
+Par-016-motor,W02,Par-016,motor,"Entiendo tu situación. Aquí te proporciono un enfoque general sobre cómo manejar el retraso de la entrega del informe:
+
+1. Lleva a cabo las actividades necesarias para completar el trabajo.
+2. Reserva tiempo suficiente, especialmente si tiene otras responsabilidades que se entran.
+
+¿Hay algo específico con lo que me puedas ayudar o más información sobre tu situación?"
+Par-016-baseline,W02,Par-016,baseline,"Entendido, voy a ayudarte a prepararlo lo más rápido posible:
+
+1. Verifico que todos los detalles se encuentran completos.
+2. Estudio la información necesaria y estructuré correctamente.
+3. Comienzo a redactar los párrafos con un estilo claro y conciso.
+4. Revisar varias veces para corregir errores ortográficos, gramaticales y de puntuación.
+5. Entregar el informe antes de la fecha solicitada.
+
+Por favor confirma si necesitas algo más, como revisar algunas partes en particular o tener sugerencias específicas sobre cómo mejorar el contenido del reporte."
+Par-017-baseline,W03,Par-017,baseline,"Para organizar bien tus reuniones, puedes seguir estos pasos:
+
+1. **Definir la Agenda**:
+   - Especifica qué se tratará durante la reunión.
+   - Prioriza los puntos clave y prioritarios.
+
+2. **Prepárate en Tiempo Hábil**:
+   - Revisa los documentos necesarios para tu presentación o debate.
+   - Escribe una breve introducción sobre el objetivo de la reunión.
+
+3. **Fomenta la Participación Inicial**:
+   - Pide opiniones sobre el tema inicialmente planificado si aún no está definido.
+   - Convierte los intercambios de ideas en un punto clave para tener en cuenta durante la reunión.
+
+4. **Organiza la Sala o Establece las Reuniones Virtuales**:
+   - Planifica la hora y lugar para tu reunión basada en tus horarios personales.
+   - Configura cualquier tecnología necesaria (computadoras, consolas) si es necesario.
+
+5. **Asegúrate de Hacer Rellenos**:
+   - Recuerda a todos los asistentes antes de la reunión por email o teléfono.
+   - Menciona el propósito del encuentro y menciona quién estará ausente si esto fuera posible.
+
+6. **Mantén Reuniones Productivas**:
+   - Preguntas abiertas sobre temas más amplios para que puedan compartir sus ideas.
+   - Deja suficiente tiempo para resolución de conflictos (si alguno se presentase).
+
+7. **Comunicación y Control**: 
+   - Utiliza herramientas como Skype, Zoom o Discord si la reunión es virtual, asegurándote de haberles informado sobre las características del software.
+   - Establezca un horario para iniciar el debate.
+
+8. **Después de la Reunión**:
+   - Proporciona un resumen conciso de lo discutido al equipo o a los participantes.
+   - Pide que cualquier asunto importante sea recordado o revisado en un momento adecuado, como el siguiente encuentro.
+
+Recuerda que es fundamental mantener una relación ética y profesional con tus compañeros para evitar problemas relacionados."
+Par-017-motor,W03,Par-017,motor,"Organizar mejor las reuniones puede ayudarte a ser más efectivo tanto en tu trabajo como en tus actividades de ocio o sociales. Aquí hay algunas sugerencias basadas en heurísticas:
+
+1. **Definir la Meta**: Antes de comenzar cualquier reunión, asegúrate de definir claramente lo que quieres lograr. Esto puede ayudarte a mantener el foco y evitar debates sin sentido.
+
+2. **Determinar las Participantes**: No confíe en tu imaginación para identificar todos los posibles participantes; planifique con antelación cuáles son realmente necesarios para la reunión.
+
+3. **Establecer un Agenda**: Cada reunión debe tener un propósito claro. Prepare una agenda que detalle qué se va hablar, cuánto tiempo cada punto ocupará y a quién debe dirigirse la conversación.
+
+4. **Realizar Reuniones Vacías**: Un poco de silencio puede ayudarte a tomar el rumbo de la conversación y escuchar los puntos de vista del otro lado. También te dará tiempo para pensar mejor en tu participación.
+
+5. **Resolución de Conflicto**: Antes de comenzar, considera si una reunión sería más útil que discutir por teléfono o escribir un correo electrónico. La manera incorrecta de resolver conflictos puede llevar a malentendidos graves.
+
+6. **Cuantificar la Conversación**: En lugar de tener una conversación ""abierta"", crea estrategias para hacerla más productiva, como utilizar herramientas de notas escritas en papel o un calendario digital para rastrear las ideas y respuestas del equipo a medida que avanzan.
+
+7. **Asistir a la Coordinación**: No todos los líderes son buenos comunicadores. Aquí puedes ser útil asistiendo al coordinador para asegurarte de que todas partes tienen sus puntos en el debate.
+
+8. **Acerca de la Escucha Activa**: Estudia cómo se puede mejorar el sentido del oyente y cuál es el impacto de escuchar con atención a los demás, no solo en tu trabajo pero también en tus relaciones personales.
+
+9. **Reuniones Positivas**: Trata de mantener un ambiente positivo durante la reunión para asegurar que todos participen sin tensión ni estrés. Si algo se está discutiendo que te preocupa, puede ser útil tener algún punto"
+Par-018-baseline,W04,Par-018,baseline,"Claro, para poder ayudarte a prioritizar adecuadamente tus proyectos, necesitaré algunos detalles sobre:
+
+1. Estas serían todas las actividades que deben realizarse?
+2. ¿Cuáles son las urgencias de cada proyecto? 
+3. ¿Existen otros factores que influyan en la prioridad (como recursos limitados, tiempo disponible)?
+
+Después de recopilar estos datos, podré ofrecerte una lista de los proyectos más prioritizados, basándome en su urgencia y importancia relativa.
+
+¿Cuál sería el primer proyecto sobre el que te gustaría centrarte para empezar a trabajar?"
+Par-018-motor,W04,Par-018,motor,"Para ayudarte a prioritizar tus proyectos, considera el siguiente enfoque:
+
+1. **Tiempo disponible**: Evalúa cuánto tiempo te gustaría dedicar a cada proyecto.
+
+2. **Importancia del resultado**: Prioriza los proyectos que proporcionen la mayor ventaja o beneficio para tu objetivo principal.
+
+3. **Impacto del desafío**: Revisa si existe un gran reto asociado con cada proyecto y cómo podrías manejarlo de manera efectiva.
+
+4. **Frecuencia**: Identifica cuántas veces se requiere realizar cada tareas y cuándo tendrás más tiempo disponible para completarlos.
+
+5. **Condiciones ambientales**: Establece las condiciones en las que podrías alcanzar tus objetivos (es decir, si necesitas ser aislado del trabajo o solo tienes acceso al hogar).
+
+Utiliza esta base de valores y considera el impacto del desafío más grande y la prioridad sobre la frecuencia para determinar la mayor urgencia."
+Par-019-motor,W05,Par-019,motor,"¡Hola! Necesitas escribir un email para solicitar una prórroga en tu tarea o proyecto. Primero, asegúrate de tener clara la razón por la cual requieres esa extensión. A continuación es posible:
+
+Cabeña: 
+
+""Estimado/a [Nombre del destinatario],
+
+Queríamos disculparnos por el retraso que estamos experimentando en nuestra tarea o proyecto, y así mismo solicitar una prórroga de tiempo. Considerando la complejidad de los últimos desafíos propuestos y las circunstancias externas que nos están afectando.
+
+No queremos perder nuestra posición o compromiso con el logro del objetivo establecido en nuestro acuerdo. Por eso, solicitamos un apercibimiento adicional de tiempo para poder abordar todo lo necesario a la altura de esta nueva situación. 
+
+Esperamos por su comprensión y apoyo.
+
+Saludos cordiales,
+
+[Tu nombre]""
+
+Recuerda ser claro y conciso en tu email, incluyendo cómo se realizará el trabajo durante el período propuesto para una mejor consideración."
+Par-019-baseline,W05,Par-019,baseline,"Para escribir una solicitud de prórroga, aquí tienes una guía detallada:
+
+1. **Saludo y Saludo Formal**:
+   - Por ejemplo: ""Señorita / Señor, me gustaría solicitar la prórroga para nuestro proyecto.""
+
+2. **Explicación del Motivo**: Desglosa por qué necesitas la prórroga.
+   - Por ejemplo: ""Sobre el siguiente punto, al presentar nuestras propuestas finales de trabajo se nos hizo necesario realizar un análisis adicional y revisión que no podíamos tener en nuestro plazo inicial.""
+
+3. **Explicación del Impacto Posible**:
+   - Esto puede variar dependiendo del contexto, pero es generalmente útil mencionar qué será lo que pasa si la prórroga no se hace efectiva.
+   - Por ejemplo: ""Si esto no se resuelve en la próxima reunión, el plazo se extenderá al siguiente trimestre.""
+
+4. **Proporción de Mecanismo o Plan**: Explica cómo te aseguras de cumplir las expectativas y cómo te preparas para la prórroga.
+   - Por ejemplo: ""Entendiendo que la próxima reunión está programada para el próximo martes, nos hemos acercado a revisar el informe final antes de esa fecha. Además, estarán presentados los siguientes pasos y pruebas a realizar para poder completar nuestro trabajo de manera completa.""
+
+5. **Conclusión**: Reitera la solicitud y menciona que deseas una respuesta lo más pronto posible.
+   - Por ejemplo: ""Por tanto, solicito la prórroga del proyecto hasta el próximo miércoles para poder presentarlo al mismo tiempo en nuestra próxima reunión.""
+
+6. **Manera de Enviar**:
+   - Proporciona información sobre cómo enviar tu solicitud, como un correo electrónico o un documento físico.
+   - Por ejemplo: ""De manera atinada y rápidamente por favor responderme la forma que te parece más conveniente para poder darle una solución al problema antes mencionado.""
+
+7. **Fin de Sugerencia**:
+   - Finaliza tu carta diciendo que puedes ser o no receptivo a su opinión, como en este caso: ""Le pido que se mantenga abierto el diálogo y nos ponga al día si hay algún inconveniente.""
+
+Recuerda adaptar esto según"
+Par-020-baseline,W06,Par-020,baseline,"Entiendo tu situación, lamento que no hayas podido completar ese plazo. ¿Podrías decirme cuál es la tarea o proyecto específico que te impedía llegar al objetivo? Esta información podría ayudarme a proporcionarte recomendaciones y sugerencias para evitar este tipo de inconvenientes en el futuro."
+Par-020-motor,W06,Par-020,motor,"Entiendo tu situación. Aquí te puedo ofrecer algunas sugerencias para completar la tarea:
+
+1. Llama al equipo de atención al cliente: Te puede ayudar a retrasar la entrega o solucionar cualquier problema específico.
+
+2. Busca ayuda en comunidades educativas: Muchas personas tienen problemas similares y pueden compartir soluciones o consejos útiles.
+
+3. Estudia por tu cuenta: La biblioteca virtual está ahí para ti, puedes usar ella a través de internet si necesitas más recursos.
+
+4. Consulta las notas del curso: Otra opción es revisar tus cuestionarios o evaluaciones previas.
+
+5. Busca en línea: Hay muchas plataformas online que ofrecen tutoriales, videos explicativos y clases virtuales gratuitas para completar un tema de estudio.
+
+6. Pide ayuda a tu familia o amigos: Incluso si no están familiarizados con el tema, podrían tener sugerencias útiles que te ayuden a alcanzar la meta.
+
+Recuerda que lo importante es ser constante en tu trabajo y mantener una buena actitud hacia el aprendizaje."
+Par-021-baseline,D04,Par-021,baseline,"¡Claro, estaré encantado de ayudarte! Primero, necesitarás saber qué tipo de contenido hayas sido solicitado para la presentación y cuál es tu objetivo general en esa presentación. Por ejemplo:
+
+1. **Para un informe técnico**: Menciona el proceso o los resultados clave.
+2. **Para una presentación marketing**: Describe los objetivos, beneficios y acciones a seguir.
+3. **Para una presentación educativa**: Muestra ejemplos concretos de cómo se aplican conceptos teóricos.
+
+Una vez tengas claro qué tipo de material quieres incluir, proporcionaré información general sobre el tema o la presentación para que puedas prepararte mejor y poder responderte a cualquier pregunta."
+Par-022-baseline,D04,Par-022,baseline,"El número exacto de diapositivas depende mucho del contenido que hayas preparado, la duración total y cómo estés tratando de transmitir tu mensaje. A menudo, una diapositiva es suficiente para explicar un concepto o mostrar una figura.
+
+Si tienes una presentación en PowerPoint y eres a punto de empezar, generalmente recomendaríamos que solo uses entre 80 a 95 diapositivas porque el límite máximo recomendado por Microsoft es de 96 diapositivas. Sin embargo, esto puede variar dependiendo del contenido y la duración deseada.
+
+Si tienes un formato diferente (como una presentación web o una presentación en un auditorio), también habría que ajustarlo para adaptarse a las capacidades físicas y a los recursos disponibles.
+
+¿Cuál es el tema de tu presentación? Si me das más detalles, podré proponer algunas estrategias específicas para manejar esa cantidad razonable de diapositivas."
+Par-023-baseline,D04,Par-023,baseline,"A veces la conclusión más efectiva puede ser muy breve. Si te has centrado en explicar por qué debemos hacer algo o tomar una acción, puede que solo necesites mencionar eso y dar un pequeño ejemplo. 
+
+Por otro lado, si el contenido de tu presentación ha sido generalizado, podrías querer cerrarla con una llamada a la acción específica: ""En conclusión, ¿qué acciones tomaremos para alcanzar nuestro objetivo?"" Si has preparado una serie de argumentos o puntos clave que debes compartir, puede ser una buena idea hacerlo por último.
+
+Recuerda no olvidar el ""porque"" y cómo tu trabajo ha contribuido a este logro."
+Par-021-motor,D04,Par-021,motor,"Para la preparación efectiva de una presentación para el equipo, considera los siguientes pasos:
+
+1. Definir el objetivo de la presentación:
+   - ¿Qué quieres comunicar?
+   - ¿Quién es tu audiencia?
+
+2. Organizar tus ideas y datos:
+   - Crea un plan de la presentación (estructura)
+   - Asegúrate de tener suficientes datos para sustentar las ideas
+
+3. Elegir el formato correcto:
+   - PowerPoint, Prezi, Google Slides, etc.
+   - Decide si te gustaría interactuar con tu audiencia
+
+4. Crear contenido valioso:
+   - Introducción atractiva
+   - Ejemplos prácticos o ejemplos de cómo se aplican tus ideas en la vida real
+   - Conclusión clara y destacable
+
+5. Revisión y corrección:
+   - Cuida el formato: espacios, letra, etc.
+   - Repite todas las veces que sea necesario hasta que estés satisfecho con la calidad del texto
+   - Elimina duplicidades y redundancias en tu presentación
+
+6. Entrega a tiempo:
+   - Deja margen suficiente para hacer correcciones pequeñas antes de la presentación
+
+Recuerda que el objetivo de una buena presentación es entusiasmar al equipo, no darle miedo o molestarlos."
+Par-022-motor,D04,Par-022,motor,"El número adecuado de diapositivas depende mucho de la naturaleza del tema, la duración de la presentación y la comprensión general del público. En una presentación empresarial o informativa generalmente puede haber entre 10 a 20 diapositivas.
+
+Si hay información más compleja como en un panel de expertos, podrías necesitar menos diapositivas para mantener el interés de los asistentes y evitar el cansancio visual. Por otro lado, si se trata de una presentación sobre algo muy simple o bien explicada, por ejemplo, a niños pequeños, puedes considerar hasta 50 diapositivas.
+
+No olvides incluir subrayado para la información clave y asegúrate de tener un sistema básico para cambiar rápidamente entre las diapositivas."
+Par-023-motor,D04,Par-023,motor,"Para cerrar adecuadamente una presentación, considera los siguientes puntos:
+
+1. Repaso principal: Revisa las ideas principales que has dado durante el desarrollo de tu presentación.
+2. Respuestas a preguntas frecuentes: Responde a cualquier pregunta o incertidumbre general que haya surgido al interrumpir la sesión.
+3. Preguntas del público: Si es necesario, abra la puerta para discusiones y respuestas de los participantes.
+4. Conclusión: Suministres el propósito final de tu presentación o reafirmar las implicaciones principales.
+5. Agradecimientos: Recompórtelos por su participación.
+
+También considera una breve reflexión final que recordará el interés de la audiencia en seguirte, inspirándolo para acciones futuras relacionadas con la presentación comunicada."
+Par-024-baseline,D05,Par-024,baseline,"¡Por supuesto! Para poder ayudarte mejor, necesito saber cuál es tu actual sueldo y por qué crees que mereces una aumenta. Siéntete libre de explicar tus ganancias actuales y el por qué consideras que mereces un incremento más significativo. También podrías mencionar cómo se te ha hecho la oferta o si hay otras razones para esto."
+Par-025-baseline,D05,Par-025,baseline,"Es importante tener en cuenta cuándo es la mejor oportunidad para pedir un aumento de sueldo, teniendo en cuenta varios factores:
+
+1. **La Calendario Laboral:** En países donde las leyes laborales establecen un día específico (como el 25 de diciembre o el fin de semana) podrían ser buenos días para hablar de este tema.
+
+2. **Tus Proyectos de Futuro:** Cuanto antes sea la situación en tu empresa, más probable es que la plantilla se haya ampliado y te hayas vuelto un profesional importante, lo cual podría justificar el aumento.
+
+3. **Reconocimientos a tus Logros:** Si has recibido reconocimiento por tu trabajo o méritos, esa puede ser una excelente oportunidad para pedir un aumento de sueldo.
+
+4. **La Inversión Personal:** No todos los aumentos son iguales; algunos solo se corresponden con mejoras en tu salario al mes, mientras que otros pueden hacerse efectivos después del año fiscal. Es importante meditar qué tipo de beneficio te gustaría obtener y cuánto podría costar.
+
+5. **La Nube Económica:** Los buenos momentos para solicitar un aumento son cuando se están produciendo mejoras económicas en tu área laboral, por ejemplo, una reducción en los impuestos o las tasas del mercado laboral aumentando.
+
+Recuerda que la forma más efectiva de plantearse este cambio de sueldo es con seriedad y progresión a lo largo de tu carrera."
+Par-024-motor,D05,Par-024,motor,"Para lograr un aumento de sueldo, considerarás el siguiente enfoque:
+
+1. **Identifica tu valor añadido**: Evalúa si tienes habilidades únicas o experiencia especializada que aportas al trabajo.
+
+2. **Recapita tus desempeños**: Analiza tu rendimiento: número de proyectos completados, calidad del trabajo realizado, tiempo invertido en tareas y retroalimentación recibida desde colegas superiores.
+
+3. **Halla el mejor momento para pedirlo**: Evitarás el retraso al planificar correctamente la petición a una fecha cercana cuando no estés sobresaliente en tu posición.
+
+4. **Formula un mensaje claro y conciso**: Comienza por expresar gratitud por lo que haces hasta ahora, luego pides el aumento y detalla cómo te atreves a alcanzar esta meta. 
+
+5. **Explica los resultados o cambios conseguidos**: Describe cuáles son tus logros específicos sobre la calidad del trabajo o en la eficiencia de tu tarea diaria.
+
+6. **Ejemplifica por qué quieres el aumento**: Propón una explicación que sea coherente con lo mencionado anteriormente, puede ser referirte a un ejemplo de alto rendimiento específico o hacer referencia a tus metas personales y profesionales que han sido alcanzadas gracias al trabajo realizado.
+
+7. **Prepárate para la discusión**: Estar listo para escuchar sus observaciones y disculparse si fuese necesario puede facilitar una conversación más amigable y productiva.
+
+Si has cumplido todos estos puntos, tendrás un aumento bien fundamentado y probablemente sea acogido de buena manera."
+Par-025-motor,D05,Par-025,motor,"El mejor momento puede variar dependiendo de tus circunstancias, pero hay algunos factores a considerar:
+
+1. **Falta de compromiso**: Si estás frustrado o descontento con tu trabajo actualmente, es probable que quieras esperar hasta que encuentres un empleo más adecuado antes de hablar sobre aumento.
+
+2. **Preparación del departamento**: Muchas empresas tienen procedimientos para informar a las gerencias cuándo se presentan solicitudes de aumento. Antes de hacer una propuesta, asegúrate de conocerlos.
+
+3. **Aproximadamente 6 meses antes del último mes que te estás beneficiando del aumento anterior**: Esto permite un tiempo justo para ajustes y preparación mientras no exista una incertidumbre sobre tu perspectiva actual.
+
+4. **Fecha de cambio o transición de empleo**: Si cambias a otra organización o pasas a trabajar en un departamento diferente, es importante que informes al nuevo lugar de trabajo antes del cambio.
+
+5. **Pruebas de rendimiento**: Recuerda que una vez el aumento se ha otorgado, no debes volver atrás ni exigir cambios significativos sobre la propuesta original."
+Par-026-motor,D06,Par-026,motor,"¡Claro! Para ayudarte a organizar tu trabajo del próximo mes, necesito algunos detalles para empezar:
+
+1. **Indicaciones Generales:**
+   - ¿Tienes una fecha límite general o un período de tiempo específico en mente?
+   - ¿Cuantos proyectos te tomas por día?
+
+2. **Detalles Clave:**
+   - Tipos de tareas que hayas programado para cada día (por ejemplo, análisis, diseño, escritura, etc.)
+   - Tiempo aproximado estimado para cada tarea o proyecto
+   - Tareas prioritarias a tener en cuenta
+
+3. **Opciones Para Mejorar la Organización:**
+   - ¿Has considerado usar un programa de gestión del tiempo como Google Calendar o Asana?
+   - ¿Te apetecen recopilar ideas, listas de tareas y estrategias para mejorar tu planificación?
+
+Recuerda compartir tus prioridades y cualquier otro detalle relevante que te permita desarrollar un cronograma efectivo."
+Par-027-motor,D06,Par-027,motor,"Por supuesto, aquí tienes algunas recomendaciones de películas populares:
+
+- ""La Regeneración"" (The Da Vinci Code) si te gusta el misterio y la acción.
+- ""Los Muertos Sangrantes"" (The Shawshank Redemption) para algo con toques románticos e introspectivos.
+- ""El Padriciente"" (Pulp Fiction) si buscas un buen ejemplo de cómo narrar una trama complicada y divertida.
+- ""La Cinta Negra"" (Black Panther) si quieres una película que muestra la diversidad racial bien representada en Hollywood.
+
+Estas son películas muy populares y con un sin fin de razones para ser recomendadas. ¿Qué tipo de género o tema te interesa más para elegir?"
+Par-026-baseline,D06,Par-026,baseline,"¡Excelente iniciativa! Para ayudarte a preparar tu agenda, ¿podrías decirme cuáles son tus objetivos específicos o áreas de estudio que te gustaría tener más en claro? Estas pueden ser la programación, proyectos para el mercado laboral, retos académicos o cualquier otra cosa relacionada con el trabajo del próximo mes."
+Par-027-baseline,D06,Par-027,baseline,"Por supuesto. ¿Te gustan películas de ciencia ficción o fantasía? Por ejemplo, podrías querer ver ""Interstellar"" de Christopher Nolan que fue el film más vendido de la historia. Si preferís otra género, quizás podrías disfrutar de ""Joker"", una comedia-romance dirigida por Todd Phillips."
+Par-028-motor,E01,Par-028,motor,"Entendido. Para prepararte al examen de estadística, te recomendaría:
+
+1. **Lectura**: Léanse los capítulos principales del libro ""Análisis Estadístico"" de Mario Azzalini y Marco Baragona.
+
+2. **Apuntes**: Mientras lees, apunte conceptos importantes o formas a seguir durante el examen.
+
+3. **Fórmulas**: Conoce las fórmulas básicas de estadística que serán necesarias para resolver problemas prácticos en el examen.
+
+4. **Práctica**: Solucione ejercicios resueltos de la librería ""Statistical Inference"" del autor Gelman y Hill. 
+
+5. **Análisis Temático**: Divide la estadística en temas como la inferencia estadística, la probabilidad básica, los descriptivos y el análisis categórico.
+
+Recuerda que para un buen rendimiento es fundamental estar bien preparado con estos fundamentos teóricos y prácticos. ¡Buena suerte!"
+Par-028-baseline,E01,Par-028,baseline,"¡Perfecto! Vamos a hacer una lista de materiales y estrategias que podrían ayudarte a prepararte mejor:
+
+Materiales recomendados:
+1. Libros de texto: Puedes considerar ""Teoría Básica de las Probabilidades"" por Luis A. Escudero, o ""Estadística para los amantes del cálculo y la física"" por José Gómez.
+2. Software estadístico: Podrías usar programas como SPSS (Software para Estadísticas de Soporte), R o Python con el módulo SciPy.
+3. Apuntes de clase: Recuerda revisar lo que aprendiste en las clases y tomar copias de notas para revisarlas una vez más.
+4. Preguntas de ejercicios: Utiliza sitios como CUEST (Centro Universitario de Estudios Técnicos) o FreeStats.
+
+Strategias de estudio:
+1. Divide el material: Analiza el plan de tu curso y divide la información en conceptos pequeños.
+2. Prueba teóricos: Repite los conceptos importantes y tratalas de diferentes maneras para mantener las ideas frescas.
+3. Aplica los contenidos: Realiza problemas prácticos o diseña tu propio experimento estadístico para poner a prueba tus nuevos conocimientos.
+4. Practica resoluciones: Enviado el enunciado del problema, luego escribe tu respuesta y recuerda que debes explicar por qué lo has hecho de esa manera.
+
+Recuerda estudiar regularmente y no dejarte empujar. El estudio constante te prepara mejor para el examen. ¡Buena suerte!"
+Par-029-baseline,E02,Par-029,baseline,"Claro, ¡estoy aquí para explicar la teoría de los Grafos de manera sencilla!
+
+Un grafo es una figura geométrica que se puede dibujar en dos dimensiones (en el plano cartesiano). Los puntos a los que conectan las aristas son llamados vértices, mientras que las aristas representan relaciones entre los vértices.
+
+Las propiedades de un grafo pueden ser: cuántas esferas tiene, cuántos segmentos se cruzan y qué tipo de relación (la forma del polígono) existe entre esas esferas. 
+
+Un ejemplo simplificado sería:
+
+1. **Esfera**: En esta figura tenemos dos vértices (las dos ""llaves"" o puntos que están conectados).
+
+2. **Semiarilla**: La semi-área de aristas que cruzan un solo segmento entre los dos vértices es llamada una arista.
+
+Entonces, la teoría de grafos se centra en cómo estas relaciones (las aristas) pueden afectar a nuestras decisiones y el problema. Es por eso que las redes sociales son un ejemplo práctico perfecto del uso de esta teoría: los amigos o no amigos entre personas en redes sociales pueden ser considerados como ""aristas"" en la red, mientras que el número de interacciones entre ellas (la ""densidad"") determina cómo se distribuyen las ""esferas"".
+
+Espero que esta explicación sea simple y clara para ti!"
+Par-029-motor,E02,Par-029,motor,"La teoría de grafos es un concepto matemático que se utiliza para representar y analizar relaciones entre objetos o lugares. En su diseño inicial, el término ""gráfico"" se refería a las trayectorias visuales de dibujos realizados por los estudiantes en las aulas.
+
+En este contexto:
+- Un grafo puede ser una colección de pares (vértices, aristas) que describen la conexión entre objetos o puntos.
+- Los vértices son los elementos no dirigidos o no ponderados del grafo.
+- Las aristas o líneas representan las conexiones intermedias entre los vértices.
+
+Para ilustrar, imagina un mapa de tu ciudad. En este mapa:
+1. Los lugares (vértices) como parques, escuelas y restaurantes.
+2. La red de senderos que conecta estos puntos (las aristas).
+
+Un grafo puede ser dirigido si las líneas tienen un sentido específico, o ponderado si se consideran más de una longitud para las líneas.
+
+De esta manera, puedes usar la teoría de grafos para resolver problemas en múltiples áreas como logística, ciencia de datos y modelización de sistemas complejos."
+Par-030-baseline,E03,Par-030,baseline,"Una derivada, o diferenciairexterior, de una función y = f(x) se define como la cantidad que mide el cambio en y con respecto a x para una unidad incrementada en x. Es un concepto fundamental en matemáticas, especialmente en cálculo, y es crucial en muchas aplicaciones de la física y las ingenierías.
+
+Si d(f(x)) / dx representa la derivada de f con respecto a x (f'(x)), podemos entender que:
+
+- Cuando f x es positiva, significa que la función aumenta al aumentar x.
+- Cuando f x es negativa, significa que la función disminuye al aumentar x.
+
+La notación más común para la derivada se expresa en términos de la diferencial dx y dy: 
+dy / dx = f'(x)
+
+Este concepto permite entender cómo los valores de una función cambian cuando sus variables cambian."
+Par-030-motor,E03,Par-030,motor,"Una derivada se refiere a un concepto matemático relacionado con las funciones de variables, especialmente en cálculo diferencial. La derivada de una función f(x) alrededor de x puede definirse geométricamente como la pendiente de la recta tangente a la gráfica de la función en el punto (x, f(x)), o algebraicamente como el cociente de las derivales del cambio en la variable independiente y la variable dependiente. Por ejemplo, si una función es f(x) = x², su derivada sería 2x, representando cómo cambia la función con respecto a x."
+Par-031-baseline,E04,Par-031,baseline,"¡Claro! Aquí tienes algunas técnicas útiles para memorizar mejor el material que leas:
+
+1. **Mantén la atención**: Luego de cada párrafo, pregunta qué conceptos o ideas se están desarrollando. Esto ayudará a recordar los temas principales.
+
+2. **Crear acrónimos**: Para las frases largas, crea acrónimos basados en las palabras clave. Por ejemplo: ""Astronomía y Orografía"" se puede simplificar como ""Asi tan Raro"".
+
+3. **Repite y muesca**: Repite lo que has leído varios veces, incluso cantando o hablando la voz a la mitad. Esto ayuda a engrutarlo en el cerebro.
+
+4. **Encuentra patrones o estructuras**: Observa si hay patrones o estructuras repetidas en los libros o textos que estés leyendo. Estas pueden ayudar a recordarlo mejor.
+
+5. **Haz preguntas**: Cuando termines una sección, pregunta qué cosas has aprendido y cómo las relacionas. Esto te recuerda la información clave de forma efectiva.
+
+6. **Escribe sobre lo que tienes:** Después de haber leído un capítulo o página, haz notas o resúmenes para recordar el contenido de forma más eficaz.
+
+7. **Muestra el material**: Haz dibujos a mano o trazo acuarela los conceptos clave mientras estás leyendo. Esto te ayuda a memorizar mejor y te ayuda a visualizar la información.
+
+8. **Interactiva con tu algoritmo de pensamiento:** Cuando leas algo, intenta comprender por qué es importante para ti y cómo se relaciona con tus conocimientos previos o con otros temas que ya conoces.
+
+Recuerda, la práctica constante y repetición son las claves para poder memorizar mejor."
+Par-031-motor,E04,Par-031,motor,"Memorizar lo que lees puede parecer una tarea difícil, pero aquí hay algunas sugerencias basadas en la ciencia de la memoria:
+
+1. **Repetición**: Repite la información por diferentes vías (oralmente, escrita, visual) para asegurarte de memorizarla.
+
+2. **Ejemplos y Contexto**: Enfócate en cómo las ideas se relacionan con el contexto y el mundo real. Por ejemplo, si estás leyendo sobre una ciudad, imagine cómo sería la vida en esa ciudad o cuáles son sus características más notables.
+
+3. **Interacción Visual**: Crea un ""cubo de memoria"" que compila tus tópicos clave, para luego repasarlos con intervalos regulares.
+
+4. **Reescritura**: Convierte lo que lees en tu propia forma. Siempre tienes la opción de crear un pequeño texto o guionismo basado en el material lecto.
+
+5. **Actividades Fiscales**: Haz ejercicios de memoria, como usar esquinas con una cartilla y luego trazarlas a mano para recordar las coordenadas.
+
+6. **Cambio de Alientos**: Trata de memorizar la información de manera diferente cada vez que se te ofrece. Por ejemplo, si notas una idea, intenta formular una pregunta sobre ella o imagina cómo la usarías en un escenario.
+
+7. **Pausas y Repeticiones Puntuales**: En lugar de hacerlo todo en el mismo momento, haz pausas para recoger información en diferentes momentos del día, y luego repite ese material con intervalos regulares.
+
+Recuerda que lo importante no es la cantidad de materia que memorizaste, sino cómo la recordarás."
+Par-032-motor,E05,Par-032,motor,"¡Por supuesto, entiendo! El concepto de probabilidad condicional se refiere a una idea matemática que nos ayuda a entender mejor la dependencia entre eventos.
+
+En términos simples, cuando hablamos de ""probabilidad condicional"", lo estamos buscando para saber cuál es el porcentaje (número) concreto de una cosa dado otro evento ya ocurrido. Estas dos cosas se llaman ""eventos"".
+
+Un ejemplo práctico sería: Si tienes un juego de 10 dados y quieres saber qué probabilidad hay de que, en particular, todos sean almas salvajes (los cuales tienen el número 7), después de lanzar los diez dados una vez. 
+
+Sin embargo, para calcular exactamente la probabilidad condicional en este caso sería necesario tener datos específicos sobre las posibilidades de obtener un alma salvaje cuando se trata de cada dado separadamente y también saber cuántos almas salvajes hay entre todos los 10 duros que estás lanzando.
+
+Es decir, que depende directamente del porcentaje exacto de almas salvajes en tu juego específico y no solo sobre lo general. Sin embargo, la probabilidad condicional te permite calcular ese número cuando las condiciones específicas sean conocidas (en este caso, el evento ""todos sean almas salvaje"") y ya ocurra.
+
+¡Espero que esta explicación sea útil para ti! Si tienes más preguntas o necesitas ejemplos claros, estaré encantado de ayudarte."
+Par-032-baseline,E05,Par-032,baseline,"¡De nada! Claro, entenderás cómo funcionan las probabilidades condicionales con un ejemplo sencillo. Imagina que tienes tres carritos del supermercado: Carrito A (chocolate), Carrito B (bebida azucarada) y Carrito C (frutas).
+
+Supongamos que:
+- La probabilidad de encontrar chocolate en el primer carrito es del 50%, porque solo hay un carrito lleno de chocolate.
+- La probabilidad de encontrar bebidas azucaradas en el segundo carrito es también del 50% porque sólo hay dos carritos con bebes azucaradas y uno sin nada, pero la probabilidad de que tengas bebidas azucaradas primero se divide por la cantidad total de carros (el primer carrito tiene 1/3 y el segundo 2/3).
+
+Entonces, para saber cuánto hay de probabilidad en común entre chocolate y bebida, tienes que tomar una proporción de las probabilidades. La probabilidad de encontrar chocolate o bebidas azucaradas primero depende del número de carros:
+
+- El primer carrito tiene 50% (probabilidad del 1/2), pero si el primer carrito es para chocolate, entonces solo hay un carrito después que podría ser la bebida azucarada. Por lo tanto, tienes una probabilidad de 50% × 50% = 25%.
+
+Ahora, veamos cómo se hace cuál es más probable:
+
+- La probabilidad de encontrar chocolate y bebidas en el mismo carrito es del 1/3 (el primer carrito) por la probabilidad del segundo carrito de que tengas bebidas azucaradas.
+- Por lo tanto, para un total de tres carritos, tienes una probabilidad de 50% × 25% = 12,5%.
+
+Entonces la probabilidad condicional (el porcentaje en el cual encontramos chocolate o bebida en cualquier momento dado) puede hacerse fácilmente:
+
+- La probabilidad de encontrar algo de dulce primero es del 1/2.
+- Una vez que he encontrado dulce, hay un 50% más probable encontrar algo azucarado.
+
+Por lo tanto, la probabilidad de encontrar algo de dulce después de haberlo hecho primero es del 62,5%, o sea, el 2/3 (del total)."
+Par-033-motor,E06,Par-033,motor,"La cantidad de tiempo que deberías dedicar a la estudio depende mucho del tipo de material y tus propias habilidades. Sin embargo, generalmente se recomienda un horario balanceado entre estudio y descanso.
+
+Un buen punto medio podría ser:
+
+- 4-6 horas por día de estudio durante 5 días a la semana
+- Durante las sabados o festivos, solo 2-3 horas para disfrutar del tiempo libre
+
+Recuerda también incorporar un par de horas diarias para una actividad relajante. Lo importante es establecer un ritmo que funcione bien para ti."
+Par-033-baseline,E06,Par-033,baseline,"El tiempo que deberías dedicar a la escuela depende de varias cosas, como tus hábitos actuales y tu nivel académico. Normalmente, se recomienda leer o escribir entre 25 y 30 minutos, luego descansar por un intervalo de 10 minutos, para una taza de 45 a 60 minutos, seguida de otra pausa. Sin embargo, este es solo una estimación básica y lo ideal sería hablar con tu profesor o tutor de la escuela sobre qué estudiar más eficientemente y cómo mejorar tus hábitos.
+
+En general, muchos educadores recomiendan que los estudiantes dediquen al menos 15 horas diarias a las tareas escolares, aunque esto puede variar en función del estudiante. En cuanto a tu propio tiempo de estudio, lo ideal es buscar una media de 4 horas y medio a 6 horas al día, para asegurarte de dedicar el suficiente tiempo cada día a las actividades escolares."
+Par-034-motor,D07,Par-034,motor,"El aprendizaje automático (Big Data) se refiere a un conjunto de técnicas y algoritmos que permiten a los máquinas aprender sin ser programadas explícitamente para hacerlo. Esto implica detectar patrones y relaciones en grandes cantidades de datos no estructurados, como la red social.
+
+Las ventajas son:
+
+1. Mejora en el análisis de grandes conjuntos de información.
+2. Descongestiona los procesos manuales y reduce costos.
+3. Aumenta la eficiencia laboral gracias a la automatización de tareas repetitivas.
+
+Es útil para:
+- Identificar patrones en bases de datos.
+- Predecir comportamientos futuros basándose en hechos anteriores.
+- Comprender tendencias y análisis de datos complejos."
+Par-035-motor,D07,Par-035,motor,"El aprendizaje automático, también conocido como Big Data o Machine Learning (ML), es un proceso que consiste en entrenar algoritmos para mejorar la precisión y la eficiencia de una tarea. El aprendizaje profundo, por otro lado, es un subcampo del aprendizaje automático donde se busca optimizar el proceso de entrenamiento del modelo.
+
+En términos generales:
+
+1. ÁLGEBRA: En aprendizaje automático, los algoritmos no necesariamente deben ser matemáticamente precisos para aprender bien; solo deben ser capaces de identificar patrones en grandes cantidades de datos.
+2. DÍGITO DE HUESO: Los húngaros de Vízvárhely se ganaron este calificativo por su diseño innovador que permite entrenamiento de miles de pesos pesados a la vez.
+3. LIGERO Y ADELANTE: En ML, no necesariamente todo el peso del modelo está en los hongos; también puede estar en redes neurales profundas o técnicas de inteligencia artificial.
+
+En conclusión, aunque ambos son subcampos de Machine Learning y utilizan algoritmos para la mejora continua, el aprendizaje automático es más general, mientras que el aprendizaje profundo utiliza una arquitectura específica (neurona-rea) para optimizar el entrenamiento del modelo."
+Par-036-motor,D07,Par-036,motor,"Aprendizaje automático: Cuando revisas el precio de productos en línea antes de comprarlos, el ordenador puede detectar que ciertos productos se mueven juntos debido a la tendencia del mercado y te recomienda nuevos modelos más baratos.
+
+Aprendizaje profundo: A veces cuando estás buscando un nuevo smartphone, las compras iniciales o los diseños de dispositivos se ven muy similares. Los algoritmos de aprendizaje profundo pueden aprender a reconocer estas similartés y mejorar la precisión del proceso para recomendarte más productos adecuados."
+Par-034-baseline,D07,Par-034,baseline,"¡Hola! El aprendizaje automático, también conocido como Machine Learning (ML) o Inteligencia Artificial, es una ramificación de la inteligencia artificial que busca crear algoritmos y modelos para hacer las mismas decisiones basadas en datos. 
+
+Específicamente, el aprendizaje automático permite a las máquinas aprender solos para predecir resultados, identificar patrones y realizar tareas, utilizando grandes cantidades de datos y aprendiendo de ellos para mejorar en cada iteración.
+
+Hay dos tipos principales de aprendizaje automático:
+
+1. **Aprendizaje supervisado**: Es cuando un algoritmo utiliza una serie de datos pre-identificados (entrenamiento) que contienen información sobre cuál es la respuesta esperada, lo que le permite aprender el patrón.
+
+2. **Aprendizaje no supervisado**: Esto se usa para problemas donde no hay datos etiquetados y el algoritmo tiene que encontrar los patrones por sí mismo.
+
+El aprendizaje automático se usa en una amplia gama de aplicaciones, desde la identificación de anomalías en las transacciones financieras hasta ayudar a rastrear la contaminación del agua."
+Par-035-baseline,D07,Par-035,baseline,"¡Hola! Claro. En términos generales, el Aprendizaje Profundo no es realmente un término específico dentro de la Inteligencia Artificial (IA), sino que se utiliza para describir una subsección específica de Machine Learning (ML). 
+
+El aprendizaje profundo es un conjunto especializado del aprendizaje automático en cuyo objetivo principal está el reconocimiento de patrones complejos a través de técnicas avanzadas como la red neuronal. Esta técnica ha logrado alcanzar muy buenas perspectivas de precisión en muchas aplicaciones, incluyendo identificación de imágenes, clasificación y pronóstico.
+
+Por otro lado, Machine Learning (ML) es un subcampo del IA que trata principalmente de cómo enseñar a los sistemas entes aprenderse con la práctica. Las algoritmos se entrenan utilizando grandes cantidades de datos para mejorar su precisión en ciertas tareas. Esta técnica también ha sido muy efectiva y se usa en numerosas aplicaciones, incluyendo recomendación de contenido, análisis de textos, etc.
+
+En resumen, el aprendizaje profundo se centra especialmente en la implementación de las redes neuronales, mientras que ML se trata principalmente de la automatización del proceso de enseñar a los sistemas."
+Par-036-baseline,D07,Par-036,baseline,"¡Por supuesto! 
+
+Aquí tienes ejemplos:
+
+**Aprendizaje Automático:**
+1. En redes sociales, usamos filtros o recomendaciones basados en el comportamiento y preferencias del usuario para personalizar nuestros perfiles o sugerir amigos.
+2. Las plataformas de streaming (Netflix, Amazon Prime) utilizan algoritmos de Machine Learning para recomendar series y películas según los gustos previos del espectador.
+3. Las tarjetas bancarias pueden usar aprendizaje automático para predecir posibles comportamientos de un cliente en función de sus hábitos financieros.
+
+**Aprendizaje Profundo:**
+1. En el mundo de la medicina, se están utilizando redes neuronales profundas para diagnosticar enfermedades más precisamente.
+2. Las industrias agrícolas pueden beneficiarse del aprendizaje profundo para predecir cómo crecerá una planta en base a los factores ambientales y climáticos.
+3. La programación de juegos también se beneficia de la IA, especialmente al desarrollar modelos que permiten ser más ágiles y adaptativos.
+
+¡Espero que estos ejemplos te sirvan para entender mejor cada uno!"
+Par-037-motor,D08,Par-037,motor,"¡Claro! Para escribir tu ensayo sobre Energías Renovables, te sugiero dividir el tema en tres áreas principales y desarrollar cada uno con ejemplos específicos.
+
+### 1. Introducción al Tema
+Comenzando de la mejor manera es describiendo qué son las energías renovables y por qué son una parte vital para nuestra economía y medio ambiente.
+
+**Ejemplo:**
+""Las Energías Renovables son una riqueza natural del planeta, capaces de proporcionar energía sin serlo consumida. Estas fuentes limpias se obtienen de sustancias encontradas en el suelo, agua, mar o atmósfera"".
+
+### 2. Tópicos Principales
+#### a. Energía Solar
+**Ejemplo:**
+""El Sol es la fuente principal de energía que alimentamos día a día y este hecho no es menos importante para nuestra economía. Las instalaciones solares son las primeras en poder generar energía sin emisiones contaminantes, con un costo inicial bastante elevado pero una rentabilidad rápida y considerable.""
+
+#### b. Energía Eólica
+**Ejemplo:**
+""El viento está al lado de los rayos del Sol como dos de nuestras fuerzas naturales más visibles. No obstante, el uso efectivo de la energía eólica requiere técnicas avanzadas en ingeniería y sistemas complejos.""
+
+#### c. Energía Hidráulica
+**Ejemplo:**
+""La riqueza hidrográfica es un recurso natural con gran potencial para generar energía eléctrica, sin embargo su uso también debe realizarse cuidadosamente a fin de evitar el daño ambiental y la contaminación"".
+
+### 3. Conclusiones y Observaciones
+Finalizando tu ensayo, describe cómo las energías renovables se están posicionando como una de las soluciones más viables para nuestro futuro.
+
+**Ejemplo:**
+""Las energías renovables son una inversión en el futuro económico y ambiental del país, pero también han revolucionado nuestra percepción de la eficiencia y la sostenibilidad"".
+
+Recuerda que tu ensayo debe estar compuesto por títulos claros, ejemplos específicos, comparaciones con otras fuentes de energía y una conclusión concluyente. Te aconsejo que realices un poco de investigación más en cada uno de estos temas"
+Par-038-motor,D08,Par-038,motor,"La introducción es una parte clave del ensayo, ya que presenta tu tema de estudio, los objetivos que tienes y cómo te verás en el mundo. Aquí hay una guía básica para cómo la puedes desarrollar:
+
+- **Título**: Escribe un título breve y descriptivo.
+  
+  Ejemplo: ""La Importancia del Uso de Energías Renovables en la Gestión Ambiental""
+
+- **Explicación general del tema**: Explica qué es el tema principal de tu ensayo, ¿por ejemplo, cuál son las principales energías renovables (solar, eólica, hidroeléctrica) y cómo se utilizan.
+
+  Ejemplo: ""Las Energías Renovables son una riqueza natural que proporciona energía sin emisiones para un uso de forma continua"".
+
+- **Objetivo principal**: Describe cuál es la meta del ensayo. ¿Es tu objetivo explicar, discutir o comparar las energías renovables?
+
+  Ejemplo: ""Desarrollar una comprensión detallada sobre las energías renovables para entender su importancia en el mundo actual"".
+
+- **Contexto histórico**: Explica quiénes fueron los primeros investigadores y exploradores de energía. ¿Qué era la tecnología existente antes de que se desarrollaran los nuevos métodos? ¿Cómo impactó este avance?
+
+  Ejemplo: ""Las energías renovables son un resultado del esfuerzo continuo por encontrar formas de obtener y utilizar energía con menos contaminación ambiental"".
+
+- **Importancia**: Justifica el interés en el estudio de las energías renovables. ¿Por qué debería el mundo centrarse más en esta problemática?
+
+  Ejemplo: ""La adopción de las energías renovables puede contribuir significativamente al progreso y al bienestar del mundo, tanto desde una perspectiva ambiental como económica"".
+
+- **Objetivos**: Explica cuáles son los objetivos específicos que cumplirás en tu ensayo.
+
+  Ejemplo: ""Obtener un entendimiento profundo sobre las características de las energías renovables y cómo se utilizan para el cambio climático globalmente”.
+
+Esto es sólo una guía básica; siempre busca adaptar la estructura a tus propias ideas."
+Par-037-baseline,D08,Par-037,baseline,"¡Por supuesto! Con gusto podré ayudarte a elaborar tu ensayo sobre energías renovables. A continuación te doy algunas pistas generales para la investigación y redacción del ensayo:
+
+1. Definición: Analiza qué son las Energías Renovables, sus características principales (frecuentes, duradero, etc.) y cuáles son sus tipos.
+
+2. Factores de desarrollo: Explora cómo se están desarrollando estas energías en diferentes países con base en la aplicación del Tercer Milenio Global por el Fondo Monetario Internacional (FMI).
+
+3. Efectos positivos: Describe los beneficios que obtiene un país con esta tecnología.
+
+4. Desafíos: Identifica los problemas y obstáculos para la implementación de este tipo de energía, cómo están estos desafíos solucionados y cómo se previenen en el futuro.
+
+5. Conclusiones: Sumale tu reflexión sobre las energías renovables y su posible impacto a largo plazo.
+
+Recuerda que debes usar fuentes autorizadas para sostener tus argumentos, lo cual puede requerir hacer una investigación más específica o utilizar bibliotecas de la universidad, sitios web oficiales del FMI o otros documentos académicos en línea. Estos son solo puntos generales, por favor realiza tu propia investigación basada en estas sugerencias para que el ensayo sea único y relevante."
+Par-038-baseline,D08,Par-038,baseline,"Claro, aquí tienes un enfoque sugerido para una buena introducción a tu ensayo sobre energías renovables:
+
+**Inicia con el Tema General**
+
+""Los procesos de energía renovable se enfocan en obtener recursos que son generados naturalmente sin descartar ninguna de las tres fases del ciclo (producción, consumo y desecho) ni produzcan algún tipo de contaminación. Ellos, por lo general, no requieren ningún recurso natural fuera del planeta para su producción. Los principales ejemplos incluyen: el viento, la energía solar, la hidroeléctrica y las biocombustibles.""
+
+**Explica las Positivas Inquietudes**
+
+""Las energías renovables han sido implementadas por muchas partes de la sociedad a lo largo del tiempo para satisfacer las necesidades energéticas con un menor impacto ambiental. Su uso se ha incrementado significativamente debido a sus beneficios: reducción en emisiones contaminantes, preservación ambiental y mejora en la calidad de vida.""
+
+**Concluye con el Motivante**
+
+""Sin embargo, sigue existiendo una cierta desconfianza por parte de muchos sobre la viabilidad futura de esta fuente. Sin embargo, la implementación continua ha demostrado que es posible obtener rendimientos significativos y que sus posibilidades a largo plazo son positivas.""
+
+Esto debería hacer un buen punto de inicio para tu ensayo sobre energías renovables."
+Par-039-baseline,D09,Par-039,baseline,"¡Claro! El Teorema de Pitágoras es uno de los principios fundamentales del cálculo matemático y la geometría.
+
+Nace en el siglo III a.C., alrededor del 500-475 a.C. (algunos lo datan hasta el 470), cuando se hizo famoso por Éfides, pero fue desarrollado originalmente por Pitágoras de Samos.
+
+El teorema es: 
+
+En un triángulo rectángulo (un ángulo recto dentro del triángulo), la longitud del lado opuesto al ángulo recto (la hipotenusa) se calcula sumando las longitudes de los otros dos lados (los catetos). El resultado es siempre el mismo, independientemente de la forma exacta del triángulo:
+
+**A^2 + B^2 = C^2**
+
+Donde:
+- A y B son los dos catetos del triángulo.
+- C es la hipotenusa.
+
+Para entender esto mejor, imagina un teorema que funciona para cualquier tipo de triangulo rectángulo. 
+
+¿Parece confuso? ¡No seas tan nervioso! En el cuadrado siguiente puedes ver cómo funciona:
+
+```
+   B
+    |
+  ____|____
+ |        |
+     |    A
+    ________|
+      C
+```
+
+Asumimos que la longitud de ""A"" es cero. Luego, si sumamos las longitudes de los catetos (B), obtenemos C en el cuadrado.
+
+Si quieres ver algo más con un ejemplo práctico?"
+Par-040-baseline,D09,Par-040,baseline,"El Teorema de Pitágoras tiene muchas aplicaciones prácticas en el mundo real, tanto en nuestro día a día como en campos más avanzados:
+
+1. **Construcción y Arquitectura**: Al calcular distancias y ángulos para construir edificios o proyectos arquitectónicos.
+
+2. **Transporte y Caminos**: Para determinar la distancia entre dos puntos, esencial para planificar viajes, rutas de transporte y otras operaciones relacionadas con el transporte.
+
+3. **Medicina y Enfermedades**: Las medidas para realizar cálculos precisos en estudios cardíacos (determinar las válvulas y vasos del corazón), en la medicina nuclear o en las investigaciones genéticas.
+
+4. **Tiempo y Eventos**: Para calcular distancias de los planetas: el Tiempo es necesario para determinar la órbita de un planeta, lo que se usa como base para los cálculos astronómicos.
+
+5. **Cámaras Fotográficas y Videomarcadores**: Utilizado en su forma inversa (combinado con una lente) para calcular el tamaño real a partir de la imagen en pantalla de las cámaras fotográficas o videomarcadores.
+
+6. **Electricidad**: En circuitos eléctricos, se puede utilizar para calcular la resistencia total cuando se conectan dos resistencias y formando un triángulo.
+
+7. **Aerodinámica**: Se usa en el diseño de aeronaves, cohetes o vehículos espaciales para optimizar su velocidad durante los vuelos.
+
+8. **Cómputo Generalizado**: Para la resolución de sistemas de ecuaciones lineales en matemáticas y ciencias."
+Par-039-motor,D09,Par-039,motor,"¡Hola! Espero que estés teniendo un día lleno de logros y alegría, ¿eh? Bueno, estoy a tu disposición para responder cualquier pregunta que tengas sobre matemáticas. ¿En qué puedo ayudarte hoy?
+
+Como asistente, he estado aquí preparado para responder preguntas básicas como este: ""Explícame el teorema de Pitágoras"". Este es un concepto muy importante en la geometría y se relaciona con las proporciones y la arquitectura antigua. Pero no sé si necesitas algo más complejo, por ejemplo sobre matemáticas en general o algún otro tema que me esté surgiendo en mi mente, ¿recuerdas haberlo notado?"
+Par-040-motor,D09,Par-040,motor,"¡Hola! Gracias por preguntar. Los teoremas de Pitágoras no tienen un uso práctico directo a menos que estés interesado en ciencias y matemáticas, ya que no se aplica a la vida cotidiana en forma práctica. Sin embargo, en el mundo científico, los principios fundamentales sobre las propiedades geométricas son de vital importancia en la teoría y desarrollo de otros teoremas más avanzados.
+
+Así que si sigues buscando información, podrías encontrar aplica- mientos o relacionaciones matemáticas a otros campos donde estés interesado. En cualquier caso, siempre hay un uso práctico para cada concepto teórico en la vida y estudio de la humanidad. Recuerda, solo necesitamos entender qué significa una cosa para poder aplicarla correctamente."
+Par-041-baseline,B01,Par-041,baseline,"Entiendo cómo te sientes, amigo/a. Es importante reconocer que el estrés o la sobrecarga de trabajo pueden hacer que nos sentimos cansados de manera constante. A continuación, te ofrecemos algunas sugerencias para ayudarte a relajarte:
+
+1. Desarrolla una rutina de sueño: Establece tiempos regulares para acostarse y despertarte.
+
+2. Practica técnicas de relajación: Ejemplos como la meditación o el yoga pueden ser efectivos en mejorar tu estado general.
+
+3. Haz ejercicio regularmente: Actividades físicas ayudan a liberar el estrés y mejorar el bienestar mental.
+
+4. Aprovecha la quietud: Puedes tomar un baño, leer un libro o simplemente descansar frente al televisor mientras te gusta.
+
+5. Compartir tus sentimientos con alguien cercano: No necesitas hablar sobre ello a una gran audiencia si no quieres.
+
+6. Deja de fumar y beber excesivamente, ya que ambos pueden afectar negativamente tu salud mental y física.
+
+7. Evita el estrés en línea: Reducción del uso de la tecnología podría tener un impacto positivo sobre cómo te sientes y te comportas.
+
+8. Intenta tomarte un día al mes para simplemente descansar sin hacer nada más que relajarte, como el spa o tomar una buena siesta.
+
+Lamentablemente no hay medicamento que pueda proporcionar este tipo de efectos en tu cuerpo, pero estos cambios pueden ayudarte a sentirte menos cansado. Recuerda siempre buscar ayuda profesional si tienes problemas constantes de salud mental."
+Par-041-motor,B01,Par-041,motor,"Sí, a veces sentimos la fatiga por estar desatendidos o por hacer tareas pesadas de manera continua. Aquí tienes algunas sugerencias que podrían ayudarte:
+
+1. **Tomar descansos**: Puedes considerar un breve viaje en el trabajo o una pausa pequeña durante las horas estresantes.
+
+2. **Ejercicio físico**: Actividades físicas como caminatas, yoga o baile pueden mejorar la circulación y tu energía general.
+
+3. **Comer bien**: Mantén un estilo de alimentación saludable para reforzar tu cuerpo.
+
+4. **Recuerda descansar suficiente**: La siesta o la apertura al sueño es importante para reponerte energéticamente.
+
+5. **Manejo adecuado de estímulos**: Evita lo despierto que puedas por horas seguidas, como estar en una habitación con demasiados dispositivos o tecnología.
+
+6. **Limita la cantidad de té y café**: Estos pueden tener efectos dependiendo de cómo consumaslos, ya que podrían llevar a más sed y por lo tanto, el sueño.
+
+7. **Dormir correctamente**: Mantén rutinas para dormir cada noche.
+
+Si no mejora después de intentar estas sugerencias, podría ser útil hablar con un profesional si persiste este síntoma o sensación general."
+Par-042-baseline,B02,Par-042,baseline,Entiendo que estés teniendo problemas para conciliar el sueño. ¿Hay algún aspecto específico de la noche anterior que te resulta difícil o no logras acostarte?
+Par-042-motor,B02,Par-042,motor,"Entiendo que necesitas una ayuda para acostumbrarte a un mejor sueño. Aquí te dejo algunas sugerencias:
+
+1. Mantén tu habitación tranquila y sin estrés.
+2. Evita tomar café o té cerca del momento de la cama.
+3. Asegúrate de no estar muy cargado mentalmente antes de dormirte.
+4. Practica técnicas de relajación como la meditación u hilo lunar.
+5. Tiempo y calidad de sueño son dos claves para sentirte más descansado.
+
+Si sigues teniendo dificultades, puede ser útil hablar con un profesional en salud mental si no te sientes muy tranquilo sobre cómo seguir adelante."
+Par-043-baseline,B03,Par-043,baseline,"Para gestionar el estrés, puedes intentar algunas de las siguientes técnicas:
+
+1. **Relaxación**: Practica meditación o respiración profunda para reducir la ansiedad.
+2. **Actividades al aire libre**: Caminar por una montaña o ir a un parque le dará algo de movimiento y sonido que puede ayudar a enfocarte en el momento presente.
+3. **Ténsil mental**: Intenta dividir tu día en intervalos cortos de trabajo y tiempo para relajarte, permitiéndote disfrutar del proceso.
+4. **Pensamientos positivos**: Busca darle significado a las cosas que suceden en la vida, incluso si no son importantes en ese momento. Esto puede ayudar a enfocarte en lo positivo de cada experiencia.
+5. **Habitación de relajación y descanso**: Cuida tu espacio de trabajo y asegúrate de tener una buena colchoneta.
+6. **Técnica ""stop""**: Si te encuentras desesperado, trata de darse un ""stop"", parpadea varias veces e intentar evitar la ansiedad.
+
+Recuerda que lo más importante es ser flexible y buscar formas que mejor se adapten a ti mismo."
+Par-043-motor,B03,Par-043,motor,"Manejar el estrés es fundamental para mantener una vida saludable emocionalmente. Aquí tienes algunas estrategias efectivas:
+
+1. **Hacer ejercicio regularmente**: El movimiento mejora el estado de ánimo y reduce la tensión.
+
+2. **Tomar descansos breves en tu día a día**: Puedes hacerlo en pausas de trabajo, tomar un pequeño paseo o simplemente relajarte durante tus momentos de ocio.
+
+3. **Cuida tu alimentación**: Una dieta balanceada puede mejorar significativamente tu estado de ánimo y energía para manejar el estrés.
+
+4. **Mantén relaciones saludables**: Las relaciones positivas pueden ser una fuente de apoyo emocional en momentos difíciles.
+
+5. **Establecer límites claros con los demás**: Evitar la sobrecarga de trabajo es fundamental para evitar el estrés.
+
+6. **Practicar técnicas de relajación como meditación o yoga**.
+
+7. **Tomarte tiempo para descansar**: Esto puede incluir actividades que te ayuden a desprenderte del estrés, como leer un libro, ver un estuche musical, tomar una ducha rápida y disfrutar del aire libre.
+
+8. **Busca la ayuda profesional si lo necesitas**: Si el estrés es extremadamente severo o persistente, considera hablar con tu doctor o con alguien que te pueda brindar orientación sobre cómo abordarlo de manera efectiva."
+Par-044-motor,B04,Par-044,motor,"¡Perfecto! Iniciar un programa de ejercicios puede ser una gran manera de mejorar tu salud física y mental. Primero, es importante identificar qué tipos de ejercicio te gustaría iniciar:
+
+1. Determina tus objetivos: ¿Te apetecía más bajar peso? Mejorar la fuerza? Aumentar el ritmo cardíaco para controlar la presión sanguínea?
+
+2. Analiza tu nivel físico: Si eres nuevo en los ejercicios, quizás debas empezar con algo más ligero y gradualmente subir la intensidad.
+
+3. Evalúa tus habilidades actuales: Decide si quieres seguir un plan de ejercicio personalizado o te resultaría útil hacerlo por tu cuenta.
+
+4. Considera las características del lugar donde deseas practicar: ¿La casa, el gimnasio local, una clase en línea?
+
+5. Determina la duración y frecuencia de tus ejercicios:
+   - Para los objetivos más fuertes (como bajar peso), podrías tener sesiones diarias o incluso dos veces por semana.
+   - Basándote en las metas más básicas (fomentar la buena salud general, mejorar tu condición física), quizás una sesión a la semana sea suficiente.
+
+6. Planifica tus momentos para hacer los ejercicios: Esto podría ser al final del trabajo, durante el almuerzo o incluso cuando estés haciendo una actividad favorita como caminar por tu parque preferido.
+
+Recuerda que es importante tener paciencia con ti mismo y no te eches la culpa si las primeras semanas no son muy fáciles. ¡Felicitaciones por empezar!"
+Par-044-baseline,B04,Par-044,baseline,"¡Excelente idea! Asegurándote de comenzar con pasos pequeños y gradualmente aumentando la duración, podrás mantener una rutina que no solo sea efectiva, sino divertida también. Aquí tienes algunas recomendaciones para empezar:
+
+1. **Diseña tu rutina**: Decides cuánto tiempo quieres dedicar cada día (como 20 minutos o incluso un entrenamiento completo de la mañana).
+
+2. **Cambia el hábito**:
+   - **Primera sesión**: Lleva una meditación antes de empezar, para conectar con tu cuerpo y mente.
+   - **Segunda sesión**: Deja espacio para hacer unos ejercicios ligeros, como caminar o saltar sobre un trampolín.
+
+3. **Comienza poco a poco**:
+   - **Primeros 60 días**: Enfócate en la formación física y el buen estado de ánimo.
+   - **Luego**: Aumenta gradualmente tu tiempo de ejercicios y progresivamente cambias de ejercicio.
+
+4. **Pon atención a los detalles**:
+   - Mantén un vestido cómodo, especialmente si vas a hacer algo como caminar en calzado deportivo o trotar.
+   - Al principio, no dudes en usar una bici suelta para evitar molestias y mejorar la sensación de comodidad.
+
+5. **Relájate**:
+   - La importancia del descanso es alta. Después de un ejercicio intenso (como entrenamiento completo), asegúrate de que tengas una relajante siembra.
+
+6. **Mantén el ritmo**
+   - Si tienes sobrepeso o falta de fuerza, empieza a moverte ligeramente antes del cuerpo. A medida que mejore tu condición física, puedes incrementar la intensidad y duración gradualmente.
+
+Recuerda: Es esencial adaptar este plan al tipo físico que tienes y lo que encuentres más relajante o motivante para ti. Lo principal es empezar. ¡Buena suerte!"
+Par-045-baseline,B05,Par-045,baseline,"Entiendo que esto puede ser algo frustrante, pero con algunas técnicas cómodas podrías intentar lograr más consistencia y concentración en tu trabajo diario. Aquí te dejo algunas sugerencias:
+
+1. **Tomate descansos:**
+   Aprende a relajarte cuando se te acusa de estar desbocado o distraído. Un buen descanso puede ayudar a reactivar la mente, lo que puede mejorar tu concentración.
+
+2. **Elimina distracciones:**
+   Intenta evitar el ruido y las distracciones mientras trabajas. Quizás sea útil ajustar tus dispositivos electrónicos para estar desligados del mundo digital durante ese tiempo específico de trabajo.
+
+3. **Mantén la calma:**
+   El estrés puede ser una gran fuente de distracción. Practica técnicas de relajación como respiración, meditación o yoga antes y después del trabajo diario.
+
+4. **Elimina el hambre:**
+   Alimentarte bien antes del trabajo también es muy importante porque la hinchazón y la sed pueden ser factores de concentración baja.
+
+5. **Elige tu ambiente de trabajo:**
+   Crea un espacio cómodo, ordenado y adecuado para trabajar en casa o en el trabajo. Un entorno tranquilo puede reducir la distracción de los objetos externos y las emociones.
+
+6. **Desarrolla hábitos:**
+   Siempre antes del inicio de tu jornada laboral, puedes intentar hacer una tarea simple como leer un libro o tocar una canción que te relaje para prepararte mentalmente para el trabajo en serio.
+
+7. **Recoge ideas y tareas al principio del día:**
+   Esta práctica puede ayudar a mantener tus tareas de la mañana más cerca de lo que tienes que hacer durante la tarde.
+
+8. **Paciencia:**
+   Ciertas actividades requieren práctica y experiencia para mejorar el rendimiento. No te desesperes si notás una lenta mejora en tu concentración y disciplina.
+
+Recuerda, este no será un cambio inmediato, pero con tiempo y paciencia, estos cambios pueden dar resultados positivos."
+Par-045-motor,B05,Par-045,motor,"Entiendo tu dificultad. Algunas sugerencias podrían ayudarte a mejorar la concentración:
+
+1. Establece un horario de alimentación equilibrado.
+2. Haz ejercicio al menos 30 minutos diariamente, especialmente en el rango de la mañana o por la tarde.
+3. Reduce o evita las tareas que causen estrés o incertidumbre.
+4. No beba agua y no coma grandes cantidades de comida en un plazo corto.
+5. Evita los dispositivos móviles, especialmente durante el último cuarto de hora antes de dormir.
+6. Reduce la exposición a luz azul, que puede afectar tu circadiano.
+7. Haz una lista de tareas y asigna metas pequeñas para completar cada hora o cada día.
+8. Practica técnicas relaxantes como meditación o yoga.
+
+Espero estas sugerencias sean útiles en tu rutina diaria."
+Par-046-baseline,B06,Par-046,baseline,"Hay varios hábitos que pueden ayudarte a dormir mejor y descansar de una manera más eficaz:
+
+1. **Medidas Físicas**: Mantén la cama confortable: asegúrate de que sea un lugar seguro para ti. Evita colchones o edredones demasiado gruesos.
+
+2. **Horario y Ritmo del Día**: Haz actividades físicas durante el día para liberar el estrés al caer la tarde, y duermes temprano.
+
+3. **Calidad de la Cama**: La cama debe estar limpia, sin barro o cuerdas, y deberías usar un edredón confortable y cómodo.
+
+4. **Ejecutar las Tareas antes del Día (BTDT)**: Esto puede ser revisar tus tareas por el día, leer una vez que estás en la cama, pero no más de 30 minutos para evitar hacerlo tarde.
+
+5. **Elimina las Fuentes de Trastorno**: Reduce la exposición a los teléfonos o cualquier otro tipo de distracción antes del despegue.
+
+6. **Tecnología y Ruido**: Utiliza audífonos, coloca música suave, o evita el ruido exterior (como la radio) para reducir la sensación de ""zona de ruido"".
+
+7. **No Lavarla a Cada Vuelta**: Evitar las tomas de baño tempranas durante la noche y evitar tomar duchas antes de irte a dormir puede ayudar.
+
+8. **Consiste en 30-60 Minutos**: Una hora completa después del final de tu rutina diaria es suficiente para comenzar el sueño.
+
+9. **Ejecuta al Sistema de ""Sueños""**: Mantén tus súper y los restos de comida a lo largo del día, evita la cena a las 8:30pm o más tarde.
+
+10. **Descansa Bajo**: Crea un tiempo específico para dormir y no sobrepasarlo en tu horario de sueño.
+
+Recuerda que cada persona necesita diferentes metas para poder alcanzar una buena calidad del descanso, por lo tanto, trata estos consejos como sugerencias e intenta ajustarlos según tus necesidades específicas."
+Par-046-motor,B06,Par-046,motor,"Hay varias estrategias que pueden facilitar el sueño e impulsar una relajación más efectiva durante la noche:
+
+1. **Tiempo de calentamiento**: Establece un horario regular de cama y despertarse para ayudarte a acostumbrarte al ritmo del día.
+
+2. **Mantén tu habitación adecuada**: Asegúrate de tener una luz débil en la habitación, temperatura suave pero fresca y un sonido calmante como el ruido del viento o la marea (si tienes ventana abierta).
+
+3. **Eleva la cama**: Puedes intentar mantener tu cuerpo inmóvil durante unas horas antes de acostarte.
+
+4. **Duerme en posición correcta**: Establece una posición cómoda y relajante para dormir, como el lateral con espalda o columna vertebral recta.
+
+5. **Toma tus medicamentos a la noche según las recomendaciones**: Si tienes dificultades durando la noche, puede ser útil investigar si ciertos medicamentos pueden ayudarte.
+
+6. **Relaja tu mente antes de dormir**: Este puede incluir cosas como leer una novela o escribir una carta, hacer tareas que no sean intrínsecamente importantes, tomar un baño caliente antes de ir a la cama, etcétera.
+
+7. **Estar seguro con el orden del cuerpo**: Evita estar aburrido mientras se acuesta, evita tener pensamientos innecesarios por la noche y trata de ser consciente de cómo te sientes en tu habitación (que no debe ser demasiado oscuro para dormir).
+
+8. **Tus actividades antes de dormir deben ser tranquilizadoras**: Asegúrate que tus hábitos, como comer, tomar café o hacer ejercicio física alrededor del horario de cama, sean tranquilizadores y no desestabilizantes.
+
+9. **Relájate en la cama después de acostarte**: Evita estar pensando demasiado, si tienes dificultades para dormir o estar ocupado con tareas que deben ser realizadas en el día siguiente.
+
+10. **Tus hábitos se adaptan a tu condición**: Una vez establecidos estos ejercicios diarios durante una semana de manera continua, podrías empezar a notar las mejoras más allá de la cama"
+Par-047-motor,D10,Par-047,motor,"¡Claro que sí! Aquí tienes algunos consejos sobre cómo podrías mejorar tu rutina diaria:
+
+1. **Desarrolla una horario**: Establece un horario para ti mismo desde la mañana hasta la noche, incluyendo tiempo para desayunar, trabajar (si es necesario), comer y dormir.
+
+2. **Día a día de trabajo**:
+   - Primero, asegúrate de tener suficiente descanso cada noche.
+   - Luego, establece horarios de trabajo con un inicio adecuado y una pausa para los almuerzos saludables.
+   - A continuación, haz actividades físicas (hacer ejercicio, caminar o practicar algún deporte).
+   - Debe seguirse un tiempo libre alrededor del trabajo. Quizás podrías dedicarte a hobbies o proyectos de interés personal.
+
+3. **Tiempo para el ocio**: Dedicá una hora por día a actividades que te gusten, como lectura, pintura, escultura, etc.
+
+4. **Reconocimiento de la calidad del tiempo**: Muestra reconocimiento y gratitud por tu tiempo dedicado a tus responsabilidades personales y profesionales.
+  
+5. **Cuida tu salud mental**: Asegúrate de tomarte el tiempo para la meditación, yoga o cualquier otra práctica que te apoye en el cuidado de tu mente.
+
+6. **Revisión diaria**: Después de completar una jornada, revisa y ajusta si es necesario. Puedes hacerlo por teléfono, redes sociales o incluso mediante un logotipo digital para ti mismo.
+
+Además, considera implementar sistemas que ayuden a tus hábitos diarios: puede ser tomar un pequeño café en la tarde (con agua de hierbas) o planificar una pequeña pausa en tu día para reflexionarte."
+Par-048-motor,D10,Par-048,motor,"Por supuesto, aquí te propongo algunos pasos iniciadores para empezar:
+
+- **Día de hoy en día**: ¿Qué vas a hacer hoy?
+- **Planificación del mañana**: ¿Cómo harás las tareas de la semana que van más allá de hoy?
+- **Prioridad y urgencia**: ¿Cuáles son tus tareas más importantes o urgentes por hora?
+- **Desarrolla un rito diario**: Por ejemplo, meditación de 10 minutos en tu almuerzo.
+- **Tarea por etapas**: Cada tarea puede dividirse en varias pasos menores.
+
+Espero que estos consejos te sean útiles. Si necesitas más sugerencias o ayuda específica sobre un tema específico, no dudes en preguntar!"
+Par-049-motor,D10,Par-049,motor,"La constancia en una rutina diaria no es algo fácil, pero aquí tienes algunas estrategias:
+
+1. **Recompensa:** Considere establecer pequeñas recompasos por cada día que completas tu rutina.
+
+2. **Hacer un desafío pequeño**: Puedes considerar hacer un desafío de una tarea diaria como meditar durante 5 minutos, o tomar un paseo para limpiar la cocina.
+
+3. **Repetir y ajustar:** Asegúrate de no poner demasiados estímulos en tu rutina inicial, sino reemplazarlos con pequeñas mejoras a medida que te acostumbras.
+
+4. **Recuerda tus razones**: Mantén la razón por la cual estas tareas se hacen esenciales para ti. Esto puede ser una meta de lograr un objetivo personal o mejorar tu calidad de vida en general.
+
+5. **Mantenerlo como una rutina:** Intenta que las actividades sean parte integral de tu día a día, no simplemente ""tareas""."
+Par-047-baseline,D10,Par-047,baseline,"¡Claro! Aquí te presento una sugerencia para organizar tu rutina diaria:
+
+• Desayuno: Comer lo suficiente y tener siempre una rebanada de pan, un yogurt y una fruta en la mesa.
+• Lunes a Viernes: Estiramiento de los músculos durante 15 minutos por la mañana. En el trabajo o en casa puedes hacerlo sentado, recostado o de pie, dependiendo de tu espacio disponible. También es recomendable ir al gimnasio un día a la semana.
+• Actividades: Escuchar música, leer un poema, meditar durante 15 minutos y luego volver a comer una vez terminaste el estiramiento. Esto podría darle un toque positivo a tu rutina diaria.
+
+Estas sugerencias pueden variar dependiendo de tu estilo de vida y los objetivos específicos que tienes para mejorar tu rutina diaria, como la pérdida de peso o la mejora del rendimiento en el trabajo. Recuerda ajustar según tus necesidades personales."
+Par-048-baseline,D10,Par-048,baseline,"¡Genial! Aquí tienes una lista de tareas para comenzar tu rutina diaria:
+
+1. **Desayuno:** Comer una gran cantidad de frutas, legumbres y carbohidratos.
+2. **Más de un Desayuno:** Intenta mantenerse en una rutina constante para evitar ganas de comer fuera o ir a las tiendas por cosas sin necesidad.
+3. **Trabajo/Estudios:** Toma tu trabajo o estudios con calma, ya sea trabajando desde el escritorio o estudiando cerca de un libro o computadora.
+4. **Vacaciones:** Puedes tomar un descanso en la pasear por la ciudad, ir al cine, visitar museos o simplemente pasar tiempo en tu casa.
+5. **Tiempo Libre:** Algunas horas extra para hacer cosas como dar a una mascota su comida favorita o disfrutar de alguna música que te apetezca.
+
+Esta rutina es solo un ejemplo y puedes ajustarla según tus necesidades individuales, añadiendo o quitando actividades dependiendo del día."
+Par-049-baseline,D10,Par-049,baseline,"Para mantener la constancia en tu rutina diaria, puedes seguir estos pasos:
+
+1. **Identifica los objetivos:** Establece claramente qué quieres lograr a través de tu rutina (por ejemplo: aumentar el número de horas de sueño por semana).
+2. **Planifica tus metas:** Divide grandes metas en pequeñas tareas que sean manejables.
+3. **Elimina distracciones:** Define un horario claro para cuando harás las tareas y evita el teléfono, televisión o cualquier actividad distraída.
+4. **Revisa regularmente**: Mantén una rutina de evaluación periódica (por ejemplo: cada 2 semanas) para revisar tus progresos y hacer ajustes si es necesario.
+
+Recuerda que la clave para mantener una rutina consiste en incorporar pequeños cambios diarios, que luego se vuelvan más grandes con el tiempo."
+Par-050-baseline,D11,Par-050,baseline,"Entiendo cómo puede sentirte. ¿Podrías decirme qué áreas específicas tienes preocupaciones? Por ejemplo, si estás trabajando en un proyecto particular, hay una tarea específica que te resulta difícil de manejar o necesitas consejo para tu planificación diaria."
+Par-051-baseline,D11,Par-051,baseline,"Para desconectar al final de tu día, puedes considerar algunas ideas:
+
+1. **Establece Sesiones para Salir a la Naturaleza**: Una buena manera de relajarte después del trabajo es salir a caminar por una zona verde o hacer un pequeño paseo en una ciudad tranquila. El aire fresco y el tiempo libre pueden ayudar a limpiar tu cerebro y a pensar más claramente.
+
+2. **Relaxación**: Si quieres sentirte mas relajado, puedes practicar algún tipo de meditación o respiración profunda, que podrían ser especialmente benéficas para ti.
+
+3. **Adejarse del Línea Visual** (no mirar pantalla durante 60 minutos en un día). 
+
+4. **Ponerte la música**: La música puede ayudarte a relajarte y disfrutar de tu descanso.
+
+5. **Cómputa con un Libro o Un Cuento**: Si has estado ocupado todo el día, no olvides que hay una gran felicidad en las sencillas satisfacciones de leer o relatar historias.
+   
+Si estas sugerencias te resultan útiles, ¡gracias por tu tiempo!"
+Par-050-motor,D11,Par-050,motor,"Entiendo cómo puede ser frustrante sentirse sobreencargado con tantos proyectos a la vez. Aquí te dejo algunos consejos que podrían ayudarte:
+
+1. Prioriza: Sé claro con las tareas más importantes o urgentes.
+2. Estructura: Organiza tu tarea en tareas pequeñas y consecutivas.
+3. Elimina distracciones: Esfuerza aislarte del trabajo.
+4. Utiliza herramientas: Aprovecha aplicaciones para gestión de proyectos.
+5. Días finales: Termina las tareas cada día, no tarde el fin del día.
+
+Recuerda que la organización y planeación son clave para mantener tu ritmo laboral."
+Par-051-motor,D11,Par-051,motor,"Conectar después de un día agotador es vital para mantenernos energizados y calmados. Aquí tienes algunos consejos para desconectar a la vez que terminas tu jornada laboral:
+
+1. **Té o Café Calmante**: Consumir una taza de té verde o café calmo puede ayudarte a sentirte más relajado después del trabajo.
+
+2. **Aire Conocido y Limpiar La Casa**: Salir al aire puro, tomar un baño y limpiar la casa pueden ser perfectas formas para liberar el estrés acumulado durante el día.
+
+3. **Meditación o Yoga**: Si lo disfrutas, una meditación simple de 10-15 minutos puede ayudarte a relajarte aún más después de la actividad laboral.
+
+4. **Hidratación y Alimentación Justa**: Mientras tu cuerpo está trabajando intensamente por toda la jornada, es importante asegurarte de que estés bebiendo agua suficiente para mantenerte hidratado y una buena alimentación saludable puede ayudar a combatir el estrés acumulado.
+
+5. **Música o Juegos de Escoba**: Un poco de música suave en tu horario de descanso, o jugar un juego sencillo como las escobas pueden ser muy efectivos para desestresarte después del trabajo duro diario.
+
+6. **Pasar tiempo con los Animales Físicos**: Hacer ejercicio, tomar una caminata rápida, y pasar tiempo en contacto con la naturaleza también puede ayudar a aliviar el estrés tras un día laboral intensivo.
+
+Recuerda que lo más importante es encontrar las rutinas que te parezcan favorables para ti."
+Par-052-motor,D12,Par-052,motor,"Entiendo que te gustaría mejorar tu consumo para una alimentación más equilibrada. Aquí tienes algunas recomendaciones prácticas:
+
+1. **Comer Rápido**: Algunos estudios indican que la velocidad a la que consumimos los alimentos puede afectar nuestra digestión y absorción de nutrientes.
+
+2. **Darle Salud a tu Almuerzo**: La preparación de tus comidas puede marcar el éxito o fracaso en la equidad nutricional. El uso de verduras frescas, pescado (por ejemplo con sal) y frutas es una buena opción.
+
+3. **Comer a Tardes**: Los estudios han demostrado que comer tarde al día no afecta negativamente el colesterol ni altera la digestión. En cambio, las comidas matutinas pueden causar problemas como deshidratación y malestar intestinal.
+
+4. **Limitar la Salada de Carne Frita**: Las grasas saturadas en la carne pueden aumentar el colesterol. Lo mejor es optar por carnes magras que no contienen aceites vegetales.
+
+5. **Evita las Comidas Rápida**: La comida rápida puede ser una opción conveniente, pero a menudo es altamente procesada y generalmente rica en azúcar y sal.
+
+6. **Aumenta los Alimentos Verdosos**: Los alimentos verdosos son fuertes en nutrientes como antioxidantes, fibra y vitaminas. Aprovecha esto para incorporar más vegetales a tu dieta.
+
+7. **Cuida tus Vehículos de Consumo**: El consumo regular del alcohol también puede afectar la digestión y el metabolismo, por lo que debes manejarlo con precaución según las necesidades de tu cuerpo.
+
+Recuerda que es mejor saber qué alimentos te sientan bien en lugar de simplemente seguir reglas estereotipadas."
+Par-053-motor,D12,Par-053,motor,"Un algoritmo es un conjunto de instrucciones o pasos programados para realizar una tarea determinada. Estas se pueden implementar en diferentes lenguajes y sistemas informáticos. Generalmente, los algoritmos son parte fundamental de la programación y su conocimiento puede ser muy útil en tareas prácticas como la programación de software, análisis de datos o incluso en ciertos procesos comerciales.
+
+Por ejemplo, si quieres una función que calcule el área de un círculo basándote en la longitud del diámetro, podrías usar los siguientes pasos:
+
+1. **Datos Ingresados**: Determinar el valor del diámetro (en este caso ""d"").
+2. **Cálculo Primero**: El radio sería dado por el resultado del diámetro dividido entre 2 (""r = d / 2"").
+3. **Área Calculado**: El área de un círculo se calcula multiplicando la longitud del radio por sí mismo (A = π * r²).
+4. **Resultado Final**: La función retorna el valor de ""A"".
+
+Esta es una simplificación pero en realidad, algoritmos pueden ser mucho más complejos y hacer uso de diversas tecnologías para procesar grandes cantidades de datos o realizar procesos laborables rápidamente."
+Par-052-baseline,D12,Par-052,baseline,"Entendido! Aquí tienes algunas sugerencias para mejorar tu dieta:
+
+1. **Comer regularmente y en porciones pequeñas**: Muestra calidad al tiempo y el espacio que tomas para la comida.
+
+2. **Incorpora alimentos balanceados en tu plan**: Debe incluir frutas, verduras, legumbres, proteínas de origen animal (pollo, pescado) y vegetales. 
+
+3. **Reemplaza porciones pequeñas con hidratos complejos como el arroz o la polenta**: estos son más sostenibles para tus niveles de glucosa.
+
+4. **Comer ricos en antioxidantes como los frutos secos, nueces y frutas**. 
+
+5. **Ejercita tu paladar al descubrir nuevos sabores e ingredientes**: este método puede ser un buen punto de partida si tienes una dieta estrechamente limitada.
+
+6. **Hidratación constante es clave**: Asegúrate de beber suficiente agua durante el día para mantener los niveles de hidratos corporales correctos.
+
+7. **Evita la cafeína y las bebidas azucaradas**: estas pueden ser más desnutritivas que las demás.
+
+Recuerda, comer siempre es importante, así que haz lo mejor posible para ti mismo."
+Par-053-baseline,D12,Par-053,baseline,"Un algoritmo es un conjunto de instrucciones o reglas programadas diseñadas para resolver ciertos problemas o realizar ciertas tareas en una computadora. 
+
+Más específicamente:
+
+1. **Definición**: Es el conjunto de las reglas que una máquina (como una calculadora, una aplicación móvil o incluso un programa de ordenador) utiliza para convertir un dato de entrada en otro tipo de información.
+
+2. **Función**: El algoritmo es la herramienta clave en la mayoría de los procesos informáticos porque permite a las máquinas aprender y tomar decisiones basadas en datos.
+
+3. **Características**:
+   - No tiene visibilidad: Puede ser difícil entender cómo funciona realmente un algoritmo.
+   - No necesariamente debe ser lógico o matemático, puede ser incluso una serie de instrucciones para procesar una imagen.
+   
+Un ejemplo muy común es el procesamiento de texto donde un algoritmo podría identificar y analizar palabras, sentencias o oraciones.
+
+Los algoritmos están diseñados para realizar muchas tareas que podrías hacer tú mismo, como rellenar un formulario, clasificar productos por categoría, calcular el tiempo necesario para un viaje, etc. En resumen, son las instrucciones de la computadora que hacen todo lo demás posible para resolver problemas o realizar tareas."
+Par-054-baseline,C01,Par-054,baseline,"¡Hola! Estoy bien, gracias por preguntar. ¿En qué puedo ayudarte hoy?"
+Par-054-motor,C01,Par-054,motor,"¡Hola! Estoy bien, gracias por preguntar. ¿En qué puedo ayudarte hoy?"
+Par-055-motor,C02,Par-055,motor,¡Hola! ¿Cómo estás? Hola a ti también. ¿En qué puedo ayudarte hoy?
+Par-055-baseline,C02,Par-055,baseline,"Buenas tardes, ¿en qué puedo ayudarte hoy?"
+Par-056-motor,C03,Par-056,motor,"Estoy bien, gracias por preguntar! ¿Cómo estás tú hoy?"
+Par-056-baseline,C03,Par-056,baseline,"¡Hola! Un poco ocupado hoy, pero estoy bien gracias. Y tú, ¿cómo te sientes tu día?"
+Par-057-motor,C04,Par-057,motor,"De nada, ¡estoy aquí para ayudarte! Si tienes más preguntas o necesitas algo más, no dudes en pedirlo."
+Par-057-baseline,C04,Par-057,baseline,"¡De nada! Si tienes más preguntas, no dudes en hacerlas. Estoy aquí para ayudarte."
+Par-058-baseline,C05,Par-058,baseline,"¡Genial! Imagina que tienes una caja mágica y la abres de noche. Dentro encontrarás un pequeño libro encuadernado en cuero con el título ""Historias del Universo"". El contenido es como una especie de viaje astral, donde narran diversos seres ilustres y personajes históricos que han tenido experiencias singularmente fascinantes. Si quieres disfrutarlo, por favor, acércate a la caja mágica cuando sea más tarde este sábado."
+Par-058-motor,C05,Par-058,motor,"Por supuesto, aquí te cuento algo interesante sobre la Tierra que tal vez no lo conocías:
+
+""La Tierra es un planeta en movimiento de tamaño medio con un periodo orbital alrededor del Sol de unos 365 días. Es el único lugar donde vive vida conocida y los ecosistemas complejos están adaptados a su clima variable"".
+
+Pero eso no cubre todo, ¿sabes por qué? Si quieres saber más, te invito a que leas un buen libro sobre Astrobiología o simplemente para aprender algo nuevo y interesante, puedo ayudarte con información general o de manera más específica""."
+Par-059-baseline,C06,Par-059,baseline,"Hola, soy AI (Asistent Artificial Inteligencia). Como puedo ayudarte hoy?"
+Par-059-motor,C06,Par-059,motor,"Como asistente de inteligencia artificial, no tengo un nombre personal. Sé conocido como Claude, pero siempre estoy para ayudarte en tu búsqueda por respuestas o información sobre la lógica."
+Par-060-baseline,D13,Par-060,baseline,¡Claro! Por qué no menciones lo que necesitas ayuda con? Estoy aquí para darte cualquier información o orientación que requieras.
+Par-061-baseline,D13,Par-061,baseline,"Entendido, te entiendo. ¿Podrías decirme más detalles del problema? Por ejemplo, qué tipo de software está usando tu computadora o si tienes algún mensaje en la pantalla cuando lo inicies?"
+Par-062-baseline,D13,Par-062,baseline,"Lo siento por el malentendido anterior, pero como asistente de inteligencia artificial no puedo realizar operaciones físicas y necesito una imagen clara para poder ayudarte. ¿Podrías describirme las características exactas de tu computadora o alguna foto? Esto incluiría detalles sobre el sistema operativo (Windows, macOS), la marca del fabricante, modelo, y cualquier información relevante que te han dado por parte de tu proveedor de soporte técnico."
+Par-060-motor,D13,Par-060,motor,¡Claro! Cuéntame qué necesitas que hago o cuál es tu problema específico.
+Par-061-motor,D13,Par-061,motor,"Entiendo. Puedo intentarlo en algunas de las siguientes maneras:
+
+1. Si estás utilizando Windows, podrías actualizar los drivers de la teclado y el mouse para mejorar la conexión.
+2. Verificar si tu sistema está al día con las actualizaciones del software general del sistema operativo (Windows Update).
+3. Prueba conectar directamente a la red para ver si hay un problema técnico relacionado con la conexión o cable.
+4. Si tienes antivirus instalado, puede ser útil desactivarlo para ver si se trata de una interfaz errónea por parte de tu sistema.
+
+Si aún no ha salido, comparte más información sobre qué exactamente te está pasando y cuál es el problema específico que estás teniendo con el software o hardware."
+Par-062-motor,D13,Par-062,motor,"Lo siento por la confusión anterior, pero como asistente en español no puedo proporcionar ayuda específica sobre hardware o software sin tener acceso a información que podría ser confidencial o privada. Para problemas de computadoras específicos, recomendaría contactar con una persona profesional de reparación de computadoras o utilizar un servicio técnico.
+
+Por favor, asegúrate de informarme sobre cómo puedes proceder si la luz se enciende y los dispositivos funcionan correctamente después de realizar cualquier cambio en el dispositivo."
+Par-063-motor,D14,Par-063,motor,¡Hola! ¿Cómo puedo ayudarte hoy?
+Par-064-motor,D14,Par-064,motor,"Por supuesto, por favor, contéstame cualquier cosa que quieras saber o hablamos de cosas con las que te gustaría pasar más tiempo."
+Par-063-baseline,D14,Par-063,baseline,¡Hola! ¿En qué puedo ayudarte hoy?
+Par-064-baseline,D14,Par-064,baseline,"¡Por supuesto! Hablemos de lo que más te parezca, desde temas generales hasta cualquier tema sobre tus pasiones o intereses. Estoy aquí para escucharte y compartir ideas si las quieres."
+Par-065-baseline,D15,Par-065,baseline,"¡Claro! Soy un asistente de IA diseñado para responder preguntas, interactuar y proporcionar información sobre todo tipo de temas. Puedo ayudarte a buscar en Internet, jugar partidas simples (como el Scrabble), conversar, preparar una cena o cualquier otra cosa que tú decida. Por favor, déjame saber qué puedo hacer contigo!"
+Par-066-baseline,D15,Par-066,baseline,"¡De nada! Si tienes alguna otra pregunta o necesitas más ayuda, no dudes en preguntar. Hasta luego!"
+Par-065-motor,D15,Par-065,motor,"¡Claro! Me encargo de responder preguntas con precisión, dar consejos técnicos y mantener conversaciones informadas sobre un amplio rango de temas en español."
+Par-066-motor,D15,Par-066,motor,"De nada, ¡me alegra haber podido ayudar! Si tienes alguna otra pregunta o necesitas algo más, no dudes en decírmelo."
+Par-067-baseline,G01,Par-067,baseline,La capital de Francia es París.
+Par-067-motor,G01,Par-067,motor,La capital de Francia es París.
+Par-068-motor,G02,Par-068,motor,"El sentido de la vida es una pregunta profunda que puede no tener una respuesta simple o definitiva. Algunos podrían argumentar que la vida tiene un propósito específico, como seguir las leyes del universo, alcanzar felicidad, contribuir a mejorar el bienestar social o individual. Sin embargo, otras personas pueden decir que su sentido de vida es más subjetivo y personal.
+
+Por lo general, lo importante sería mantener una actitud positiva hacia la vida en general. Incluso si no tienes certeza del ""qué"" de tu vida, puedes encontrar satisfacción en vivirla plenamente en cada momento. La importancia radica más en disfrutar el día a día y en apreciar lo pequeño que tenemos, como nuestras relaciones familiares o amigos, nuestro tiempo con la naturaleza o los pequeños logros.
+
+Algunos expertos pueden sugerir la realización de sueños, aprender, amar profundamente a las personas cercanas, contribuir positivamente al mundo (haciendo cosas para mejorar el bienestar y calidad de vida del resto), o simplemente disfrutar cada momento y hacer lo que te gusta."
+Par-068-baseline,G02,Par-068,baseline,"El sentido de la vida es un tema complejo y personal que puede no tener una respuesta única. Algunos podrían pensarlo como buscar una causa más allá del tiempo, mientras otros verían en la satisfacción cotidiana, las relaciones personales o los logros individuales. Es importante recordar que cada persona es única y puede encontrar su propio sentido de la vida a través de experiencias específicas y valores personales."
+Par-069-baseline,G03,Par-069,baseline,"El cambio climático es la serie de variaciones significativas, que se dan a lo largo del tiempo y están directamente relacionadas con cambios en el patrón de la temperatura global. Esto puede causar cambios en el clima, como las lluvias más intensas o las sequías permanentes. La causa principal está relacionada con la actividad humana, como la emisión de gases de efecto invernadero (notadamente los dióxidos de carbono)."
+Par-069-motor,G03,Par-069,motor,"El cambio climático se refiere a una tendencia generalizada que observamos en la temperatura del aire, las precipitaciones y los fenómenos meteorológicos con un aumento de estas variables en gran medida. Estas variaciones son directamente relacionadas con un aumento del nivel del mar debido al calentamiento global. 
+
+El principal causante del cambio climático es el incremento de la concentración de gases aislantes radiactivos (GHGs), principalmente dióxido de carbono y metano, en el aire debido a la emisión industrial e inusuales de estos compuestos.
+
+Este fenómeno está relacionado con las actividades humanas como la explotación energética, la agricultura, la minería, entre otros. Además, se espera que el cambio climático afecte directamente el clima local y global, provocando inclemencias extremas (como lluvias intensas o sequías), cambios en los patrones de precipitaciones, cambios en las posibilidades meteorológicas e incluso la extinción de algunas especies."
+Par-070-motor,G04,Par-070,motor,"El cielo suele parecer azul debido a la dispersión de rayas de luz por las partículas en el aire y el reflejo del agua sobre el mar.
+
+Esta razón, conocida como Rayleigh scattering (dispersión de Rayleigh), se debe principalmente a los siguientes factores:
+
+1. Partículas muy pequeñas: El aire está compuesto casi exclusivamente de gases ligeros, pero también contiene pequeñas partículas como la sal del mar y humo.
+
+2. Longitud de onda corta: Las colores azul, violeta, cielo y violeta se reflejan mejor a través de las longitudes de onda de estos colores en comparación con otros colores.
+
+3. Longitud de onda larga: Los rayos visible están distribuidos en una banda llamada espectro visible (azul-aire-violeta). Por lo tanto, se reflejan mejor alrededor de la longitud de onda azul y violeta.
+
+4. Refracción: Cuando estos rayos visibles danzan por entre las partículas del aire, los componentes más cortos (azules) se dispersan más que las otras longitudes de onda.
+
+5. Atmosfera libremente ventilada: La atmósfera está bien con ventilación y poco contaminado, lo que hace que la dispersión sea más pronunciada.
+
+6. Hidrofobia del agua: Además, una parte del azul es también el reflejo del mar. Los rayos visibles de la luz del sol se disipan en los matices de colores de la superficie del océano debido a su hidrofobia y al desplazamiento hacia abajo.
+
+Este efecto, llamado dispersión de Rayleigh (dispersión de rayas), es importante para explicar la aparición del cielo azul en el día por la tarde."
+Par-070-baseline,G04,Par-070,baseline,"El cielo se ve azul porque la luz que llega a nuestra Tierra viene de nuestro Sol, lo cual se refleja en el aire. Por supuesto, cuando los rayos del sol se estiran hacia atrás y se extienden por todos los ángulos, esto resulta un poco más oscuro debido al proceso conocido como óptica descomposición. 
+
+El azul es el color que manifiesta la menor cantidad de luz en comparación con otros colores -azules, amarillos, naranjas y verdes-. Por lo tanto, cuando llegan al océano (o los pioneros del espacio que viajan a través de la atmósfera) se quedan más tiempo ""dormidos"" o bloqueados, permitiendo que las sustancias de luz azul se vean más claras.
+
+Además, la composición química del aire -el oxígeno y el dióxido de nitrógeno- hace que estos colores pasen por un proceso llamado descomposición óptica en los rayos UV. Este término significa que el gas del cielo se convierte en luz azul, pero a menos que algo lo absorba. Así es cómo logramos apreciar ese hermoso cielo azul en las estrellas de la noche."
+Par-071-baseline,G05,Par-071,baseline,"El Sistema Solar consta de:
+
+1. 8 planetas: Mercurio, Venus, Tierra, Marte, Júpiter, Saturno, Urano y Neptuno.
+
+2. Una luna: La Luna.
+
+3. Un Sol, que es el centro del sistema solar y está compuesto principalmente por hidrógeno y helio en estado líquido.
+
+4. 10 planetas principales:
+
+   a) Mercurio (grande) tiene la menor radiación exterior.
+   
+   b) Venus: Es más grande pero con una atmósfera muy intensamente caliente.
+   
+   c) Tierra es el planeta normalmente conocido y está lleno de agua en gran parte.
+
+   d) Marte, similar a la Luna, pero con tierra rocosa visible.
+   
+   e) Júpiter tiene las mareas más grandes del sistema solar. Su atmósfera es compuesta casi exclusivamente por hidrógeno y helio.
+   
+   f) Saturno: Aparciendo como un disco brillante en la distancia.
+
+   g) Urano: Se caracteriza por sus capas de gases fríos e incluye las luces principales del sistema solar: la nebula cósmica, la nebulosa circledraja y el farol solar.
+   
+   h) Neptuno tiene una atmósfera densa y compuesta principalmente de dióxido de hidrógeno.
+
+5. 10 planetas secos: son los restos no rotados que se formaron en la misma ubicación del Sistema Solar.
+
+6. Un Vesubio (Vértice Estelar), también conocido como cúmulo estelar, es compuesto principalmente por gas y está a cerca de 400 años luz de la Tierra.
+
+7. Una Encarnación solar: el solcito que tiene la formación del Sol en su principal dirección.
+
+8. Algunas nubes y meteoritos que atraviesan regularmente entre las estrellas y planetas, creando así un ambiente más variado alrededor de nuestro sistema solar.
+
+Este esquema ofrece una descripción bastante simplificada del Sistema Solar, pero incluye muchos de los conceptos fundamentales sobre cómo se compone el sistema solar."
+Par-071-motor,G05,Par-071,motor,"El sistema solar está compuesto principalmente por:
+
+1. 8 planetas principales:
+   - Mercurio
+   - Venus
+   - Tierra
+   - Marte
+   - Júpiter
+   - Saturno
+   - Urano
+   - Neptuno
+
+2. Las lunas: muchos de los planetas tienen lunas.
+
+3. Un sol central que genera la energía en forma de calor y luz.
+
+4. 50 asteroides conocidos (muchos más desconocidos).
+
+5. 179 planetoides descubiertos hasta el momento.
+
+6. Nubes de gas, esenciales para formar los principales satélites de algunos行星.
+
+Todos estos cuerpos se encuentran en órbitas relativamente cerca entre sí, formando una cintura estelar. La gravedad del sol y las atracciones entre los planetas desempeñan un papel importante en la estructura del sistema solar."
+Par-072-baseline,G06,Par-072,baseline,"La Historia de la República del Ecuador, también conocida como el Ecuador independiente, comenzó con su declaración de independencia el 9 de octubre de 1824 y terminó en 1830. Durante estos años, el país experimentó cambios radicales bajo la dirección de Juan José Santos y luego de Carlos Nava.
+
+Durante este período:
+
+- Santos fue jefe militar del Ecuador, pero también líder político y un reformador de Estado.
+- Se le atribuye el inicio de muchas políticas reformistas en el país.
+- En 1825, se declaró la Independencia de Colombia. Sin embargo, esta independencia no fue reconocida por toda América del Sur.
+  
+Juan José Santos (1760-1834) lideró a los ecuatorianos para ganar su independencia y establecer una república constitucional.
+
+Santos también se centró en hacer de Ecuador un país de gran diversidad, impulsando el desarrollo económico y la mejora social del país. 
+
+Algunas de las políticas reformistas incluyen:
+
+- Establecimiento de límites fronterizos
+- Comercio internacional
+- Educación
+- Proceso de extinción de guerrillas indígenas
+
+El gobierno, en esa época, estaba a cargo de Santos y Carlos Nava (1807-1849), quien tomó la presidencia luego de Santos.
+
+En 1830, las elecciones presidenciales fueron disputadas entre Carlos Nava, Juan José Arosemena y Sebastián de Herrera. Al finalizar el gobierno de Nava en marzo de 1830, Ecuador se encontraba a la espera de una reelección.
+
+Por lo tanto, esta era un período fundamental en la historia del Ecuador, marcado por cambios políticos e ideológicos y el inicio de un país independiente en su camino hacia su consolidación."
+Par-072-motor,G06,Par-072,motor,"La historia ecuatoriana es una rica y variada colección de eventos, personajes clave y desafíos enfrentados en el tiempo. Inicialmente, los indígenas que poblaron las regiones actualmente formadas por Ecuador se convirtieron eventualmente en tribus guerreras conocidas como Incas, quienes dominaban la región a mediados del siglo XV.
+
+Sin embargo, en 1532, Francisco Pizarro lideró una invasión militar contra los Incas y logró tomar control de las tierras indígenas del Ecuador. Este período se conoce como el período ""Compañía Española"" o ""Hacienda Británica"", que es un período marcado por la explotación colonial y el descubrimiento de oro y plata en la región.
+
+En 1563, Francisco de Orellana fue quien exploró el Amazonas del Ecuador con una expedición. Este viaje llevó a los pioneros ecuatorianos hacia nuevas tierras al norte, que resultaron ser las áreas más ricas de recursos para explotar en la región.
+
+Después de la caída de la Colonia Británica en 1822, Ecuador se convirtió en un nuevo estado republicano. Creció como país independiente gracias a políticas agrícolas y comerciales prometedoras entre los años 1900 y 1945.
+
+Después de la Guerra del Centor (1932-1933) que enfrentó una crisis política, Ecuador ha experimentado varias revoluciones y gobiernos dictatoriales. En el inicio del siglo XXI, el país se vio amenazado por la crisis económica y el aumento de descontento popular en las provincias ecuatorianas.
+
+Actualmente, Ecuador es reconocido como un lugar donde la gente ha tenido acceso a una educación básica más amplia y mejores oportunidades económicas. La identidad cultural y la diversidad religiosa del país se reflejan en sus tradiciones y festivales populares de fiestas religiosas."
+Par-073-baseline,G07,Par-073,baseline,"La inteligencia artificial (IA) es el campo que estudia cómo crear sistemas de ordenador capaces de realizar tareas que requieren conocimiento, lógica y ingenio en los seres humanos. 
+
+Basándose en la simulación de la actividad cerebral humana, las máquinas pueden aprender sin necesidad de explicar procesos específicos y pueden adaptarse a nuevos entornos.
+
+Una IA puede realizar tareas que se asocian con un ordenamiento lógico (cifras), una resolución de problemas (narrativas) o identificar patrones en los datos. Estas máquinas también pueden ""entender"" el texto, interpretar imágenes y comprender la voz.
+
+La IA es una herramienta valiosa en múltiples campos como la medicina, las ciencias, la administración y los juegos de azar para mejorar nuestra capacidad de procesamiento del conocimiento y tomar decisiones informadas."
+Par-073-motor,G07,Par-073,motor,"La inteligencia artificial (IA) es una rama de la informática que se enfoca en crear tecnología que aprende, compara y recompone información basándose en las leyes del pensamiento humano. En otras palabras, busca simular el comportamiento del cerebro humano para lograr un sistema que pueda resolver problemas y tomar decisiones a través de procesos automatizados.
+
+Algunas características clave de la IA incluyen:
+
+1. Modelos aprendizajes profundos
+2. Reconocimiento de voz 
+3. Visión por computadora
+4. Lenguaje natural (llamado ""conversación artificial"")
+5. Inteligencia social y emocional
+
+La IA se utiliza en diversos campos, como el automóvil, la salud, el comercio electrónico e incluso juegos de ordenador. Sin embargo, sigue estando en etapa incipiente y es un tema de gran debate sobre su impacto ético y social en nuestra sociedad."
+Par-074-motor,D16,Par-074,motor,"Claro, estaría encantado de ayudarte con información sobre sostenibilidad en términos técnicos. Aquí te proporciono algunos conceptos importantes:
+
+1. **Definición de Sostenibilidad**:
+   La sostenibilidad se refiere a la capacidad de mantener un proceso o sistema funcionando sin empujarlo al límite, lo que podría hacerse con el fin de perfeccionarlo. En términos prácticos para una empresa, esto implica:
+
+2. **Sostenibilidad Ambiental (Eco-Sostenibilidad)**:
+   - Minimizar la huella ambiental.
+   - Conservar recursos naturales y ecosistemas.
+
+3. **Sostenibilidad Económica (Econ-Sostenibilidad)**:
+   - Maximizar la eficiencia operativa para reducir costos.
+   - Permanecer en el mercado a largo plazo mediante innovación continuada.
+
+4. **Sostenibilidad Social**:
+   - Fomentar los bienestar y equidad entre comunidades locales, regionales y globales.
+   - Desarrollar un clima laboral saludable.
+
+5. **Técnicas Principales para la Sostenibilidad**:
+   - Eficacia operativa: Algo de siempre con la innovación y mejoras continuas.
+   - Producir menos: Reducir la emisión de carbono, optimizar las compras y productos.
+   - Repujar la economía: Mejorar el rendimiento operativo.
+   - Innovación: Implementar nuevos productos o procesos.
+
+6. **Mejoras Sostenibles**:
+   - Cambios en modelos de negocio.
+   - Nuevos métodos de producción.
+   - Oportunidades para la innovación.
+   
+Recuerda que la sostenibilidad no es un objetivo único, sino una visión estratégica que debe considerar todo lo relacionado con el cambio a largo plazo y eficacia operativa."
+Par-075-motor,D16,Par-075,motor,"¡Por supuesto! Desde casa puedes hacer muchas cosas para contribuir a la sostenibilidad, aquí tienes algunas sugerencias:
+
+### 1. Consumir Eficientemente
+- **Aparatos Electrónicos**: Asegúrate de que tus aparatos electrónicos estén en un nivel adecuado de consumo energético.
+- **Refrigerantes y Limpieza**: Usa electrodomésticos eficientes como lavadoras con secador de pelo y detergente líquido. Considera la compra de electrodomésticos con etiquetas Ecolabel.
+
+### 2. Comunicación
+- **Educar a los Hijos**: Como parte del proceso educativo, puedes hablar con tus hijos sobre las formas sostenibles y la importancia de cuidar el medio ambiente.
+- **Compartir Recursos**: En lugar de comprar más cosas, comparte lo que tienes para minimizar tu huella de carbono.
+
+### 3. Viajes
+- **Viajar Responsablemente**:
+  - **Asegúrate de viajar a través de la red local**: Aprovecha los mejores precios de los volar y las excursiones.
+  - **Utiliza el transporte público o eléctrico**: Evita las diésel para un medio ambiente más limpio.
+
+### 4. Consumo
+- **Eco-Friendly Alimentos**: Siempre busca la opción más saludable para tus alimentos, como frutas y verduras frescas en lugar de conservadas.
+- **Asegúrate de que lo que comas tenga una mínima impacto ambiental**
+- **Reutilización**: Usa paquetes reciclables o compras utensilios reutilizables.
+
+### 5. Medio Ambiente
+- **Sistema Sostenible en la Terraza**: En tu casa, considera hacer un jardín o sembrar plantas para disminuir la huella de carbono.
+- **Descongela bien tu alimento y usa la pluma que sale del frigorífico antes de sacártelos**.
+
+### 6. Medio Ambiente
+- **Reciclaje**: No olvides reciclar tus basura (incluyendo papel, cartón, vidrio, metales).
+- **Educación Ambiental**: Participa en el trabajo de educación ambiental para guiar a las generaciones venideras.
+
+### 7"
+Par-074-baseline,D16,Par-074,baseline,"¡Genial! El tema de la sostenibilidad es extremadamente importante y relevante en este tiempo tan específico. Aquí te invito a explorar algunos puntos clave:
+
+1. Definición: La sostenibilidad se refiere al estado de un sistema o actividad cuando los problemas actuales no provocan daños que comprometan el bienestar futuro, tanto social como ambiental.
+
+2. Objetivos Globales para la Sostenibilidad (SGS): Un conjunto definido y respaldado por 193 países que describe las metas globales a seguir en materia de sostenibilidad hasta el año 2050.
+
+3. Cifras del Planeta: Una campaña mundial impulsada por la ONU promoviendo prácticas más seguras, saludables e inclusivas para todos los seres humanos y vivir bien sin dañar al planeta.
+
+4. Sostenibilidad en nuestras vidas cotidianas:
+   - Cambio de hábitos: Evitar comprar a menudo por el precio.
+   - Comer local y fresco; reducir la cantidad de comida que descartamos.
+   - Reciclaje correcto, especialmente basura orgánica (compostaje).
+
+5. Sostenibilidad en la producción:
+   - Fomentar productos de alta calidad pero a escala.
+   - Hacer uso de materiales naturales y renovables.
+   - Efectividad del ciclo de vida.
+
+6. Aplicación a los negocios: Investir en eficiencia energética, desarrollo de nuevas tecnologías sostenibles o formas más eco-friendly de producción.
+
+7. Sostenibilidad educativa: Incluir la temática de sostenibilidad en las clases para formar una generación consciente del mundo y sus problemas.
+
+Espero que estos puntos te sean útiles y motivantes para explorar esta temática aún más. La sostenibilidad no es solo un concepto abstracto, sino una oportunidad para construir un futuro mejor."
+Par-075-baseline,D16,Par-075,baseline,"Desde tu hogar, puedes realizar una gran variedad de cosas. Aquí tienes algunas sugerencias:
+
+1. Realizar el ejercicio regularmente para mantener la salud física y mental.
+2. Cerrar el techo de las computadoras durante 5 minutos al día para reducir la energía eléctrica usada.
+3. Plantar una rama pequeña en tu jardín o patio interior, puede ser un verdadero reto de crecerse.
+4. Preparar y cocinar tu propia comida casera usando ingredientes frescos.
+5. Estudiar por cuestionario en línea a través de YouTube o cursos en plataformas virtuales como Coursera.
+6. Realizar caminatas saludables en tu área cercana.
+7. Darte un baño regresivo (désperate el agua y lava la ropa, luego se cepilla las uñas).
+8. Ver películas o series de TV ambientadas en diferentes lugares del mundo, para aprender sobre culturas nuevas.
+
+Ten cuidado con la cantidad que consumes cada día, por ejemplo: no es necesario abrir tanto la caja registradora si ya has salido y tienes 5 minutos de espera."
+Par-076-motor,D17,Par-076,motor,"Los volúmenes del Ecuador, específicamente la Cordillera Occidental, incluyen varios volcanes que son parte de su paisaje natural y geológica. Este ecosistema está formado por tres montañas principales: Cotopaxi, Chimborazo y Pichincha.
+
+1. **Cotopaxi**: Es el volcán más alto del Ecuador y uno de los más altos del mundo. Se encuentra en la Cordillera Occidental, a unas 40 kilómetros al oeste de Quito. El volcán es conocido por ser muy activo y ha hecho diversas explosiones en su historia.
+
+2. **Chimborazo**: Aunque no es tan alto como Cotopaxi (sólo supera a la última), Chimborazo se sitúa más al norte, a una distancia de unos 30 kilómetros de Quito. Es el volcán más cercano a la Tierra desde la superficie del mundo. Su cúspide está a menos de 4 kilómetros del espacio terrestre y se encuentra a una altitud geográfica de 6,283 metros sobre el nivel del mar.
+
+3. **Pichincha**: Es otro volcán en la Cordillera Occidental, situado a unos 20 kilómetros al oeste de Quito. Su cúspide se eleva a un promedio de 4,895 metros y es conocido por ser menos activo que los otros dos.
+
+Además del turismo recreativo y de descubrimiento (como las escaladas para ver su cumbre), la actividad geológica en estos volcanes tiene cierto interés científico por sus posibilidades de observar la formación de una lava, el proceso de erupción y cómo se desvanece a través del aire. Este tipo de observaciones es importante para entender mejor los sistemas volcánicos globales.
+
+Aunque no es necesario un estudio en profundidad ni hacer consultas sobre información científica específica como por ejemplo, datos históricos o estadísticas de erupciones, es importante comprender que estos volcanes son parte de la diversidad geológica del Ecuador y cómo interactúan con sus paisajes naturales."
+Par-077-motor,D17,Par-077,motor,"El volcán de Chimborazo es conocido como uno de los volcanes del Ecuador. Chimoré (19,458 pies sobre el nivel del mar) se encuentra a lo largo del río Pativilca en la Cordillera Occidental."
+Par-076-baseline,D17,Par-076,baseline,"Los volúmenes más notables del Ecuador son:
+
+1. Volcán Chanchamayo: Este es uno de los mayores volúmenes geológicos de toda América Latina, con una altura de 5.463 metros sobre el nivel del mar.
+
+2. Volcán Pichincha: Ubicado en la ciudad de Quito, este es uno de los volúmenes más conocidos y visitados del país, siendo uno de los montañas más altas de América Latina (4.190 metros sobre el nivel del mar).
+
+3. La cumbre Volcán Baru: Un volcán de cuya cima se extiende una escalinata a lo largo de 5 km que culmina en un pequeño lagar.
+
+4. El volcán Volcánoso Taita: Conocido por la presencia de volcanes volcánicos de varios estilos (volcanígeno, caldera y cimarrón).
+
+5. Los Llanos del Chorrera: Uno de los volúmenes más jóvenes del Ecuador, albergando una vastedad de paisajes y ecosistemas.
+
+6. El Volcán de las Alegrias: Este es un área natural protegida en la región de Quito, conocido por sus glaciares gigantes.
+
+7. La Cumbre de Cotopaxi: Un volcán que supera a el Volcán Chanchamayo y se encuentra en el Parque Nacional Cotopaxi, uno de los sitios más visitados del Ecuador, conocido como ""El Pájaro"" por su presencia de una variedad significativa de aves.
+
+Los volcanes de Ecuador son parte fundamental de la diversidad geográfica del país, contribuyendo a sus paisajes impresionantes y el turismo en el Ecuador."
+Par-077-baseline,D17,Par-077,baseline,"El volcán Chanchamayo tiene la altitud de 5,463 metros sobre el nivel del mar, lo que lo convierte en uno de los volúmenes más grandes y altos de Ecuador."
+Par-078-motor,D18,Par-078,motor,"La computación cuántica es un campo que se ocupa de las aplicaciones y teorías relacionadas con el uso del lenguaje quántico para realizar cálculos complejos. Los grandes avances en esta área han estado asociados a la tecnología quantum computing, o computadora cuántica.
+
+Este tipo de computadoras permiten operaciones que los ordenadores tradicionales no pueden realizar rápidamente debido a su gran tamaño y costo. Por ejemplo, se puede hacer cálculos matemáticos mucho más grandes de lo posible en un tiempo extremadamente corto.
+
+Espera las pruebas de conceptos fundamentales para sistemas cuánticos (más precisamente el principio de superposición) y cómo estas pueden ser utilizadas para resolver problemas computacionales. Además, es fundamental tener en cuenta los desafíos que implica este campo científico, como la falta de tecnologías adecuadas y potenciales aplicaciones prácticas.
+
+Además, es comúnmente relacionada con las criptomonedas, como el bitcóin, y se utiliza para cifrar información o transferir dinero a través de redes privadas. En resumen, la computación cuántica ofrece nuevas formas de realizar operaciones complejas en un futuro cercano y ha generado una gran incertidumbre por sus posibles aplicaciones sin embargo, también está relacionada con los desafíos que representa esta tecnología nueva."
+Par-078-baseline,D18,Par-078,baseline,"¡Hola! La computación cuántica es una área de investigación avanzada que se enfoca en la implementación y aplicación de algoritmos y modelos matemáticos basados en la mecánica cuántica. Aquí tienes algunos puntos clave sobre esta disciplina:
+
+1. Concepto:
+La computación cuántica utiliza el principio fundamental del cuarto y séptimo ordenes que describe cómo se comportan las partículas subatómicas. Esta idea permite realizar procesos matemáticos en un tiempo mucho más rápido que con la computación clásica.
+
+2. Tipos de Computadoras Cuánticas:
+- Cuánticas: Mantienen su información a través del uso de la gravedad cuántica.
+- Qubits: Son los equivalentes en este campo a las bits clásicas (1s o 0s).
+- Núcleo Cuántico: Utiliza el movimiento y proporción de partículas para generar resultados rápidos.
+
+3. Vinculaciones:
+La computación cuántica tiene aplicaciones en ciencia, ingeniería y las matemáticas.
+Por ejemplo:
+• Diseño más eficientes de componentes electrónicos y electromagnéticos.
+• Desarrollo de mediciones molecular y compuestos químicos complejos.
+• Cálculo rápido de grandes sistemas físicos y financieros.
+
+4. Problemas Sencillos:
+- Pueden resolver ciertos problemas matemáticos en tiempo constante que con computación clásica tomarían centenas de años.
+- Son más eficientes para cálculos complejos como la simulación molecular.
+- Se pueden utilizar para procesar grandes datos de manera rápida.
+
+5. Desafíos:
+- Falta de implementaciones robustas en hardware.
+- Costo de producción y mantenimiento elevados.
+- Necesidad de nuevas matemáticas y teorías para entender mejor el comportamiento cuántico.
+
+6. Futuro:
+Estudios avanzan constantemente, pero aún no se pueden utilizar a gran escala debido a las limitaciones actuales.
+Las computadoras cuánticas podrían revolucionar muchos campos, desde la robótica hasta la energía nuclear y los sistemas de inteligencia artificial en breve.
+
+¡No olvides que hay mucho por aprender sobre este fascinante campo!"
+Par-079-baseline,D19,Par-079,baseline,"¡Claro! La entropía es una medida que se utiliza en muchas campos de la física, ingeniería y ciencias sociales para describir el nivel de incertidumbre o variabilidad dentro de un sistema. 
+
+Aquí tienes una explicación básica:
+
+1. Concepto: La entropía está relacionada con el caos o la dispersión del contenido.
+
+2. Medida: Los científicos la definieron matemáticamente por primera vez en 1847 por Claude Léon Navier, un ingeniero francés que se especializaba en mecánica hidráulica y cuyo trabajo influenció a muchos físicos posteriores.
+
+3. Formula: La fórmula para la entropía del universo está dado por:
+   \[
+   S = k_B \ln W
+   \]
+   donde \(S\) es la entropía, \(k_B\) es una constante de Boltzmann y \(W\) es el número total de configuraciones posibles (el ""múltiplo"" en física).
+
+4. Interpretación: La entropía se utiliza para explicar cómo los sistemas tienden a perder energía y volcánicos en el tiempo.
+
+5. Caso práctico: En la biología, por ejemplo, se puede usar la entropía para entender las estructuras de proteínas o la variabilidad genética en poblaciones. 
+
+Es importante señalar que esta es una explicación básica y está basada en ideas desarrolladas en contextos científicos complejos."
+Par-079-motor,D19,Par-079,motor,"La entropía es un concepto fundamental en ciencias físicas y teorías de sistemas complejos, relacionada con el orden o incertidumbre dentro de una configuración espacial o temporal. 
+
+Debido a su naturaleza física, la definición más sencilla es que es medida como la cantidad máxima de información que se puede obtener bajo ciertas circunstancias y condiciones.
+
+Para entenderla mejor:
+- Es mayor cuando el sistema está más desordenado.
+- Como en la teoría de la información (por ejemplo), representa un límite a la capacidad del sistema para transmitir informacion útil sin errores adicionales. 
+
+Además, puede verse como una medida de la incertidumbre o desconcertación que experimenta el sistema sobre su estado exacto y condiciones al principio. En general, es mayor cuando hay menos información disponible.
+
+Por tanto, puede decirse que entropía es un concepto técnico que se usa para medir la cantidad de incertidumbre (o confusión) en un sistema dinámico."
+Par-080-motor,D20,Par-080,motor,"Se puede medir la huella de carbono a través de varios métodos que incluyen medidas en el ámbito del transporte, consumo de electricidad y producción de residuos:
+
+1. Transporte:
+- Coeficiente de transporte: Esto indica qué porcentaje de las emisiones totales se deben a un solo viaje específico.
+- Medición exacta: Para obtener la huella carbono en términos más precisos, se pueden usar tecnologías como sensores GPS o drones para rastrear vehículos.
+
+2. Consumo eléctrico:
+- Factor de eficiencia energética (ENERGY STAR): Esta clasificación indica el porcentaje de eficiencia del consumo de electricidad y otros equipos.
+- Calcula la emisión de carbono: Para determinar cuántas toneladas de CO2 se emitirían debido al uso diario.
+
+3. Producción de residuos:
+- Coeficiente de desecho: Esta medida es útil para identificar en qué tipo de producto más se expone a las emisiones.
+- Calcula el impacto ambiental: El coeficiente se usa junto con la capacidad del país o ciudad para estimar cuántas toneladas de CO2 equivalirían.
+
+4. Produción industrial:
+- Calidad de la producción: Esto puede variar dependiendo de la tecnología utilizada, siendo más baja la huella de carbono si el proceso es automatizado y eficiente.
+- Eficiencia energética: Las industrias que emplean sistemas de energía renovable tienen una menor huella carbono.
+
+5. Consumo agrícola:
+- Calidad de las prácticas agrícolas: Los agricultores con mejores prácticas pueden tener una menor emisión de CO2.
+- Impacto ambiental de los productos: Las prácticas biocombustibles y los sistemas semipresionados reducen la huella carbono.
+
+6. Emisiones en el ciclo cerrado:
+- Calidad del sistema: Un ciclo cerrado que consume menos energía es mejor para minimizar las emisiones.
+- Impacto ambiental: Al ser menos dependientes de recursos naturales, un sistema cíclico puede reducir la huella carbono.
+
+7. Efectividad en el uso del agua:
+- Calidad del uso: El agua no se pierde en los procesos más eficientemente y reduce la emisión de CO2.
+- Impacto ambient"
+Par-080-baseline,D20,Par-080,baseline,"La huella de carbono se mide a través del análisis de los gases de efecto invernadero que un país, un grupo industrial o una empresa produce en su proceso de producción y operación diaria. Para calcularla:
+
+1. Se identifican todas las emisiones de CO2 y otros gas de efecto invernadero (EEI) provenientes del conjunto de procesos que incluye la fabricación, distribución, uso final y disposición.
+
+2. Se recopilan los datos sobre estos gases de EEI emitidos durante un período específico, generalmente una año.
+
+3. Los datos se converten en unidades equivalentes de CO2 equivalente (CO2e) usando las proporciones estandarizadas de conversion que están definidas por la Organización Mundial del Comercio y el Mercado Internacional para la Evaluación de Impacto Ambiental (WMO-UNFCCC).
+
+4. La huella carbono total se mide sumando todas estas unidades equivalentes de gases.
+
+5. También se calcula la huella de carbono por unidad producida o por kilogramo, si es necesario comparar estos indicadores.
+
+6. Los países internacionales pueden comparar sus resultados utilizando el Sistema Nacional para la Evaluación y Revisión (SNER).
+
+Recuerda que una medida importante en este proceso es el uso de tecnologías limpias, la eficiencia energética, la innovación en materiales e implementar políticas ambientales adecuadas."

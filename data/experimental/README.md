@@ -11,6 +11,7 @@ que no estén en la fuente.
 | Registros de consulta exportados | 80 | `queries.csv` |
 | Turnos | 80 | `turns.csv` |
 | Respuestas (ambas condiciones) | 160 | `responses.csv` |
+| Respuestas de la reejecución de la campaña | 160 | `responses_replica.csv` |
 
 Las columnas de texto deben revisarse y anonimizarse antes de publicar nuevas
 exportaciones.

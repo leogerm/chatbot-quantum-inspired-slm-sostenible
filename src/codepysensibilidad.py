@@ -614,6 +614,7 @@ class HybridChatbot:
                  alpha=ALPHA_DEFAULT, coupling=COUPLING_DEFAULT,
                  theta_quiebre=THETA_QUIEBRE, seed: Optional[int] = None):
         self.llm_enabled = llm_enabled
+        self.inject_directive = True   # False = condición de línea base (sin directiva de contexto)
         self.mode = "rapido"
         self.ollama_model = ollama_model
         self.ollama_base_url = os.getenv("OLLAMA_HOST", "http://127.0.0.1:11434")
@@ -763,8 +764,12 @@ class HybridChatbot:
             history.append({"role": "user", "content": u[:200]})
             history.append({"role": "assistant", "content": b[:200]})
 
-        system = (f"Eres un asistente conversacional en español. {cs.directive} "
-                  f"No inventes librerías ni datos ficticios.")
+        if self.inject_directive:
+            system = (f"Eres un asistente conversacional en español. {cs.directive} "
+                      f"No inventes librerías ni datos ficticios.")
+        else:
+            system = ("Eres un asistente conversacional en español. "
+                      "No inventes librerías ni datos ficticios.")
         messages = [{"role": "system", "content": system}, *history, {"role": "user", "content": user_input}]
 
         temp = max(0.1, min(0.9, cs.annealing_temp))
@@ -818,8 +823,10 @@ class HybridChatbot:
             except Exception:
                 emissions_gco2 = 0.0
 
+        emissions_source = "codecarbon"
         if emissions_gco2 <= 0:
             emissions_gco2 = round(total_kwh * 161.6, 5)
+            emissions_source = "potencia_x_tiempo"
 
         self.total_emissions_gco2 = round(self.total_emissions_gco2 + emissions_gco2, 5)
         self.total_energy_kwh_acc = round(self.total_energy_kwh_acc + total_kwh, 8)
@@ -848,6 +855,7 @@ class HybridChatbot:
             "source": source,
             "total_ms": round(total_ms, 1),
             "emissions_gco2": emissions_gco2,
+            "emissions_source": emissions_source,
             "total_emissions_gco2": self.total_emissions_gco2,
             "cpu_power_w": cpu_w,
             "ram_power_w": ram_w,
