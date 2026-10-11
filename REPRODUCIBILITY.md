@@ -43,6 +43,7 @@ La fuente canónica del proyecto es
 https://github.com/leogerm/chatbot-quantum-inspired-slm-sostenible.
 
 La hoja de evaluación recibida contenía 80 registros y las dos respuestas por
-turno, pero no contenía puntuaciones en las columnas de J1, J2 o J3. Por eso
-`data/evaluation/ratings.csv` conserva solo su encabezado. No se usó
-`fill_judges.py`, ya que generaba puntuaciones sintéticas.
+turno. Se publicó como `data/evaluation/manual_jueces_ciegos.xlsx` después de
+retirar sus puntuaciones de prueba. Por eso `data/evaluation/ratings.csv`
+conserva solo su encabezado hasta recibir las calificaciones reales de J1, J2
+y J3. No se usó `fill_judges.py`, ya que generaba puntuaciones sintéticas.

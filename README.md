@@ -13,18 +13,17 @@ innecesarios:
 
 - `data/experimental/`: corpus exportado de 80 turnos con categoría e
   identificador de diálogo, y las 160 respuestas de ambas condiciones.
-- `data/evaluation/`: calificaciones de los jueces J1, J2 y J3 por respuesta y
-  criterio.
+- `data/evaluation/`: manual de evaluación ciega y calificaciones de los
+  jueces J1, J2 y J3 por respuesta y criterio.
 - `data/telemetry/`: registros por turno de latencia, emisiones, entropía y
   fidelidad.
-- `src/`: código fuente reproducible. El archivo `codepysensibilidad.py` no
-  está presente en este checkout; se incorporará aquí cuando esté disponible.
+- `src/`: código fuente reproducible, incluido `codepysensibilidad.py` y el
+  estudio de sensibilidad H3.
 - `REPRODUCIBILITY.md`: convención de archivos, controles y pasos de
   reproducción.
 
-Los CSV incluidos inicialmente son plantillas con encabezados: no contienen
-resultados inventados. Los datos completos podrán añadirse respetando los
-identificadores y las convenciones documentadas en cada carpeta.
+El manual publicado es una plantilla limpia para los jueces. Las puntuaciones
+de prueba del archivo recibido no se publican como resultados experimentales.
 
 ## Estado de disponibilidad
 
@@ -32,9 +31,10 @@ identificadores y las convenciones documentadas en cada carpeta.
 | --- | --- | --- |
 | Consultas, turnos y categorías | `data/experimental/` | 80 registros exportados |
 | Respuestas de ambas condiciones | `data/experimental/` | 160 respuestas exportadas |
-| J1/J2/J3 por criterio | `data/evaluation/` | Sin puntuaciones en la fuente recibida |
+| Manual de jueces ciegos | `data/evaluation/manual_jueces_ciegos.xlsx` | 80 pares, listo para aplicar |
+| J1/J2/J3 por criterio | `data/evaluation/ratings.csv` | Pendiente de calificaciones finales |
 | Latencia, emisiones, entropía y fidelidad | `data/telemetry/` | Plantilla; matriz H3 disponible |
-| Código fuente | `src/` | Código de sensibilidad integrado |
+| Código fuente | `src/` | Motor y sensibilidad H3 integrados |
 
 No se publican secretos, modelos binarios, archivos temporales, `__pycache__`
 ni documentos personales.
