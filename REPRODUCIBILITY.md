@@ -3,11 +3,11 @@
 ## Alcance
 
 El repositorio documenta la evidencia disponible para el apartado D.3 sin
-inventar resultados ni publicar artefactos no autorizados. Incluye una
-exportación del corpus, las respuestas de ambas condiciones, el manual de
-evaluación ciega, el código fuente y una matriz de sensibilidad H3. Los
-archivos que todavía no tienen mediciones finales se mantienen como plantillas
-con sus encabezados.
+inventar resultados ni publicar artefactos no autorizados. Incluye el corpus
+independiente de 57 consultas y 80 turnos, las 160 respuestas de ambas
+condiciones, el manual de evaluación ciega, el código fuente y la matriz de
+sensibilidad H3. Los archivos que todavía no tienen mediciones finales se
+mantienen como plantillas con sus encabezados.
 
 ## Convenciones
 
@@ -22,7 +22,7 @@ con sus encabezados.
 
 ## Archivos esperados
 
-1. `data/experimental/queries.csv`: 80 consultas exportadas con categoría e
+1. `data/experimental/queries.csv`: 57 consultas exportadas con categoría e
    identificador de diálogo.
 2. `data/experimental/turns.csv`: 80 turnos asociados a sus diálogos.
 3. `data/experimental/responses.csv`: 160 respuestas, identificadas por
@@ -38,6 +38,13 @@ con sus encabezados.
 8. `src/codepysensibilidad.py` y `src/sensibilidad_h3_paralelo.py`: código
    fuente del motor y del estudio de sensibilidad.
 
+La tesis describe dos condiciones pareadas: A es el modelo con historial
+reciente y sin directiva; B añade la directiva generada por el motor. La
+comparación reportada usa 80 turnos y 160 generaciones. Las cifras agregadas
+reportadas son 18 200,22 ms frente a 17 545,43 ms de latencia media y
+0,010891 frente a 0,010537 gCO2eq por turno, con 1,7142 gCO2eq acumulados.
+Son estimaciones CodeCarbon, no mediciones eléctricas directas.
+
 ## Procedimiento
 
 1. Usar las exportaciones ya incluidas como referencia y no cambiar sus
@@ -48,6 +55,10 @@ con sus encabezados.
 4. Instalar las dependencias de `requirements.txt` y ejecutar el código de
    `src/` desde la raíz del repositorio cuando se necesite reproducir el
    estudio.
+5. Interpretar los resultados dentro del alcance declarado: H1 no quedó
+   respaldada; H2 es compatible con los datos pero no demostrada; H3 cumple
+   el criterio preregistrado de la malla 5x5, que la propia tesis califica de
+   poco exigente.
 
 La fuente canónica del proyecto es
 https://github.com/leogerm/chatbot-quantum-inspired-slm-sostenible.
